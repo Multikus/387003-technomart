@@ -12,8 +12,13 @@
     			<img src="img/index-logo.svg" width="220" height="43" alt="Логотип магазина Техномарт">
     		</a>
 <!--    		Форма поиска-->
-<!--  			Закладки-->
-<!--  			Корзина-->
+<!--Моё предположение на счёт закладок и корзины-->
+ 				<p class="nav-about-order">
+ 					<span class="nav-bookmarks">Закладки:</span>
+ 					<output name="bookmarks-quantity">0</output>
+ 					<span class="nav-goods-basket">Корзина:</span>
+ 					<output name="basket-quantity">0</output>
+ 				</p>
   			<p class="main-nav-confirm-button">
   				<a href="#" class="button">Оформить заказ</a>
   			</p>
@@ -127,25 +132,39 @@
 					</p>
 					<span class="button gallery-button gallery-button-back">&lt;</span>
 					<span class="button gallery-button gallery-button-next">&gt;</span>
+<!--					Добавил разметку второго слайда-->
+					<figure class="gallery-content">
+						<a href="#"><img src="img/man-with-puncher.jpg" width="621" height="267" alt="Мужчина с перфоратором"></a>
+					</figure>
+					<p class="gallery-header">
+						<span class="gallery-header-name">
+							Дрели
+						</span>
+						<span class="gallery-header-item">
+							Настоящие мужские игрушки
+						</span>
+					</p>
+					<p class="gallery-button">
+						<a href="catalog.html" class="choose-category-button">Открыть каталог</a>
+					</p>
+					<span class="button gallery-button gallery-button-back">&lt;</span>
+					<span class="button gallery-button gallery-button-next">&gt;</span>
    			</div>	
     	</section>
     	
     	<section class="popular-goods">
-<!--    	Тут чем-то нужно заменять див или можно так оставить? Что-то ничего не смог придумать-->
-    		<div class="popular-goods-heaer">
-    			<h2 class="popular-caption">Популярные товары:</h2>
-    			<span class="popular-goods-button">
-    				<a href="#" class="popular-goods-button-link">Все популярные товары</a>
-    			</span>
-    		</div>
-    		
+<!--    	Убрал div-->
+    		<h2 class="popular-caption">Популярные товары:</h2>
+    		<span class="popular-goods-button">
+    			<a href="#" class="popular-goods-button-link">Все популярные товары</a>
+    		</span>
+    		    		
     		<ul class="popular-goods-list">
 <!--    		Первая картинка-->
     			<li class="popular-goods-item">
     				<h3>
     					<a href="instrument-item.html">
     						<span class="popular-goods-category">Перфоратор BOSCH</span>
-<!--								Тут для переноса модели товара можно использовать тег br ?-->
     						<span class="popular-goods-model">BFG 9000</span>
     					</a>
     				</h3>
@@ -164,7 +183,6 @@
     				<h3>
     					<a href="instrument-item.html">
     						<span class="popular-goods-category">Перфоратор BOSCH</span>
-<!--								Тут для переноса модели товара можно использовать тег br ?-->
     						<span class="popular-goods-model">BFG 3000</span>
     					</a>
     				</h3>
@@ -295,21 +313,17 @@
 						<a href="#">Кредит</a>
 					</li>
 				</ul>
-				
-				<ul class="service-delivery">
-					<li class="servece-delivery-descrition">
-						<h2 class="servece-delivery-caption">Доставка</h2>
-						<p class="delivery-description">
+<!--				Сделал блоком-->
+				<div class="service-delivery">
+					<h2 class="servece-delivery-caption">Доставка</h2>
+					<p class="delivery-description">
 							Мы с удовольствием доставим ваш товар прямо
 							к вашему подъезду совершенно бесплатно!
 							Ведь мы неплохо заработаем,
 							поднимая его на ваш этаж!
-						</p>
-					</li>
-					<li class="servece-delivery-descrition">
-						<img class="servece-delivery-image" src="img/service-truck.jpg" width="478" height="261" alt="Векторная картинка грузовика">
-					</li>
-				</ul>
+					</p>
+					<img class="servece-delivery-image" src="img/service-truck.jpg" width="478" height="261" alt="Векторная картинка грузовика">
+				</div>	
 			</section>
 			
 			<!-- Это комментарий для блока <section class="service">    мне кажется я что-то перемудрил, может проще как-то можно? Например вот так
@@ -368,8 +382,11 @@
 				<p class="contact-description">
 					Вы можете забрать товар сами, заехав в наш офис:					
 				</p>
+<!--				Добавил сервис карт-->
 				<p class="contact-map">
-					<img src="img/map.jpg" width="300" height="160" alt="Карта проезда к нам">
+					<a href="https://yandex.ru/map-widget/v1/?um=constructor%3A4dd0f0168b8da29dbf8b8fbee4d790efa685c0f0415bf63324f135fdc59f51c1&amp;source=constructor" width="573" height="432" frameborder="0">
+						<img src="img/map.jpg" width="300" height="160" alt="Карта проезда к нам">
+					</a>	
 				</p>
 				<p class="contact-button-box">
 					<a href="#" class="contact-button">Заблудились? Напишите нам!</a>
