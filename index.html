@@ -9,24 +9,38 @@
     <header class="main-header">
     	<nav class="main-navigation">
     		<a class="main-header-logo">
-    			<img src="img/index-logo.svg" width="220" height="43" alt="Логотип магазина Техномарт">
+    			<img src="img/main-logo-header.svg" width="220" height="47" alt="Логотип магазина Техномарт">
     		</a>
 <!--    		Форма поиска-->
-<!--Убрал лишнюю обёртку.-->
  				<p class="nav-about-order">
+ 					<img class="nav-bookmarks-ico" src="img/icon-bookmark.svg" alt="графическое изображение закладки">
  					<span class="nav-bookmarks">Закладки: 0</span>
+ 					<img class="goods-basket-ico" src="img/icon-cart.svg" alt="графическое изображение корзины" >
  					<span class="nav-goods-basket">Корзина: 0</span>
  					<a href="#" class="button">Оформить заказ</a>
  				</p>
   			<h1 class="main-nav-title">Интернет-магазин строительных материалов и инструмента для ремонта</h1>
   			<p class="main-nav-contacts">
-  				 <span class="nav-contacts-phone">+7(812) 555-05-55</span><br>
-  				 г. Санкт-Петербург, ул. Б. Конюшенная, дю 19/8
+ 					<img class="nav-contacts-phone-ico" src="img/icon-phone.svg" alt="графическое изображение телефонной трубки" >
+  				<span class="nav-contacts-phone">+7(812) 555-05-55</span><br>
+  				г. Санкт-Петербург, ул. Б. Конюшенная, дю 19/8
   			</p>
+<!--  		изменил обёртку со списка на тег Р-->
+  			<p class="user-navigation">
+  				<img class="login-ico" src="img/icon-login.svg" alt="графическое изображение кнопки вход">
+  				<span class="login-link">Вход</span>
+  				<span class="login-link-registration">Регистрация</span>
+  			</p>
+  			
+<!--
   			<ul class="user-navigation">
+  				<li class="login-link-ico">
+  					<img class="login-ico" src="img/icon-login.svg" alt="">
+  				</li>
 					<li class="login-link">Вход</li>
-					<li class="login-link-registration">Регистрация</li>
+					<li class="login-link-registration">c</li>
 				</ul>
+-->
    			<ul class="site-navigation">
    				<li><a href="#">Главная</a></li>
    				<li><a href="about.html">Компания</a></li>
@@ -49,10 +63,9 @@
     					Материалы
     				</h3>
     				<p class="category-item-image">
-							<img src="img/catalog-materials.jpg" width="300" height="124" alt="Каталог доступных товаров для строительства">
+							<img src="img/materials-ico.svg" width="44" height="65" alt="Каталог доступных товаров для строительства">
 						</p>
 						<p class="catalog-button">
-<!--						Тут нужен адрес страницы или можно поставить # чтобы никуда не отправляло-->
 							<a href="catalog-materials.html" class="choose-category-button">На любой вкус</a>
 						</p>
     			</li>
@@ -62,7 +75,7 @@
     					Инструмент
     				</h3>
     				<p class="category-item-image">
-							<img src="img/catalog-instrument.jpg" width="300" height="124" alt="Каталог доступных инструментов для строительства">
+							<img src="img/instruments-ico.svg" width="75" height="61" alt="Каталог доступных инструментов для строительства">
 						</p>
 						<p class="catalog-button">
 <!--						Тут нужен адрес страницы или можно поставить # чтобы никуда не отправляло-->
@@ -75,7 +88,7 @@
     					Техника
     				</h3>
     				<p class="category-item-image">
-							<img src="img/catalog-equipment.jpg" width="300" height="124" alt="Каталог доступной техники для строительства">
+							<img src="img/technics-ico.svg" width="78" height="62" alt="Каталог доступной техники для строительства">
 						</p>
 						<p class="catalog-button">
 <!--						Тут нужен адрес страницы или можно поставить # чтобы никуда не отправляло-->
@@ -88,7 +101,7 @@
     					Скидка 50%
     				</h3>
     				<p class="category-item-image">
-							<img src="img/catalog-sale.jpg" width="300" height="124" alt="Акционные товары">
+							<img src="img/sales-ico.svg" width="59" height="72" alt="Акционные товары">
 						</p>
 						<p class="catalog-button">
 <!--						Тут нужен адрес страницы или можно поставить # чтобы никуда не отправляло-->
@@ -101,7 +114,7 @@
     					Доставка
     				</h3>
     				<p class="category-item-image">
-							<img src="img/catalog-delivery.jpg" width="300" height="124" alt="Доставка товаров">
+							<img src="img/delivery-ico.svg" width="78" height="63" alt="Доставка товаров">
 						</p>
 						<p class="catalog-button">
 <!--						Тут нужен адрес страницы или можно поставить # чтобы никуда не отправляло-->
@@ -113,7 +126,7 @@
    			<div class="gallery">
 					<h3 class="visually-hidden">Фотогалерея</h3>
 					<figure class="gallery-content">
-						<a href="#"><img src="img/man-width-drill.jpg" width="621" height="267" alt="Мужчина с дрелью"></a>
+						<a href="#"><img src="img/slider-1.jpg" width="620" height="266" alt="Мужчина с дрелью"></a>
 					</figure>
 					<p class="gallery-header">
 						<span class="gallery-header-name">
@@ -166,7 +179,7 @@
     				</h3>
     				<p class="goods-item-image">
     					<a href="instrument-item.html">
-    						<img src="img/product-bfg9000.jpg" width="180" height="160" alt="Перфоратор BOSCH BFG 9000">
+    						<img src="img/perf-bfg-9000.jpg" width="220" height="170" alt="Перфоратор BOSCH BFG 9000">
     					</a>
     				</p>
     				<p class="popular-goods-old-price">32 500 Р.</p>
@@ -184,7 +197,7 @@
     				</h3>
     				<p class="goods-item-image">
     					<a href="instrument-item.html">
-    						<img src="img/product-bfg3000.jpg" width="180" height="160" alt="Перфоратор BOSCH BFG 3000">
+    						<img src="img/perf-bfg-3000.jpg" width="220" height="170" alt="Перфоратор BOSCH BFG 3000">
     					</a>
     				</p>
     				<p class="popular-goods-old-price">22 500 Р.</p>
@@ -203,7 +216,7 @@
     				</h3>
     				<p class="goods-item-image">
     					<a href="instrument-item.html">
-    						<img src="img/product-bfg6000.jpg" width="180" height="160" alt="Перфоратор BOSCH BFG 6000">
+    						<img src="img/perf-bfg-6000.jpg" width="220" height="170" alt="Перфоратор BOSCH BFG 6000">
     					</a>
     				</p>
     				<p class="popular-goods-old-price">30 500 Р.</p>
@@ -216,13 +229,12 @@
     				<h3>
     					<a href="instrument-item.html">
     						<span class="popular-goods-category">Перфоратор BOSCH</span>
-<!--								Тут для переноса модели товара можно использовать тег br ?-->
     						<span class="popular-goods-model">bfg 2000</span>
     					</a>
     				</h3>
     				<p class="goods-item-image">
     					<a href="instrument-item.html">
-    						<img src="img/product-bfg2000.jpg" width="180" height="160" alt="Перфоратор BOSCH BFG 2000">
+    						<img src="img/perf-bfg-2000.jpg" width="220" height="170" alt="Перфоратор BOSCH BFG 2000">
     					</a>
     				</p>
     				<p class="popular-goods-old-price"></p>
@@ -250,7 +262,7 @@
     			</li>
     			<li class="popular-manufacturer-item">
     				<a href="#" class="manufacturer-logo-link">
-    					<img src="img/maktia.jpg" class="manufacturer-logo" width="220" height="146" alt="Логотип компании makita">
+    					<img src="img/makita.jpg" class="manufacturer-logo" width="220" height="146" alt="Логотип компании makita">
 						</a>
     			</li>
     			<li class="popular-manufacturer-item">
@@ -318,7 +330,7 @@
 							Ведь мы неплохо заработаем,
 							поднимая его на ваш этаж!
 					</p>
-					<img class="servece-delivery-image" src="img/service-truck.jpg" width="478" height="261" alt="Векторная картинка грузовика">
+					<img class="servece-delivery-image" src="img/service-truck.png" width="478" height="261" alt="Векторная картинка грузовика">
 				</div>	
 			</section>
 			
@@ -381,7 +393,7 @@
 <!--				Добавил сервис карт-->
 				<p class="contact-map">
 					<a href="https://yandex.ru/map-widget/v1/?um=constructor%3A4dd0f0168b8da29dbf8b8fbee4d790efa685c0f0415bf63324f135fdc59f51c1&amp;source=constructor" width="573" height="432" frameborder="0">
-						<img src="img/map.jpg" width="300" height="160" alt="Карта проезда к нам">
+						<img src="img/mini-map.jpg" width="300" height="160" alt="Карта проезда к нам">
 					</a>	
 				</p>
 				<p class="contact-button-box">
@@ -396,7 +408,7 @@
 		  		<ul class="footer-contact">
 		  			<li class="footer-logo">
 		  				<a class="footer-logo-image">
-    						<img src="img/index-logo.svg" width="220" height="64" alt="Логотип магазина Техномарт">
+    						<img src="img/main-logo-footer.svg" width="220" height="68" alt="Логотип магазина Техномарт">
     					</a>
 		  			</li>
 		  			<li class="footer-contact-address">
@@ -431,10 +443,21 @@
 					</p>
 					
 		  		<div class="social-button">
-				 		<ul>
-							<li><a href="" class="social-button-item">Вконтакте</a></li>
-							<li><a href="" class="social-button-item">Фейсбук</a></li>
-							<li><a href="" class="social-button-item">Инстаграм</a></li>
+						<ul>
+							<li>
+								<a href="#" class="social-button-item">
+									<img class="social-button-ico" src="img/icon-vk.svg" alt="Читайте нас в соиальной сети Вконтакте">
+								</a>
+							</li>
+							<li>
+								<a href="#" class="social-button-item">
+									<img class="social-button-ico" src="img/icon-fb.svg" alt="Читайте нас в соиальной сети Фэйсбук">
+								</a></li>
+							<li>
+								<a href="#" class="social-button-item">
+									<img class="social-button-ico" src="img/icon-insta.svg" alt="Читайте нас в Инстаграм">
+								</a>
+							</li>
 						</ul>
 					</div>
 					
