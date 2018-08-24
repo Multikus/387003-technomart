@@ -29,12 +29,12 @@
  					<span class="nav-contacts-phone">+7(812) 555-05-55</span><br>
   				г. Санкт-Петербург, ул. Б. Конюшенная, дю 19/8
   			</p>
-<!--  		изменил обёртку со списка на тег Р-->
+
   			<ul class="user-navigation">
-  				<li class="login-link">
+  				<li>
   					<a href="#" class="login-link">Вход</a>
   				</li>
-  				<li class="login-link-registration">
+  				<li>
   					<a href="#" class="login-link-registration">Регистрация</a>
   				</li>
 				</ul>
@@ -118,11 +118,24 @@
 					<p class="gallery-button">
 						<a href="catalog.html" class="choose-category-button">Открыть каталог</a>
 					</p>
+<!--					разметка управляющих элементов слайдера-->
+					<ul class="control-slider">
+						<li class="slider-radio">
+							<button class="slide-btn" type="button">Первый слайд</button>
+						</li>
+						<li class="slider-radio">
+							<button class="slide-btn" type="button">Второй слайд</button>
+						</li>
+					</ul>
+					
 <!--					Разметка кнопки назад для слайдера-->
 					<button class="button gallery-button gallery-button-back" type="button">
-						<img src="img/svg/icon-left.svg" alt="Кнопка возврата к предыдущему слайду" class="gallery-button-back-ico">
+						<img src="img/svg/icon-left.svg" alt="Кнопка возврата к предыдущему слайду галереи" class="gallery-button-back-ico">
 					</button>
-					<span class="button gallery-button gallery-button-next">&gt;</span>
+					<button class="button gallery-button gallery-button-next">
+							<img src="img/svg/icon-right.svg" alt="Кнопка перехода к следующему слайду галереи" class="gallery-button-next-ico">
+					</button>
+					
 <!--					Добавил разметку второго слайда-->
 					<figure class="gallery-content">
 						<a href="#"><img src="img/man-with-puncher.jpg" width="621" height="267" alt="Мужчина с перфоратором"></a>
@@ -138,8 +151,13 @@
 					<p class="gallery-button">
 						<a href="catalog.html" class="choose-category-button">Открыть каталог</a>
 					</p>
-					<span class="button gallery-button gallery-button-back">&lt;</span>
-					<span class="button gallery-button gallery-button-next">&gt;</span>
+					<!--					Разметка кнопки назад для слайдера-->
+					<button class="button gallery-button gallery-button-back" type="button">
+						<img src="img/svg/icon-left.svg" alt="Кнопка возврата к предыдущему слайду галереи" class="gallery-button-back-ico">
+					</button>
+					<button class="button gallery-button gallery-button-next">
+							<img src="img/svg/icon-right.svg" alt="Кнопка перехода к следующему слайду галереи" class="gallery-button-next-ico">
+					</button>
    			</div>	
     	</section>
     	
@@ -385,21 +403,17 @@
 		</main> 
 		 
 		  <footer class="main-footer">
-		  	
+		  <!--		  	исправил в соответствии с 4 лекцией-->
 		  	<section class="footer-menu">
-		  		<ul class="footer-contact">
-		  			<li class="footer-logo">
-		  				<a class="footer-logo-image">
-    						<img src="img/svg/main-logo-footer.svg" width="220" height="68" alt="Логотип магазина Техномарт">
-    					</a>
-		  			</li>
-		  			<li class="footer-contact-address">
-		  				<p class="footer-address">
-		  					г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8<br>
-		  					+7 (812) 555-05-55
-		  				</p>
-		  			</li>
-		  		</ul>
+					<p class="footer-logo">
+						<a href="index.html" class="footer-logo-image">
+							<img src="img/svg/main-logo-footer.svg" width="220" height="68" alt="Логотип магазина Техномарт">
+						</a>
+					</p>
+					<p class="footer-address">
+						г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8<br>
+						+7 (812) 555-05-55
+					</p>
 		  		
 		  		<ul class="footer-nav">
 						<li><a href="about.html">Компания</a></li>
@@ -457,12 +471,26 @@
 			
 			<section class="modal modal-write">
 <!--				Здесь будет форма-->
-				<span class="modal-close">x</span>
+				<button class="modal-close" type="button">Закрыть</button>
+				<form class="write-us" method="post" action="https://echo.htmlacademy.ru">
+					<label for="write-us-name">Ваше имя:</label> 
+					<input type="text" name="user-name-write-us" id="write-us-name" placeholder="Имя Фамилия">
+					
+					<label for="write-us-mail">Ваше e-mail:</label> 
+					<input type="text" name="user-mail-write-us" id="write-us-mail" placeholder="email@example.com">
+					
+					<label for="write-us-text">Текст письма:</label>
+					<textarea name="text-write-us" id="write-us-text" cols="50" rows="6" placeholder="В свободной форме"></textarea>
+				</form>
+				<div class="modal-container">
+					<button class="btn-modal-write label-form" type="submit">Отправить</button>
+				</div>
 			</section>
     	
      	<section class="modal modal-map">
 				<h2 class="visually-hidden">Как до нас добраться</h2>
-				<span class="modal-close">x</span>
+				<button class="modal-close" type="button">Закрыть</button>
+				<img src="img/modal-map.jpg" alt="Карта проезда" class="modal-map-img">
 			</section>                                                                                                             
     
   </body>

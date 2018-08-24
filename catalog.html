@@ -12,6 +12,13 @@
 					<img src="img/main-logo-header.svg" width="220" height="47" alt="Логотип магазина Техномарт">
 				</a>
 	<!--    		Форма поиска-->
+				<form class="main-nav-search" action="https://echo.htmlacademy.ru" method="post">
+					<p>
+        		<label for="nav-search"></label>
+        		<input id="nav-search" type="search" name="search-site" placeholder="Поиск">
+      		</p>
+				</form>
+			
 				<p class="nav-about-order">
  					<span class="nav-bookmarks">Закладки: 0</span>
  					<span class="nav-goods-basket">Корзина: 10</span>
@@ -26,11 +33,14 @@
 					<span class="nav-contacts-phone">+7(812) 555-05-55</span><br>
 					г. Санкт-Петербург, ул. Б. Конюшенная, дю 19/8
 				</p>
+				
+				
 				<ul class="user-navigation">
-	<!-- 			тут будет форма ФИО клиента-->
+					<li class="user-name">Равшан Джамшутович</li>
 					<li class="user-order"><a href="#">Мои заказы</a></li>
 					<li class="user-cabinet"><a href="#">Личный кабинет</a></li>
 				</ul>
+				
 				<ul class="site-navigation">
 					<li><a href="#">Главная</a></li>
 					<li><a href="about.html">Компания</a></li>
@@ -57,12 +67,78 @@
 
 			<section class="filters-form">
 				<h2 class="filters-form-title">Фильтр</h2>
-	<!--			Здесь будет форма-->
+	<!--			Формы -->
+				<form class="main-form" method="post" action="https://echo.htmlacademy.ru">
+					<fieldset class="filter-price">
+						<legend class="label-form">Цена:</legend>
+							<div class="input-form-container">
+								<input id="filter-price" type="range" min="0" max="30000" step="1">	
+								<input type="text" value="0">
+								<input type="text" value="30000">
+							</div>
+					</fieldset>
+					<fieldset class="filter-manufacturers">
+						<legend class="label-form">Производители:</legend>	
+						<ul>
+							<li>
+								<input type="checkbox" name="bosch" id="filter-bosch" checked>
+								<label class="label-form" for="filter-bosch">Bosch</label>
+							</li>
+							<li>
+								<input type="checkbox" name="interskol" id="filter-interskol">
+								<label class="label-form" for="filter-interskol">Интерскол</label>
+							</li>
+							<li>
+								<input type="checkbox" name="makita" id="filter-bosch" checked>
+								<label class="label-form" for="filter-makita">Makita</label>
+							</li>
+							<li>
+								<input type="checkbox" name="dewalt" id="filter-dewalt">
+								<label class="label-form" for="filter-dewalt">Dewalt</label>
+							</li>
+							<li>
+								<input type="checkbox" name="hitachi" id="filter-hitachi">
+								<label class="label-form" for="filter-hitachi">Hitachi</label>
+							</li>
+						</ul>	
+					</fieldset>
+					<fieldset class="filter-feature">
+						<legend class="label-form">Питание:</legend>
+							<ul>
+								<li>
+									<input type="radio" name="feature-group" value="battery" id="filter-battery" checked>
+									<label class="label-form" for="filter-battery">Аккумуляторные</label>
+								</li>
+								<li>
+									<input type="radio" name="feature-group" value="network" id="filter-network">
+									<label class="label-form" for="filter-network">Сетеые</label>
+								</li>
+							</ul>
+					</fieldset>
+					<button type="submit">Показать</button>
+				</form>		
 			</section> 
 
 			<section class="filters-instrument">
 				<h2 class="filters-instrument-title">Сортировка</h2>
-	<!--			Здесь будет форма-->
+	<!--			сортировка товаров -->
+				<ul class="filters-choise-sorting">
+					<li>
+						<a href="#" class="label-form" >По цене</a>
+					</li>
+					<li>
+						<a href="#" class="label-form">По типу</a>
+					</li>
+					<li>
+						<a href="#" class="label-form">По функционалу</a>
+					</li>
+					<li>
+						<a href="#" class="sort-button-up">&#9650;</a>
+					</li>
+					<li>
+						<a href="#" class="sort-button-down">&#9660;</a>
+					</li>
+				</ul>
 			</section> 
 
 	<!-- 		Каталог товаров-->
@@ -219,22 +295,17 @@
 	
 	
   	<footer class="main-footer">
-		  	
+<!--		  	исправил в соответствии с 4 лекцией-->
 			<section class="footer-menu">
-				<ul class="footer-contact">
-					<li class="footer-logo">
-						<a href="index.html" class="footer-logo-image">
-							<img src="img/svg/main-logo-footer.svg" width="220" height="68" alt="Логотип магазина Техномарт">
-						</a>
-					</li>
-					<li class="footer-contact-address">
-						<p class="footer-address">
-							г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8<br>
-							+7 (812) 555-05-55
-						</p>
-					</li>
-				</ul>
-
+				<p class="footer-logo">
+					<a href="index.html" class="footer-logo-image">
+						<img src="img/svg/main-logo-footer.svg" width="220" height="68" alt="Логотип магазина Техномарт">
+					</a>
+				</p>
+				<p class="footer-address">
+					г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8<br>
+					+7 (812) 555-05-55
+				</p>
 				<ul class="footer-nav">
 					<li><a href="about.html">Компания</a></li>
 					<li><a href="news.html">Новости</a></li>
@@ -290,8 +361,17 @@
 		</footer>
 		
 		<section class="modal add-googs">
-<!--				Здесь будет форма-->
-			<span class="modal-close">x</span>
+
+			<ul>
+				<li class="add-goods-img">
+					<h2 class="add-goods-title">Товар добавлен в корзину</h2>
+				</li>
+			</ul>
+			<div class="add-goods-container">
+				<a href="#" class="confirm-order label-form">Оформить заказ</a>
+				<a href="#" class="continue-shopping label-form">Продолжить покупки</a>
+			</div>
+			<button class="modal-close" type="button">Закрыть</button>
 		</section>
 		
 	</body>
