@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -13,6 +14,7 @@
     		</a>
 <!--    		Форма поиска-->
 				<form class="main-nav-search" action="https://echo.htmlacademy.ru" method="post">
+					<h3 class="visually-hidden">Поле поиска по сайту</h3>
 					<p>
         		<label for="nav-search"></label>
         		<input id="nav-search" type="search" name="search-site" placeholder="Поиск">
@@ -26,6 +28,7 @@
  				</p>
   			<h1 class="main-nav-title">Интернет-магазин строительных материалов и инструмента для ремонта</h1>
   			<p class="main-nav-contacts">
+  				<span class="visually-hidden">Контактная информация. Телефон и адрес компании.</span><br>
  					<span class="nav-contacts-phone">+7(812) 555-05-55</span><br>
   				г. Санкт-Петербург, ул. Б. Конюшенная, дю 19/8
   			</p>
@@ -40,6 +43,7 @@
 				</ul>
   			
    			<ul class="site-navigation">
+   				<h3 class="visually-hidden">Главное меню сайта</h3>
    				<li><a href="#">Главная</a></li>
    				<li><a href="about.html">Компания</a></li>
    				<li><a href="catalog.html">Каталог</a></li>
@@ -129,13 +133,20 @@
 					</ul>
 					
 <!--					Разметка кнопки назад для слайдера-->
-					<button class="button gallery-button gallery-button-back" type="button">
-						<img src="img/svg/icon-left.svg" alt="Кнопка возврата к предыдущему слайду галереи" class="gallery-button-back-ico">
-					</button>
-					<button class="button gallery-button gallery-button-next">
-							<img src="img/svg/icon-right.svg" alt="Кнопка перехода к следующему слайду галереи" class="gallery-button-next-ico">
-					</button>
-					
+					<span class="visually-hidden">Кнопка возврата к предыдущему слайду галереи
+						<button class="button gallery-button gallery-button-back" type="button">
+							<svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40">
+								<path fill="#FFF" d="M19.83-.035l2.089 2.099L4.13 19.947l17.847 17.939-2.09 2.099L-.048 19.947z"/>
+							</svg>
+						</button>
+					</span>
+					<span class="visually-hidden">Кнопка перехода к следующему слайду галереи
+						<button class="button gallery-button gallery-button-next">
+							<svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40">
+								<path fill="#FFF" d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z"/>
+							</svg>
+						</button>
+					</span>
 <!--					Добавил разметку второго слайда-->
 					<figure class="gallery-content">
 						<a href="#"><img src="img/man-with-puncher.jpg" width="621" height="267" alt="Мужчина с перфоратором"></a>
@@ -151,14 +162,8 @@
 					<p class="gallery-button">
 						<a href="catalog.html" class="choose-category-button">Открыть каталог</a>
 					</p>
-					<!--					Разметка кнопки назад для слайдера-->
-					<button class="button gallery-button gallery-button-back" type="button">
-						<img src="img/svg/icon-left.svg" alt="Кнопка возврата к предыдущему слайду галереи" class="gallery-button-back-ico">
-					</button>
-					<button class="button gallery-button gallery-button-next">
-							<img src="img/svg/icon-right.svg" alt="Кнопка перехода к следующему слайду галереи" class="gallery-button-next-ico">
-					</button>
-   			</div>	
+					
+				</div>	
     	</section>
     	
     	<section class="popular-goods">
@@ -306,10 +311,14 @@
 				<ul class="service-list">
 					<li class="service-list-description">
 						<h2 class="service-list-caption">Сервисы</h2>
+						<h3 class="visually-hidden">Описание отличий нашего сериса</h3>
 						<p class="service-description">
 							Хороший интернет-магазин отличается от плохого не только ценами!<br>
 							Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
 						</p>
+					</li>
+					<li>
+						<h3 class="visually-hidden">Список доступных сервисов</h3>
 					</li>
 					<li class="service-list-button">
 						<a href="delivery.html">Доставка</a>
@@ -324,6 +333,7 @@
 <!--				Сделал блоком-->
 				<div class="service-delivery">
 					<h2 class="servece-delivery-caption">Доставка</h2>
+					<h3 class="visually-hidden">Описание преимущества нашего сервиса доставки</h3>
 					<p class="delivery-description">
 							Мы с удовольствием доставим ваш товар прямо
 							к вашему подъезду совершенно бесплатно!

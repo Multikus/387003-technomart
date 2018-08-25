@@ -3,8 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Техномарт</title>
+		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
-		</head>
+	</head>
 	<body>
 		<header class="main-header">
 			<nav class="main-navigation">
@@ -13,6 +14,7 @@
 				</a>
 	<!--    		Форма поиска-->
 				<form class="main-nav-search" action="https://echo.htmlacademy.ru" method="post">
+					<h3 class="visually-hidden">Поле поиска по сайту</h3>
 					<p>
         		<label for="nav-search"></label>
         		<input id="nav-search" type="search" name="search-site" placeholder="Поиск">
@@ -30,6 +32,7 @@
 				</p>
 				<h1 class="main-nav-title">Интернет-магазин строительных материалов и инструмента для ремонта</h1>
 				<p class="main-nav-contacts">
+					<span class="visually-hidden">Контактная информация. Телефон и адрес компании.</span><br>
 					<span class="nav-contacts-phone">+7(812) 555-05-55</span><br>
 					г. Санкт-Петербург, ул. Б. Конюшенная, дю 19/8
 				</p>
@@ -42,6 +45,7 @@
 				</ul>
 				
 				<ul class="site-navigation">
+					<h3 class="visually-hidden">Главное меню сайта, на странице каталог</h3>
 					<li><a href="#">Главная</a></li>
 					<li><a href="about.html">Компания</a></li>
 					<li><a href="catalog.html">Каталог</a></li>
@@ -71,6 +75,7 @@
 				<form class="main-form" method="post" action="https://echo.htmlacademy.ru">
 					<fieldset class="filter-price">
 						<legend class="label-form">Цена:</legend>
+						<h3 class="visually-hidden">Фильтр сортировки товаров по цене</h3>
 							<div class="input-form-container">
 								<input id="filter-price" type="range" min="0" max="30000" step="1">	
 								<input type="text" value="0">
@@ -78,6 +83,7 @@
 							</div>
 					</fieldset>
 					<fieldset class="filter-manufacturers">
+						<h3 class="visually-hidden">Фильтр сортировки товаров по производителю</h3>
 						<legend class="label-form">Производители:</legend>	
 						<ul>
 							<li>
@@ -103,6 +109,7 @@
 						</ul>	
 					</fieldset>
 					<fieldset class="filter-feature">
+						<h3 class="visually-hidden">Фильтр сортировки товаров по дополнительным характеристикам</h3>
 						<legend class="label-form">Питание:</legend>
 							<ul>
 								<li>
@@ -115,13 +122,16 @@
 								</li>
 							</ul>
 					</fieldset>
-					<button type="submit">Показать</button>
+						<span class="visually-hidden">Кнопка применения установленных фильтров
+							<button type="submit">Показать</button>
+						</span>
 				</form>		
 			</section> 
 
 			<section class="filters-instrument">
 				<h2 class="filters-instrument-title">Сортировка</h2>
 	<!--			сортировка товаров -->
+				<h3 class="visually-hidden">Выбор направления сортировки товаров от большего к меньшему</h3>
 				<ul class="filters-choise-sorting">
 					<li>
 						<a href="#" class="label-form" >По цене</a>
@@ -133,10 +143,23 @@
 						<a href="#" class="label-form">По функционалу</a>
 					</li>
 					<li>
-						<a href="#" class="sort-button-up">&#9650;</a>
+						<a href="#" class="sort-button-up">
+<!--						Тут правильное вложение внутрь тега спан или спан отдельно, а заним уже свг идёт? -->
+							<span class="visually-hidden">Сортировка товаров от меньшего к большему.
+								<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+									<path fill="#ef545e" d="M5.5 0L0 10h11z"/>
+								</svg>
+							</span>
+						</a>
 					</li>
 					<li>
-						<a href="#" class="sort-button-down">&#9660;</a>
+						<a href="#" class="sort-button-down">
+<!--						Тут правильное вложение внутрь тега спан или спан отдельно, а заним уже свг идёт? -->
+							<span class="visually-hidden">Сортировка товаров от большего к меньшему.
+								<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+									<path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+							</span>
+						</a>
 					</li>
 				</ul>
 			</section> 
@@ -274,6 +297,7 @@
 				</ul>
 
 				<ul class="pagination-list">
+					<h3 class="visually-hidden">Навигация по страницам каталога</h3>
 					<li class="pagination-item pagination-item-current"><a href="#">1</a></li>
 					<li class="pagination-item"><a href="#">2</a></li>
 					<li class="pagination-item"><a href="#">3</a></li>
@@ -284,7 +308,7 @@
 			</section>		
 
 			<section class="instrument-information">
-				<h2 class="information-title">Пара слов о перформаторах</h2>
+				<h2 class="information-title">Пара слов о перфораторах</h2>
 				<p class="information-text">
 					Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
 					Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
