@@ -1,11 +1,168 @@
 
-/*
 body {
-	background-color: #2a48f4;
+	margin: 0;
+	padding: 0;
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 17px;  
+	color: #000;
+	background-color: #fff;
 }
-*/
+.main-header {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+/*Общая стилизация шапки*/
+.main-navigation {
+	font-size: 17px;
+	line-height: 17px;
+/*	color: #fff;*/
+	background-color: #f3f7f8;
+}
+/*убираем точки в списках шапки*/
+.site-navigation,
+.user-navigation {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
 
-/*
+/*Стилизация контейнера верхней части меню*/
+.header-container {
+	color: #fff;
+	font-size: 17px;
+	line-height: 18px;
+	background-color: #293449;
+}
+.header-container a {
+	color: #fff;
+}
+
+/*Стилизация кнопки заказа*/
+.nav-about-order .button {
+	background-color: #63a63e;
+}
+/*форма поиска спокойное состояние*/
+.main-nav-search input {
+	border-style: none;
+	background-color: #293449;
+}
+/*изменение цвета подсказки формы поиска Safari и Chrome*/
+.main-nav-search input[type="search"]::-webkit-input-placeholder {
+	color: #fff;
+}
+/*изменение цвета подсказки формы поиска Firefox*/
+.main-nav-search input[type="search"]::-moz-placeholder {
+	color: #fff;
+}
+/*стилизация формы поиска*/
+.main-nav-search input:hover, 
+.main-nav-search input:focus {
+	background-color: #212a3a;
+	outline: 0;
+}
+/*стилизация состояния наведения кнопки заказа*/
+.nav-about-order .button:hover,
+.nav-about-order .button:focus {
+	background-color: #5fbb2d;
+	outline: 0;
+}
+/*стилизация заголовка на главной*/
+.main-navigation h1 {
+	font-size: 16px;
+	font-style: italic;
+	line-height: 23px;
+	color: #ee3643; 
+}
+/*адрес на главной*/
+.main-nav-contacts {
+	font-size: 14px;
+	line-height: 24px;
+	color: #32425c;
+}
+/*стилизация номера телефона на главной*/
+.nav-contacts-phone {
+	font-size: 21px;
+	line-height: 21px;
+	color: #ee3643;
+}
+/*Стилизация кнопок вход и рег-я*/
+.login-link {
+	font-size: 21px;
+	line-height: 21px;
+	color: #000000;
+	background-color: #fff;
+}
+
+.login-link-registration {
+	font-size: 21px;
+	line-height: 21px;
+	color: #000000;
+}
+/*Стилизация ссылок ЛК на странице каталога*/
+.user-name {
+	font-size: 21px;
+	line-height: 21px;
+	color: #000000;
+}
+
+.user-order a,
+.user-cabinet a{
+	font-size: 16px;
+	line-height: 18px;
+	color: #32425c;
+	text-decoration: underline;
+}
+/*Стилизация при наведении*/
+.login-link:hover,
+.login-link-registration:hover,
+.user-order a:hover,
+.user-cabinet a:hover,
+.login-link:focus,
+.login-link-registration:focus,
+.user-order a:focus,
+.user-cabinet a:focus {
+	color: #ee3643;
+	outline: 0;
+}
+/*Стилизаяция ссылок в главном меню*/
+.site-navigation a {
+	padding-top: 22px;
+	padding-bottom: 21px;
+	font-size: 17px;
+	line-height: 17px;
+	color: #fff;
+	}
+/*Стилизация контейнера главного меню*/
+.site-navigation {
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 940px;
+	background-color: #32425c;
+}
+/*стилизация состояния наведения главного меню*/
+.site-navigation a:hover,
+.site-navigation a:focus {
+	background-color: #293449;
+	outline: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -16,6 +173,6 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-*/
+
 
 
