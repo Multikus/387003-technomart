@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -12,7 +13,7 @@
     	<nav class="main-navigation">
    			<div class="header-container">
     			<a class="main-header-logo">
-    				<img src="img/svg/main-logo-header.svg" width="220" height="47" alt="Логотип магазина Техномарт">
+    				<img src="img/main-logo-header.png" width="220" height="47" alt="Логотип магазина Техномарт">
     			</a>
 <!--    			Форма поиска-->
 					<form class="main-nav-search" action="https://echo.htmlacademy.ru" method="post">
@@ -170,11 +171,12 @@
     	</section>
     	
     	<section class="popular-goods">
-<!--    	Убрал div-->
-    		<h2 class="popular-caption">Популярные товары:</h2>
-    		<span class="popular-goods-button">
-    			<a href="#" class="popular-goods-button-link">Все популярные товары</a>
-    		</span>
+ 				<div class="popular-goods-box">
+    			<h2 class="popular-caption">Популярные товары:</h2>
+    			<span class="popular-goods-button">
+    				<a href="#" class="popular-goods-button-link">Все популярные товары</a>
+    			</span>
+				</div>
     		    		
     		<ul class="popular-goods-list">
 <!--    		Первая картинка-->
@@ -254,7 +256,6 @@
     	</section>
     	    	
     	<section class="popular-manufacturer">
-    		<!--    	Тут чем-то нужно заменять див или можно так оставить? Что-то ничего не смог придумать-->
     		<div class="popular-manufacturer-heaer">
     			<h2 class="popular-caption">Популярные производители:</h2>
     			<span class="popular-manufacturer-button">
@@ -346,38 +347,7 @@
 					<img class="servece-delivery-image" src="img/service-truck.png" width="478" height="261" alt="Векторная картинка грузовика">
 				</div>	
 			</section>
-			
-			<!-- Это комментарий для блока <section class="service">    мне кажется я что-то перемудрил, может проще как-то можно? Например вот так
-		
-		<section class="service">
-			<div class="service-cation">
-				<h2>Сервисы</h2>
-				<p class="service-description">Хороший интернет-магазин отличается от плохого не только ценами!<br>
-							Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-			</div>
-			
-			<div class="service-list-box">
-				<ul class="service-list>
-					<li class="service-list-button">
-						<a href="delivery.html">Доставка</a>
-					</li>
-					<li class="service-list-button">
-						<a href="#">Гарантии</a>
-					</li>
-					<li class="service-list-button">
-						<a href="#">Кредит</a>
-					</li>
-				</ul>
-				<h2 class="delivery-title">Доставка</h2>
-				<p class="delivery-description">Мы с удовольствием доставим ваш товар прямо
-							к вашему подъезду совершенно бесплатно!
-							Ведь мы неплохо заработаем,
-							поднимая его на ваш этаж!
-				</p>
-				<img class="servece-delivery-image" src="img/service-truck.jpg" width="478" height="261" alt="Векторная картинка грузовика">
-			</div>			
-								
-												-->
+
 			<section class="company">
 				<h2 class="company-title">Компания<span class="company-name" >&laquo;Техномарт&raquo;</span></h2>
 				<p class="company-description">
@@ -420,7 +390,7 @@
 		  	<section class="footer-menu">
 					<p class="footer-logo">
 						<a href="index.html" class="footer-logo-image">
-							<img src="img/svg/main-logo-footer.svg" width="220" height="68" alt="Логотип магазина Техномарт">
+							<img src="img/main-logo-footer.png" width="220" height="68" alt="Логотип магазина Техномарт">
 						</a>
 					</p>
 					<p class="footer-address">
@@ -455,12 +425,12 @@
 						<ul>
 							<li>
 								<a href="#" class="social-button-item">
-									<img class="social-button-ico" src="img/svg/icon-vk.svg" alt="Читайте нас в соиальной сети Вконтакте">
+									<img class="social-button-ico" src="img/svg/icon-vk.svg" alt="Читайте нас в социальной сети Вконтакте">
 								</a>
 							</li>
 							<li>
 								<a href="#" class="social-button-item">
-									<img class="social-button-ico" src="img/svg/icon-fb.svg" alt="Читайте нас в соиальной сети Фэйсбук">
+									<img class="social-button-ico" src="img/svg/icon-fb.svg" alt="Читайте нас в социальной сети Фэйсбук">
 								</a></li>
 							<li>
 								<a href="#" class="social-button-item">
@@ -472,7 +442,9 @@
 					
 					<p class="footer-feedback">
 						Обратная связь:<br>
-						mail@htmlacademy.ru
+						<span class="footer-feedback-box">
+							mail@htmlacademy.ru
+						</span>
 					</p>
 					
 					<p class="footer-developed">

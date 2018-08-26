@@ -148,14 +148,274 @@ a {
 	background-color: #293449;
 	outline: 0;
 }
+/*******************************/
 
+/*Стилизация выбора категории товара*/
+.category-item-title {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
+	color: #fff;
+}
+/*стилизация кнопки на карточках категории*/
+.choose-category-button {
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #fff;
+}
+/*список категорий, список управляющих эл-в*/
+.category-list,
+.control-slider {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
 
+/*временно, чтобы текст видно было*/
+.choose-category {
+	background-color: grey;
+}
+/*фон для заголовка*/
+.popular-goods-box {
+	background-color: #f9f5f0;
+}
+/*Заголовок над популярными товарами*/
+.popular-caption {
+	font-size: 30px;
+	line-height: 30px;
+	color: #32425c;
+	text-transform: uppercase;
+}
+/*Стилизация кнопки поп. товаров*/
+.popular-goods-button-link {
+	font-size: 14px;
+	line-height: 18px;
+	color: #fff;
+	text-transform: uppercase;
+}
+/*Стилизаия карточек товара*/
+.popular-goods-list {
+	list-style: none;
+}
+/*марка товара. Верхняя строка*/
+.popular-goods-category {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: bold;
+	color: #000;
+}
+/*Модель тоара. Нижняя строка*/
+.popular-goods-model {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000;
+}
+/*Старая цена*/
+.popular-goods-old-price, 
+.popular-goods-button {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: line-through;
+	color: #a9a9a9;
+}
+/*кнопка с ценой новой*/
+.popular-goods-button {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+/*	фоновоую заливку удалить после стилизации кнопки*/
+	background-color: red;
+}
+/*************************************/
+/*Блок заголовка поп. произв-ей*/
+.popular-manufacturer-heaer {
+	background-color: #f9f5f0;
+}
+/*Кнопка все производители*/
+.popular-manufacturer-button-link {
+	font-size: 14px;
+	line-height: 18px;
+	color: #fff;
+	text-transform: uppercase;
+	/*	фоновоую заливку удалить после стилизации кнопки*/
+	background-color: red;
+}
+/*Убираем точки списка у лого произв-ля*/
+.popular-manufacturer-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}	
+/**************************************/
+/*Стилизация блока серисы*/
+/*Общие параметры для всего блока*/
+.service {
+	background-color: #f4f8f9; 
+}
+/*Заголовок сервиса*/
+.service-list-caption {
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+	color: #000;
+}
+/*заголовок доставки*/
+.servece-delivery-caption {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 400;
+	color: #32425c;
+}
+/*текст*/
+.service-description,
+.delivery-description {
+	font-size: 13px;
+	line-height: 24px;
+	color: #000;
+}
+/*список сервисов*/
+.service-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.service-list-button {
+	background-color: #32425c;
+}
+/*Стилизаия текста  списке*/
+.service-list-button a {
+	font-size: 21px;
+	line-height: 30px;
+	font-weight: bold;	
+	color: #fff;
+}
+/*Стилизация при наведении*/
+.service-list-button a:hover,
+.service-list-button a:focus {
+	background-color: #293449;
+	outline: 0;
+}
+/*********************************/
+/*Блок компания техномарт*/
+/*Стилизация заголовков*/
+.company-title, 
+.contact-title {
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+	color: #000;	
+}
+/*Стилизаия текста*/
+.company-description,
+.contact-description {
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #000;
+}
+/*Стилизуем маркеры списка*/
+.company-partners {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+/*Стилизация списка партнеров*/
+.company-partners-item {
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 400;
+	color: #000;
+}
+/*Стилизация текста кнопок*/
+.about-company-button, 
+.contact-button {
+	font-size: 14px;
+	line-height: 28px;
+	font-weight: 400;
+	color: #fff;
+/*временный фон	удалить*/
+	background-color: red;
+}
+/***********************************/
+/*стилизация футера*/
+.main-footer {
+	background-color: #32425c;
+}
+.footer-social {
+	background-color: #293449;
+}
+/*Стилизация меню сайта*/
+/*убрали маркеры списка*/
+.footer-nav,
+.footer-category-nav {
+	list-style: none;
+	outline: 0;
+}
+/*Стилизация текста ссылок*/
+.footer-address, 
+.footer-nav a,
+.footer-category-nav a {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #fff;
+}
+.footer-category-nav a {
+	color: #ffd180;
+}
+/*стилизация нижней части футера*/
+.footer-copyright,
+.footer-feedback, 
+.footer-developed {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #fff;	
+}
 
+.footer-feedback-box,
+.footer-developed a {
+	color: #ffd180;
+}
+/*Убираем маркеры списка СС*/
+.social-button ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+/*фон для кнопок СС*/
+.social-button-ico {
+	background-color: #212a3a;
+	padding: 5px;
+	 
+}
+/*фон для кнопок СС при наедении*/
+.social-button-ico:hover,
+.social-button-ico:focus {
+	background-color: #ee3643;
+	outline: 0;
+}
 
+/*Стилизация при наведении*/
+.footer-nav a:hover,
+.footer-nav a:focus {
+	border-bottom: 1px solid #fff;
+	outline: 0;
+} 
 
-
-
-
+.footer-category-nav a:hover,
+.footer-category-nav a:focus {
+	border-bottom: 1px solid #ffd180;
+	outline: 0;
+}
 
 
 
