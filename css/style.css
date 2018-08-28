@@ -148,6 +148,37 @@ a {
 	background-color: #293449;
 	outline: 0;
 }
+/*********************************/
+/*Хлебные крошки. -- Страница каталога -- */
+.breadcrumbs a, 
+.breadcrumbs-current { 	
+	font-family: 'PT Sans', sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: #000;
+}
+
+.breadcrumbs {
+	list-style: none;
+}
+/*Стилизация контейнера заголовка*/
+.catalog-title {
+	background-color: #f2f6f8;
+	padding: 0;
+	margin: 0;
+	margin-left: 10px;
+}
+/*Заголовок перфораторы*/
+.catalog-title h2 {
+	font-size: 30px;
+	line-height: 30px;
+	color: #32425c;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	margin-left: 30px;
+}
+
+/* --------------------- */
 /*******************************/
 
 /*Стилизация выбора категории товара*/
@@ -255,7 +286,7 @@ a {
 	padding: 0;
 }	
 /**************************************/
-/*Стилизация блока серисы*/
+/*Стилизация блока сервисы*/
 /*Общие параметры для всего блока*/
 .service {
 	background-color: #f4f8f9; 
@@ -416,6 +447,48 @@ a {
 	border-bottom: 1px solid #ffd180;
 	outline: 0;
 }
+
+/*Страница каталога*/
+/*Фильтры*/
+.main-form,
+.filters-form-title,
+.filters-instrument-title,
+.filters-choise-sorting a,
+.catalog-list span {
+	font-family: 'PT Sans', sans-serif;
+}
+/*Заголовки внутри формы*/
+.filters-form-title,
+.filters-instrument-title {
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #000;
+}
+/*Заголовки внутри формы*/
+.filter-price legend,
+.filter-feature legend,
+.filter-manufacturers {
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000;
+}
+/*Стилизация текста ползунка фильтра*/
+.main-form input[value="0"],
+.main-form input[value="30000"] {
+	font-size: 17px;
+	line-height: 20px;
+}
+
+
+
+
+
+
+
+
 
 
 
