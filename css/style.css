@@ -458,6 +458,15 @@ a {
 	font-family: 'PT Sans', sans-serif;
 }
 /*Заголовки внутри формы*/
+/*Фоновый цвет*/
+.filters-form-title{
+	background-color: #f7f3ec;
+}
+/*Фон инпутов, ВРЕМЕННО*/
+.input-form-container {
+	background-color: #f7f3ec;
+}
+
 .filters-form-title,
 .filters-instrument-title {
 	font-size: 13px;
@@ -479,18 +488,238 @@ a {
 .main-form input[value="0"],
 .main-form input[value="30000"] {
 	font-size: 17px;
-	line-height: 20px;
+	line-height: 18px;
+}
+.main-form label {
+	font-weight: 400;
+}
+/*Стилизация кнопки применить*/
+.form-submit {
+	font-size: 13px;
+	line-height: 18px;
+	border: 1px solid #e5e5e5;
+	background-color: #fff;
+}
+/*Стилизация направления фильтра*/
+.filters-choise-sorting {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
+.direction-sort {
+	font-size: 13px;
+	line-height: 18px;
+	color: #000;
+	opacity: 0.3;
+	border-bottom: 1px dotted #ee3643;
+	text-transform: uppercase;
+}
 
+/*Стилизация наведени и фокуса*/
+.direction-sort:hover,
+.direction-sort:focus {
+	border-bottom: 1px solid #ee3643;
+	opacity: 1;
+	outline: 0;
+}
 
+/*Стилизаия стрелочек*/
+.sort-button-up,
+.sort-button-down {
+	opacity: 0.3;
+}
 
+.sort-button-up:hover,
+.sort-button-down:hover,
+.sort-button-up:focus,
+.sort-button-down:focus {
+	opacity: 1;
+	outline: 0;	
+}
+/*Убираем обводку формы*/
+.main-form fieldset{
+	border-style: none;
+}
+/*Декоратиные линии в фильтре*/
+.manufacturers-line {
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+}
+/*-------------------------------*/
+/*Стилизаия блока товара*/
+.catalog {
+	font-family: 'PT Sans', sans-serif;
+}
+.catalog-list {
+	list-style: none;
+}
+/*Старая цена*/
+.catalog-item-old-price,
+.catalog-item-button {
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: bold;
+	text-decoration: line-through;
+	color: #999999;
+}
+/*Новая цена*/
+.catalog-item-button {
+	text-decoration: none;
+	color: #fff;
+/*Временный фон*/
+	background-color: red;
+}
+/*Категория и модель*/
+.catalog-item-category,
+.catalog-item-model {
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: bold;
+	color: #000;
+}
+.catalog-item-model {
+	text-transform: uppercase;
+}
 
+/*Обратная сторона карточки тоара*/
+.catalog-buy-card {
+	font-family: "Cuprum", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+}
+/*Кнопка купить*/
+.catalog-buy-card .buy-button {
+	color: #fff;
+	padding: 7px 20px 7px 20px;
+/*	Временный фон*/
+	background-color: #63a63e;
+}
+/*Взаимодействие с кнопкой купить*/
+.catalog-buy-card .buy-button:hover,
+.catalog-buy-card .buy-button:focus {
+	background-color: #5fbb2d;
+	outline: 0;
+}
 
+/*Кноп в закладки*/
+.catalog-buy-card .bookmarks-button {
+	color: #32425c;
+	border: 2px solid #63a63e;
+	padding: 5px 20px 5px 20px;
+}
+/*Взаимодействие с кнопкой в закладки*/
+.catalog-buy-card .bookmarks-button:hover,
+.catalog-buy-card .bookmarks-button:focus {
+	color: #32425c;
+	border: 2px solid #32425c;
+	outline: 0;
+}
+/*------------------------------------*/
+/*Стилизация номеров страниц*/
+.pagination-list {
+	list-style: none;
+	
+}
+.pagination-list a,
+.pagination-item-current a,
+.button-next {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color: #000;
+	text-transform: uppercase;
+	padding: 14px;
+	border: 1px solid #e5e5e5;
+}
 
+.pagination-item-current a {
+	color: #fff;
+	background-color: #ee3643;
+	
+}
 
+.pagination-list a:hover,
+.pagination-list a:focus,
+.button-next:hover,
+.button-next:focus {
+	border: 1px solid #bdc6ca;
+	outline: 0;
+}
+/*---------------------------*/
+.instrument-information {
+	background-color: #f2f6f8;
+	margin: 0px;
+	padding: 0px;
+}
 
+.information-title {
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #000;
+}
 
+.information-text {
+	font-size: 13px;
+	line-height: 24px;
+	color: #000;
+	margin: 0px;
+}
+/*Модальные окна*/
+/*Стилизация попапа*/
+.add-googs ul {
+	list-style: none;
+}
+
+.add-goods-title {
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+	color: #000;
+}
+
+.add-goods-container {
+	background-color: #f1f1f1;
+}
+
+.confirm-order,
+.continue-shopping {
+	font-size: 14px;
+	line-height: 18px;
+	color: #000;
+	text-transform: uppercase;
+}
+.confirm-order {
+	color: #fff;
+	background-color: #ee3643;
+}
+
+.modal-close {
+	border-style: none;
+}
+
+/*Модальное окно на главной*/
+
+.write-us label {
+	font-size: 18px;
+	line-height: 18px;
+	color: #000;
+}
+
+.modal-container {
+	background-color: #f4f4f4;
+}
+
+.btn-modal-write {
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #ee3643;
+	border-style: none;
+}
 
 
 
