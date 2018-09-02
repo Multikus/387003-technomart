@@ -318,12 +318,14 @@ a {
 	line-height: 30px;
 	font-weight: 400;
 	color: #000;
+	text-transform: uppercase;
 }
 /*заголовок доставки*/
 .servece-delivery-caption {
 	font-size: 36px;
 	line-height: 36px;
 	font-weight: 400;
+	text-transform: uppercase;
 	color: #32425c;
 }
 /*текст*/
@@ -352,6 +354,10 @@ a {
 /*Стилизация при наведении*/
 .service-list-button a:hover,
 .service-list-button a:focus {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: auto;
+	width: 240px;
 	background-color: #293449;
 	outline: 0;
 }
@@ -364,6 +370,7 @@ a {
 	line-height: 30px;
 	font-weight: 400;
 	color: #000;	
+	text-transform: uppercase;
 }
 /*Стилизаия текста*/
 .company-description,
@@ -754,6 +761,7 @@ a {
 .header-central-box,
 .user-navigation {
 	display: flex;
+	flex-wrap: wrap;
 }
 /*Расположение меню сайта*/
 .site-navigation {
@@ -817,18 +825,231 @@ a {
 	margin-left: 130px;
 }
 
+/*Заголовок популярных товаров*/
+.popular-goods-box {
+	display: flex;
+	flex-wrap: wrap;
+	width: 940px;
+	margin-left: 130px;
+	margin-bottom: 22px;
+	justify-content: space-between;
+	background-color: #f9f5f0;
+}
+/*Добавить отступы в контейнер*/
+.popular-goods-button {
+	align-self: center;		
+}
+
+/*---------------------------------*/
+/*Популярные товары*/
+.popular-goods-list {
+	display: flex;
+/*	flex-wrap: wrap;*/
+	width: 940px;
+	padding: 0;
+	margin-left: 130px;		
+}
+
+.popular-goods-list li {
+	width: 218px;
+	border: 1px solid #eaeaea;
+}
+.popular-goods-list li:nth-of-type(2) {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.popular-goods-list li:nth-of-type(3) {
+	margin-right: 20px;
+}
+/*Стилизация внутри карточки товара*/
+.popular-goods-item {
+	display: flex;
+  flex-direction: column;
+	justify-content: space-between;
+}
+
+.popular-goods-item h3 {
+	order: 2;
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+.popular-goods-old-price {
+	align-self: center;
+	margin: 0;
+	margin-bottom: 13px;
+	order: 3;
+}
+
+.popular-goods-price {
+	align-self: center;
+	order: 4;
+	margin-bottom: 30px
+}
+
+.popular-goods-category {
+	margin-left: 32px;
+}
+
+.popular-goods-model {
+	margin-left: 71px; 
+}
+
+.goods-item-image {
+	margin-top: 0px;
+	margin-bottom: -16px;
+}
+
+.popular-goods-price a {
+	padding: 10px 15px 11px 37px; 
+}
+
+/*------------------------------------*/
+/*Популярные производители*/
+/*Заголовок*/
+.popular-manufacturer-header {
+	display: flex;
+	flex-wrap: wrap;
+	width: 940px;
+	justify-content: space-between;
+	margin-left: 130px;
+	margin-bottom: 20px;
+	background-color: #f9f5f0;
+}
+.popular-manufacturer-button {
+	align-self: center; 
+}
+/*Логотипы производителей*/
+.popular-manufacturer-list {
+	display: flex;
+	flex-wrap: wrap;
+	width: 940px;
+	margin-left: 130px;
+	justify-content: space-between;
+}
+
+.popular-manufacturer-item {
+	width: 218px;
+	height: 143px;
+	margin-bottom: 20px;
+	border: 1px solid #eaeaea;
+}
+
+.popular-manufacturer-item {
+	display: flex;
+}
+.manufacturer-logo-link {
+	margin: auto;
+}
+
+.second-row li {
+	margin-bottom: 63px;
+}
+/*-----------------------------*/
+/*Разметка сервисы*/
+/*Расположение*/
+.service {
+	display: flex;
+	margin-left: 130px;
+}
+
+
+.service-list-box{
+	display: flex;
+	flex-direction: column;
+}
+
+.service-delivery,
+.service-delivery-box {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end
+}
 
 
 
+/*-------------------------*/
+/*Блок о компании*/
+.company-contack-box {
+	display: flex;
+	justify-content: space-between;
+}
+
+.company {
+	display: flex;
+	flex-direction: column;
+	margin-left: 130px;
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+}
 
 
+/*------------------------------*/
+/*Футер*/
+.footer-nav,
+.footer-category-nav,
+.footer-address {
+	margin: 0;
+	padding: 0;
+}
 
+.footer-line-top, 
+.footer-line-middle,
+.footer-social {
+	display: flex;
+	margin-left: 130px;
+}
 
+.footer-nav {
+	display: flex;
+	margin-top: 39px;
+}
 
+.footer-category-nav {
+	display: flex;
+	margin-top: 39px;
+	margin-bottom: 73px;
+}
 
+.social-button ul {
+	display: flex;
+}
 
+.footer-nav li:not(:last-of-type):not(:first-of-type) {
+	margin-left: 30px;
+	margin-right: 30px;
+}
 
+.footer-nav li:first-child {
+	margin-left: 173px;
+	margin-right: 30px;
+}
+.footer-nav li:last-child {
+	margin-left: 30px;
+}
 
+.footer-category-nav li:not(:last-of-type):not(:first-of-type) {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.footer-category-nav li:first-child {
+	margin-right: 30px;
+	margin-left: 91px;
+}
+
+/*Нижняя часть футера*/
+.social-button {
+	margin-left: 161px;
+	margin-right: 119px;
+}
+
+.footer-feedback {
+	margin-right: 52px;
+}
 
 
 
