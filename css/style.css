@@ -6,6 +6,7 @@ body {
 	font-size: 17px;  
 	color: #000;
 	background-color: #fff;
+	
 }
 .main-header {
 	margin: 0;
@@ -78,6 +79,7 @@ a {
 }
 /*адрес на главной*/
 .main-nav-contacts {
+	margin-top: 60px;
 	font-size: 14px;
 	line-height: 24px;
 	color: #32425c;
@@ -87,19 +89,37 @@ a {
 	font-size: 21px;
 	line-height: 21px;
 	color: #ee3643;
+	border: 4px solid #000;
+	padding: 11px 51px 11px 74px;
+}
+.nav-contacts-adress {
+	display: block;
+	padding-top: 11px;
+	margin-left: 10px;
 }
 /*Стилизация кнопок вход и рег-я*/
 .login-link {
 	font-size: 21px;
 	line-height: 21px;
 	color: #000000;
-	background-color: #fff;
+/*	изменить цвет на правильный*/
+	background-color: #beacac;
+	padding: 15px 27px 15px 48px;
+	margin-left: 69px;
+	margin-right: 10px;
+}
+
+.user-navigation li {
+	display: block;
+	margin-top: 60px;
 }
 
 .login-link-registration {
 	font-size: 21px;
 	line-height: 21px;
 	color: #000000;
+	background-color: #beacac;
+	padding: 15px 25px 15px 25px;
 }
 /*Стилизация ссылок ЛК на странице каталога*/
 .user-name {
@@ -129,22 +149,22 @@ a {
 }
 /*Стилизаяция ссылок в главном меню*/
 .site-navigation a {
-	padding-top: 22px;
-	padding-bottom: 21px;
 	font-size: 17px;
 	line-height: 17px;
 	color: #fff;
 	}
+.site-navigation li {
+	padding-top: 20px;
+	padding-bottom: 24px;
+}
 /*Стилизация контейнера главного меню*/
 .site-navigation {
-	margin-left: 10px;
-	margin-right: 10px;
 	width: 940px;
 	background-color: #32425c;
 }
 /*стилизация состояния наведения главного меню*/
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation li:hover,
+.site-navigation li:focus {
 	background-color: #293449;
 	outline: 0;
 }
@@ -201,6 +221,7 @@ a {
 	padding: 0;
 	margin: 0;
 	text-decoration: none;
+	list-style: none;
 }
 
 /*временно, чтобы текст видно было*/
@@ -720,6 +741,99 @@ a {
 	background-color: #ee3643;
 	border-style: none;
 }
+
+/*------------------------------*/
+/*Начало сетки. Крупные блоки*/
+.header-container {
+	padding-left: 130px;
+	
+}
+
+.header-container,
+.site-navigation,
+.header-central-box,
+.user-navigation {
+	display: flex;
+}
+/*Расположение меню сайта*/
+.site-navigation {
+	width: 940px;
+	justify-content: space-between;
+	margin-left: 130px;	
+	
+}
+.site-navigation-item:last-child {
+	padding-right: 55px;
+}
+
+.site-navigation-item:first-of-type {
+	padding-left: 52px;
+}
+
+/*Разметка центрального блока шапки*/
+.header-h-box {
+	width: 250px;
+	margin-top: 43px;
+	margin-bottom: 40px;
+	margin-left: 130px;
+	padding-left: 50px;
+	
+}
+/*-----Шапка закончена--------*/
+/*Популярные категории*/
+.category-list {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	padding-top: 62px;
+	margin-left: 130px;	
+}
+
+.category-item {
+	width: 300px;
+	margin-right: 20px;
+	
+/*	временная рамка*/
+	border: 1px solid #000;
+}
+
+.category-item:nth-of-type(4) {
+	margin-top: 20px;
+	margin-left: 644px;
+} 
+.category-item:nth-of-type(5) {
+	margin-top: 20px;
+	margin-left: 644px;
+} 
+
+/*Слайдер*/
+.gallery-content {
+	margin: 0;
+	padding: 0;
+}
+.gallery {
+	display: flex;
+	flex-direction: column;
+	margin-left: 130px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
