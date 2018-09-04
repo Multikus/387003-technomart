@@ -1,9 +1,7 @@
  
 
 body {
-	margin: 0 auto;
-	max-width: 1200px;
-/*	min-width: 940px;*/
+	margin: 0;
 	padding: 0;
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 17px;  
@@ -11,9 +9,19 @@ body {
 	background-color: #fff;
 }
 
+.main-wrap {
+	margin: 0 auto;
+	max-width: 1200px;
+	min-width: 940px;
+}
+
 .main-header {
 	margin: 0;
 	padding: 0;
+}
+
+.container {
+	margin-left: 130px;
 }
 
 a {
@@ -797,8 +805,10 @@ a {
 	display: flex;
 /*	flex-wrap: wrap;*/
 	max-width: 940px;
+/*
 	margin-left: auto;
 	margin-right: auto;
+*/
 }
 
 
@@ -863,7 +873,7 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	width: 940px;
-	margin-left: 130px;
+/*	margin-left: 130px;*/
 	margin-bottom: 22px;
 	justify-content: space-between;
 	background-color: #f9f5f0;
@@ -880,7 +890,7 @@ a {
 /*	flex-wrap: wrap;*/
 	width: 940px;
 	padding: 0;
-	margin-left: 130px;		
+/*	margin-left: 130px;		*/
 }
 
 .popular-goods-list li {
@@ -945,7 +955,7 @@ a {
 	flex-wrap: wrap;
 	width: 940px;
 	justify-content: space-between;
-	margin-left: 130px;
+/*	margin-left: 130px;*/
 	margin-bottom: 20px;
 	background-color: #f9f5f0;
 }
@@ -957,7 +967,7 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	width: 940px;
-	margin-left: 130px;
+/*	margin-left: 130px;*/
 	justify-content: space-between;
 }
 
@@ -983,7 +993,7 @@ a {
 /*Расположение*/
 .service {
 	display: flex;
-	margin-left: 130px;
+/*	margin-left: 130px;*/
 }
 
 
@@ -996,7 +1006,7 @@ a {
 .service-delivery-box {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: flex-end
+	flex-direction: column;
 }
 
 
@@ -1034,6 +1044,7 @@ a {
 .footer-social {
 	display: flex;
 	margin-left: 130px;
+	max-width: 1200px;
 }
 
 .footer-nav {
