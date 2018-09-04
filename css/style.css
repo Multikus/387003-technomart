@@ -804,7 +804,6 @@ a {
 
 .choose-category-box {
 	display: flex;
-	flex-direction: column;
 	flex-wrap: wrap;
 }
 
@@ -823,14 +822,19 @@ a {
 	margin-top: 20px;
 	/*	временная рамка*/
 
-	border: 1px solid #000;
+/*	border: 1px solid #000;*/
 }
 
 .category-list-second {
 	list-style: none;
 	margin: 0;
+	padding: 0;
 	display: flex;
 	flex-direction: column;
+}
+
+.category-list-second li {
+	margin-left: 20px;
 }
 
 .category-list-second {
@@ -843,65 +847,11 @@ a {
 	display: flex;
 	flex-direction: column;
 	width: 620px;
-}
-.gallery-content {
-	margin: 0;
-	padding: 0;
-	width: 620px;
-	
-}
-
-
-
-/*
-.category-list li:nth-of-type(4),
-.category-list li:nth-of-type(5) {
-	align-self: flex-end;
-	margin-left: 20px; 
-	margin-right: 0px;
-}
-
-
-
-.gallery,
-.gallery-content {
-	margin: 0;
-	padding: 0;
-}
-*/
-
-
-/*
-
-
-
-*/
-	
-/*
-	border: 1px solid #000;
-}
-
-.category-item:nth-of-type(4) {
 	margin-top: 20px;
-	margin-left: 644px;
-} 
-.category-item:nth-of-type(5) {
-	margin-top: 20px;
-	margin-left: 644px;
-} 
-*/
+}
 
-/*Слайдер*/
-/*
-.gallery-content {
-	margin: 0;
-	padding: 0;
-}
-.gallery {
-	display: flex;
-	flex-direction: row;
-}
-*/
+
+
 
 
 /*Второй слайд галереи скрыт*/
