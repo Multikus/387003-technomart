@@ -1,17 +1,21 @@
+ 
 
 body {
-	margin: 0;
+	margin: 0 auto;
+	max-width: 1200px;
+/*	min-width: 940px;*/
 	padding: 0;
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 17px;  
 	color: #000;
 	background-color: #fff;
-	
 }
+
 .main-header {
 	margin: 0;
 	padding: 0;
 }
+
 a {
 	text-decoration: none;
 }
@@ -789,19 +793,91 @@ a {
 }
 /*-----Шапка закончена--------*/
 /*Популярные категории*/
-.category-list {
+.choose-category {
 	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	padding-top: 62px;
-	margin-left: 130px;	
+/*	flex-wrap: wrap;*/
+	max-width: 940px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
+
+.choose-category-box {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.category-list {
+	display: flex;
+	width: 940px;	
+	padding-top: 62px;
+}
+
+.category-list li:first-of-type{
+	margin-left: 20px;
+}
 .category-item {
 	width: 300px;
 	margin-right: 20px;
+	margin-top: 20px;
+	/*	временная рамка*/
+
+	border: 1px solid #000;
+}
+
+.category-list-second {
+	list-style: none;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.category-list-second {
+	align-self: flex-end;
+}
+.category-list-second li {
+	margin-right: 0;
+}
+.gallery {
+	display: flex;
+	flex-direction: column;
+	width: 620px;
+}
+.gallery-content {
+	margin: 0;
+	padding: 0;
+	width: 620px;
 	
-/*	временная рамка*/
+}
+
+
+
+/*
+.category-list li:nth-of-type(4),
+.category-list li:nth-of-type(5) {
+	align-self: flex-end;
+	margin-left: 20px; 
+	margin-right: 0px;
+}
+
+
+
+.gallery,
+.gallery-content {
+	margin: 0;
+	padding: 0;
+}
+*/
+
+
+/*
+
+
+
+*/
+	
+/*
 	border: 1px solid #000;
 }
 
@@ -813,18 +889,25 @@ a {
 	margin-top: 20px;
 	margin-left: 644px;
 } 
+*/
 
 /*Слайдер*/
+/*
 .gallery-content {
 	margin: 0;
 	padding: 0;
 }
 .gallery {
 	display: flex;
-	flex-direction: column;
-	margin-left: 130px;
+	flex-direction: row;
 }
+*/
 
+
+/*Второй слайд галереи скрыт*/
+.gallery-content-second {
+	display: none;
+}
 /*Заголовок популярных товаров*/
 .popular-goods-box {
 	display: flex;
