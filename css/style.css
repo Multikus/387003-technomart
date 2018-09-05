@@ -137,7 +137,10 @@ a {
 .user-name {
 	font-size: 21px;
 	line-height: 21px;
+	margin: 0;
+	padding: 0;
 	color: #000000;
+	
 }
 
 .user-order a,
@@ -1094,6 +1097,68 @@ a {
 .footer-feedback {
 	margin-right: 52px;
 }
+
+
+
+
+/*Сетка для страницы каталога*/
+
+.nav-middle-box {
+	display: flex;
+	align-items: center;
+	padding-left: 190px;
+}
+
+.user-navigation-box {
+	display: flex;
+	flex-direction: column;
+}
+
+.user-navigation-catalog {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-middle-box h1 {
+	font-size: 16px;
+	font-style: italic;
+	line-height: 23px;
+	color: #ee3643; 
+}
+
+.breadcrumbs {
+	display: flex;
+}
+
+.filters-form {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+.main-form-box {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 300px;
+}
+
+.filters-instrument,
+.filters-choise-sorting {
+	display: flex;
+	
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
