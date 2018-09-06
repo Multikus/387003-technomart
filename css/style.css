@@ -1046,6 +1046,7 @@ a {
 .footer-line-middle,
 .footer-social {
 	display: flex;
+	width: 940px;
 	margin-left: 130px;
 	max-width: 1200px;
 }
@@ -1147,11 +1148,75 @@ a {
 .filters-instrument,
 .filters-choise-sorting {
 	display: flex;
-	
+}
+
+.catalog-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+/*Стилизаия карточки товара на страние каталога*/
+.catalog-item {
+	display: flex;
+  flex-direction: column;
+	justify-content: space-between;
+}
+
+.catalog-list li {
+	width: 218px;
+	border: 1px solid #eaeaea;
+}
+.catalog-list li {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.catalog-list li:nth-of-type(2),
+.catalog-list li:nth-of-type(5),
+.catalog-list li:nth-of-type(8) {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.catalog-item h3 {
+	order: 2;
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+.catalog-item-category {
+	margin-left: 32px;
+}
+
+.catalog-item-model {
+	margin-left: 71px;
+}
+
+.catalog-item-old-price {
+	align-self: center;
+	margin: 0;
+	margin-bottom: 13px;
+	order: 3;
+}
+
+.catalog-item-price {
+	align-self: center;
+	order: 4;
+	margin-bottom: 30px
+}
+
+.catalog-item-image {
+	margin-top: 0px;
+	margin-bottom: -16px;
+}
+. catalog-item-price {
+	padding: 10px 15px 11px 37px; 
 }
 
 
-
+/*Разметка навигации страниц*/
+.pagination-list {
+	display: flex;
+}
 
 
 
@@ -1179,6 +1244,3 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-
-
