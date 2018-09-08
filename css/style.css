@@ -1,24 +1,25 @@
- 
-
-body {
+ body {
 	margin: 0;
 	padding: 0;
 	font-family: "Cuprum", Arial, sans-serif;
-	font-size: 17px;  
+	font-size: 17px;
 	color: #000;
 	background-color: #fff;
 }
 
-.main-wrap {
-	margin: 0 auto;
-	max-width: 1200px;
-	min-width: 940px;
+.main-header {
+	padding: 0;
+	font-size: 17px;
+	line-height: 17px;
+	background-color: #f3f7f8;
 }
 
-.main-header {
-	margin: 0;
-	padding: 0;
+/*
+.main-navigation {
+	margin: 0 auto;
+	width: 940px;
 }
+*/
 
 .container {
 	margin-left: 130px;
@@ -28,12 +29,7 @@ a {
 	text-decoration: none;
 }
 /*Общая стилизация шапки*/
-.main-navigation {
-	font-size: 17px;
-	line-height: 17px;
-/*	color: #fff;*/
-	background-color: #f3f7f8;
-}
+
 /*убираем точки в списках шапки*/
 .site-navigation,
 .user-navigation {
@@ -43,7 +39,12 @@ a {
 }
 
 /*Стилизация контейнера верхней части меню*/
+.alignment-box {
+	background-color: #293449;
+}
 .header-container {
+	margin: 0 auto;
+	width: 940px;
 	color: #fff;
 	font-size: 17px;
 	line-height: 18px;
@@ -84,6 +85,7 @@ a {
 }
 /*стилизация заголовка на главной*/
 .main-navigation h1 {
+	margin: 0;
 	font-size: 16px;
 	font-style: italic;
 	line-height: 23px;
@@ -91,13 +93,17 @@ a {
 }
 /*адрес на главной*/
 .main-nav-contacts {
-	margin-top: 60px;
+	margin: 10px 69px 0px 67px;
+	margin-left: 67px;
+	margin-right: 69px;
 	font-size: 14px;
 	line-height: 24px;
 	color: #32425c;
 }
 /*стилизация номера телефона на главной*/
 .nav-contacts-phone {
+/*	display: block;*/
+	vertical-align: middle;
 	font-size: 21px;
 	line-height: 21px;
 	color: #ee3643;
@@ -106,7 +112,8 @@ a {
 }
 .nav-contacts-adress {
 	display: block;
-	padding-top: 11px;
+	vertical-align: bottom;
+	margin-top: 18px;
 	margin-left: 10px;
 }
 /*Стилизация кнопок вход и рег-я*/
@@ -115,15 +122,14 @@ a {
 	line-height: 21px;
 	color: #000000;
 /*	изменить цвет на правильный*/
-	background-color: #beacac;
+	background-color: #d65656;
 	padding: 15px 27px 15px 48px;
-	margin-left: 69px;
 	margin-right: 10px;
 }
 
-.user-navigation li {
-	display: block;
-	margin-top: 60px;
+.user-navigation {
+	margin-top: 12px;
+	align-self: flex-start;
 }
 
 .login-link-registration {
@@ -174,6 +180,7 @@ a {
 }
 /*Стилизация контейнера главного меню*/
 .site-navigation {
+	margin: 0 auto;
 	width: 940px;
 	background-color: #32425c;
 }
@@ -186,7 +193,7 @@ a {
 /*********************************/
 /*Хлебные крошки. -- Страница каталога -- */
 .breadcrumbs a, 
-.breadcrumbs-current { 	
+.breadcrumbs-current {
 	font-family: 'PT Sans', sans-serif;
 	font-size: 13px;
 	line-height: 18px;
@@ -767,13 +774,11 @@ a {
 /*------------------------------*/
 /*Начало сетки. Крупные блоки*/
 .header-container {
-	padding-left: 130px;
-	
+	background-color: #293449;
 }
 
 .header-container,
 .site-navigation,
-.header-central-box,
 .user-navigation {
 	display: flex;
 	flex-wrap: wrap;
@@ -782,7 +787,6 @@ a {
 .site-navigation {
 	width: 940px;
 	justify-content: space-between;
-	margin-left: 130px;	
 	
 }
 .site-navigation-item:last-child {
@@ -794,24 +798,22 @@ a {
 }
 
 /*Разметка центрального блока шапки*/
-.header-h-box {
-	width: 250px;
-	margin-top: 43px;
-	margin-bottom: 40px;
-	margin-left: 130px;
+
+.header-central-box {
+	margin: 0 auto;
+	width: 890px;
+	display: flex;
+	align-items: center;
+	padding-top: 43px;
+	padding-bottom: 40px;
 	padding-left: 50px;
-	
 }
+
 /*-----Шапка закончена--------*/
 /*Популярные категории*/
 .choose-category {
 	display: flex;
-/*	flex-wrap: wrap;*/
 	max-width: 940px;
-/*
-	margin-left: auto;
-	margin-right: auto;
-*/
 }
 
 
@@ -822,7 +824,7 @@ a {
 
 .category-list {
 	display: flex;
-	width: 940px;	
+	width: 940px;
 	padding-top: 62px;
 }
 
@@ -883,17 +885,15 @@ a {
 }
 /*Добавить отступы в контейнер*/
 .popular-goods-button {
-	align-self: center;		
+	align-self: center;
 }
 
 /*---------------------------------*/
 /*Популярные товары*/
 .popular-goods-list {
 	display: flex;
-/*	flex-wrap: wrap;*/
 	width: 940px;
 	padding: 0;
-/*	margin-left: 130px;		*/
 }
 
 .popular-goods-list li {
@@ -910,7 +910,7 @@ a {
 /*Стилизация внутри карточки товара*/
 .popular-goods-item {
 	display: flex;
-  flex-direction: column;
+	flex-direction: column;
 	justify-content: space-between;
 }
 
@@ -1208,7 +1208,7 @@ a {
 	margin-top: 0px;
 	margin-bottom: -16px;
 }
-. catalog-item-price {
+.catalog-item-price {
 	padding: 10px 15px 11px 37px; 
 }
 
@@ -1235,12 +1235,12 @@ a {
 
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
