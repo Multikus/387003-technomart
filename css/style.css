@@ -14,15 +14,9 @@
 	background-color: #f3f7f8;
 }
 
-/*
-.main-navigation {
+.container {
 	margin: 0 auto;
 	width: 940px;
-}
-*/
-
-.container {
-	margin-left: 130px;
 }
 
 a {
@@ -252,8 +246,16 @@ a {
 }
 /*фон для заголовка*/
 .popular-goods-box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 894px;
+	padding-right: 16px;
+	padding-left: 30px;
+	margin-bottom: 22px;
 	background-color: #f9f5f0;
 }
+
 /*Заголовок над популярными товарами*/
 .popular-caption {
 	font-size: 30px;
@@ -310,24 +312,64 @@ a {
 }
 /*************************************/
 /*Блок заголовка поп. произв-ей*/
-.popular-manufacturer-heaer {
+.popular-manufacturer-header {
+	display: flex;
+	flex-wrap: wrap;
+	width: 894px;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	padding-left: 30px;
+	padding-right: 16px;
 	background-color: #f9f5f0;
 }
+
 /*Кнопка все производители*/
 .popular-manufacturer-button-link {
 	font-size: 14px;
 	line-height: 18px;
 	color: #fff;
 	text-transform: uppercase;
-	/*	фоновоую заливку удалить после стилизации кнопки*/
-	background-color: red;
+	align-self: center;
+	padding: 12px 70px 12px 70px;
+	border-radius: 3px;
+	background-color: #ee3643;
 }
 /*Убираем точки списка у лого произв-ля*/
+.popular-manufacturer-list {
+;
+}
+/*Стилизаия логотипов производителей*/
 .popular-manufacturer-list {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-}	
+	display: flex;
+	flex-wrap: wrap;
+	width: 940px;
+	justify-content: space-between;
+}
+
+.popular-manufacturer-item {
+	width: 218px;
+	height: 143px;
+	margin-bottom: 20px;
+	border: 1px solid #eaeaea;
+}
+
+.popular-manufacturer-item {
+	display: flex;
+}
+.manufacturer-logo-link {
+	margin: auto;
+}
+
+.second-row li {
+	margin-bottom: 63px;
+}
+
+
+
+
 /**************************************/
 /*Стилизация блока сервисы*/
 /*Общие параметры для всего блока*/
@@ -456,10 +498,12 @@ a {
 .footer-copyright,
 .footer-feedback, 
 .footer-developed {
+	margin: 0;
+	padding: 0;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 400;
-	color: #fff;	
+	color: #fff;
 }
 
 .footer-feedback-box,
@@ -870,22 +914,20 @@ a {
 
 
 /*Второй слайд галереи скрыт*/
-.gallery-content-second {
+.gallery-content-second,
+.control-slider,
+.hidden-box {
 	display: none;
 }
 /*Заголовок популярных товаров*/
-.popular-goods-box {
-	display: flex;
-	flex-wrap: wrap;
-	width: 940px;
-/*	margin-left: 130px;*/
-	margin-bottom: 22px;
-	justify-content: space-between;
-	background-color: #f9f5f0;
-}
+
 /*Добавить отступы в контейнер*/
-.popular-goods-button {
+.popular-goods-button-link {
+	padding: 12px 55px 12px 55px;
+	margin: 0;
+	border-radius: 3px;
 	align-self: center;
+	background-color: #ee3643;
 }
 
 /*---------------------------------*/
@@ -953,44 +995,8 @@ a {
 /*------------------------------------*/
 /*Популярные производители*/
 /*Заголовок*/
-.popular-manufacturer-header {
-	display: flex;
-	flex-wrap: wrap;
-	width: 940px;
-	justify-content: space-between;
-/*	margin-left: 130px;*/
-	margin-bottom: 20px;
-	background-color: #f9f5f0;
-}
-.popular-manufacturer-button {
-	align-self: center; 
-}
-/*Логотипы производителей*/
-.popular-manufacturer-list {
-	display: flex;
-	flex-wrap: wrap;
-	width: 940px;
-/*	margin-left: 130px;*/
-	justify-content: space-between;
-}
 
-.popular-manufacturer-item {
-	width: 218px;
-	height: 143px;
-	margin-bottom: 20px;
-	border: 1px solid #eaeaea;
-}
 
-.popular-manufacturer-item {
-	display: flex;
-}
-.manufacturer-logo-link {
-	margin: auto;
-}
-
-.second-row li {
-	margin-bottom: 63px;
-}
 /*-----------------------------*/
 /*Разметка сервисы*/
 /*Расположение*/
@@ -1005,8 +1011,7 @@ a {
 	flex-direction: column;
 }
 
-.service-delivery,
-.service-delivery-box {
+.service-delivery {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
@@ -1024,7 +1029,6 @@ a {
 .company {
 	display: flex;
 	flex-direction: column;
-	margin-left: 130px;
 }
 
 .contact {
@@ -1037,29 +1041,33 @@ a {
 /*Футер*/
 .footer-nav,
 .footer-category-nav,
-.footer-address {
+.footer-address,
+.footer-logo {
 	margin: 0;
 	padding: 0;
 }
 
-.footer-line-top, 
-.footer-line-middle,
-.footer-social {
+.footer-line-top {
 	display: flex;
 	width: 940px;
-	margin-left: 130px;
-	max-width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.footer-line-middle {
+	display: flex;
+	width: 940px;
+	margin: 0 auto;
+	margin-bottom: 53px;
 }
 
 .footer-nav {
 	display: flex;
-	margin-top: 39px;
+	margin-top: 35px;
 }
 
 .footer-category-nav {
 	display: flex;
-	margin-top: 39px;
-	margin-bottom: 73px;
 }
 
 .social-button ul {
@@ -1090,6 +1098,14 @@ a {
 }
 
 /*Нижняя часть футера*/
+.footer-social-box {
+	display: flex;
+	width: 940px;
+	margin: 0 auto;
+	padding-top: 39px;
+	padding-bottom: 33px;
+}
+
 .social-button {
 	margin-left: 161px;
 	margin-right: 119px;

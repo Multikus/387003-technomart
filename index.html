@@ -117,6 +117,7 @@
 							</p>
 						</li>
 					</ul>
+					
 					<div class="gallery">
 						<h3 class="visually-hidden">Фотогалерея</h3>
 						<div class="gallery-content">
@@ -134,6 +135,25 @@
 							<a href="catalog.html" class="choose-category-button">Открыть каталог</a>
 						</p>
 					</div>
+<!--					Второй слайд галереи-->
+					<div class="gallery-content-second">
+						<a href="#">
+							<img src="img/man-with-puncher.jpg" width="621" height="267" alt="Мужчина с перфоратором">
+						</a>
+						<p class="gallery-header">
+							<span class="gallery-header-name">
+								Дрели
+							</span>
+							<span class="gallery-header-item">
+								Настоящие мужские игрушки
+							</span>
+						</p>
+						<p class="gallery-button">
+							<a href="catalog.html" class="choose-category-button">Открыть каталог</a>
+						</p>
+					</div>
+					
+					
 					<ul class="category-list-second">
 						<li class="category-item">
 							<h3 class="category-item-title">
@@ -155,14 +175,6 @@
 				</div>
 
 			</section>
-
-
-
-
-
-
-
-
 
 
 			<!--  <section class="choose-category">
@@ -228,7 +240,8 @@
 								</p>
 	-->
 			<!--					разметка управляющих элементов слайдера-->
-			<!--
+<!--	<div class="hidden-box"  ДОБАВЛЕН ЧТОБЫ СКРЫТЬ УПРАВЛЯЮЩИЕ ЭЛ-ТЫ ВРЕМЕННО-->
+							<div class="hidden-box">
 								<ul class="control-slider">
 									<li class="slider-radio">
 										<button class="slide-btn" type="button">Первый слайд</button>
@@ -237,10 +250,10 @@
 										<button class="slide-btn" type="button">Второй слайд</button>
 									</li>
 								</ul>
-	-->
+
 
 			<!--					Разметка кнопки назад для слайдера-->
-			<!--
+
 								<span class="visually-hidden">Кнопка возврата к предыдущему слайду галереи</span>
 									<button class="button gallery-button gallery-button-back" type="button">
 										<svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40">
@@ -254,37 +267,14 @@
 											<path fill="#FFF" d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z"/>
 										</svg>
 									</button>
-	-->
-
-			<!--					Добавил разметку второго слайда-->
-			<!--
-								<figure class="gallery-content-second">
-									<a href="#"><img src="img/man-with-puncher.jpg" width="621" height="267" alt="Мужчина с перфоратором"></a>
-								</figure>
-								<p class="gallery-header">
-									<span class="gallery-header-name">
-										Дрели
-									</span>
-									<span class="gallery-header-item">
-										Настоящие мужские игрушки
-									</span>
-								</p>
-								<p class="gallery-button">
-									<a href="catalog.html" class="choose-category-button">Открыть каталог</a>
-								</p>
-							</div>		
-						</li>
-					</ul>
-
-				</section>
-	-->
+							</div>
 
 			<section class="popular-goods">
 				<div class="popular-goods-box">
 					<h2 class="popular-caption">Популярные товары:</h2>
-					<span class="popular-goods-button">
+<!--					<span class="popular-goods-button">-->
 						<a href="#" class="popular-goods-button-link">Все популярные товары</a>
-					</span>
+<!--					</span>-->
 				</div>
 
 				<ul class="popular-goods-list">
@@ -364,12 +354,13 @@
 				</ul>
 			</section>
 
+		
 			<section class="popular-manufacturer">
 				<div class="popular-manufacturer-header">
 					<h2 class="popular-caption">Популярные производители:</h2>
-					<span class="popular-manufacturer-button">
+<!--					<span class="popular-manufacturer-button">-->
 						<a href="#" class="popular-manufacturer-button-link">Все производители</a>
-					</span>
+<!--					</span>-->
 				</div>
 
 				<ul class="popular-manufacturer-list">
@@ -393,9 +384,6 @@
 							<img src="img/interskol-logo.png" class="manufacturer-logo" width="184" height="32" alt="Логотип компании интерскол">
 						</a>
 					</li>
-				</ul>
-
-				<ul class="popular-manufacturer-list second-row">
 					<li class="popular-manufacturer-item">
 						<a href="#" class="manufacturer-logo-link">
 							<img src="img/hitachi-logo.png" class="manufacturer-logo" width="143" height="22" alt="Логотип компании hitachi">
@@ -459,9 +447,7 @@
 						поднимая его на ваш этаж!
 					</p>
 				</div>
-				<div class="service-delivery-box">
-					<img class="service-delivery-image" src="img/service-truck.png" width="478" height="261" alt="Векторная картинка грузовика">
-				</div>
+				
 			</section>
 				<div class="company-contack-box">
 					<section class="company">
@@ -541,44 +527,45 @@
 						</ul>
 					</div>
 				</section>
-
+<!--//////////////////////////////////////////////////////////-->
 				<section class="footer-social">
+					<div class="footer-social-box">
+						<p class="footer-copyright">
+							&copy; 2010-2017 Компания &laquo;Техномарт&raquo;<br>
+							Все права защищены
+						</p>
 
-					<p class="footer-copyright">
-						&copy; 2010-2017 Компания &laquo;Техномарт&raquo;<br>
-						Все права защищены
-					</p>
+						<div class="social-button">
+							<ul>
+								<li>
+									<a href="#" class="social-button-item">
+										<img class="social-button-ico" src="img/svg/icon-vk.svg" alt="Читайте нас в социальной сети Вконтакте">
+									</a>
+								</li>
+								<li>
+									<a href="#" class="social-button-item">
+										<img class="social-button-ico" src="img/svg/icon-fb.svg" alt="Читайте нас в социальной сети Фэйсбук">
+									</a></li>
+								<li>
+									<a href="#" class="social-button-item">
+										<img class="social-button-ico" src="img/svg/icon-insta.svg" alt="Читайте нас в Инстаграм">
+									</a>
+								</li>
+							</ul>
+						</div>
 
-					<div class="social-button">
-						<ul>
-							<li>
-								<a href="#" class="social-button-item">
-									<img class="social-button-ico" src="img/svg/icon-vk.svg" alt="Читайте нас в социальной сети Вконтакте">
-								</a>
-							</li>
-							<li>
-								<a href="#" class="social-button-item">
-									<img class="social-button-ico" src="img/svg/icon-fb.svg" alt="Читайте нас в социальной сети Фэйсбук">
-								</a></li>
-							<li>
-								<a href="#" class="social-button-item">
-									<img class="social-button-ico" src="img/svg/icon-insta.svg" alt="Читайте нас в Инстаграм">
-								</a>
-							</li>
-						</ul>
+						<p class="footer-feedback">
+							Обратная связь:<br>
+							<span class="footer-feedback-box">
+								mail@htmlacademy.ru
+							</span>
+						</p>
+
+						<p class="footer-developed">
+							Разработано - <br>
+							<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+						</p>
 					</div>
-
-					<p class="footer-feedback">
-						Обратная связь:<br>
-						<span class="footer-feedback-box">
-							mail@htmlacademy.ru
-						</span>
-					</p>
-
-					<p class="footer-developed">
-						Разработано - <br>
-						<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-					</p>
 				</section>
 			</footer>
 
