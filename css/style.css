@@ -48,10 +48,22 @@ a {
 	color: #fff;
 }
 
+.main-header-logo {
+	width: 220px;
+	height: 42px;
+}
+
 /*Стилизация кнопки заказа*/
 .nav-about-order .button {
 	background-color: #63a63e;
 }
+
+.main-nav-search p,
+.nav-about-order {
+	margin: 0;
+	padding: 0;
+}
+
 /*форма поиска спокойное состояние*/
 .main-nav-search input {
 	border-style: none;
@@ -367,9 +379,6 @@ a {
 	margin-bottom: 63px;
 }
 
-
-
-
 /**************************************/
 /*Стилизация блока сервисы*/
 /*Общие параметры для всего блока*/
@@ -534,7 +543,7 @@ a {
 .footer-nav a:focus {
 	border-bottom: 1px solid #fff;
 	outline: 0;
-} 
+}
 
 .footer-category-nav a:hover,
 .footer-category-nav a:focus {
@@ -629,11 +638,13 @@ a {
 .sort-button-up:focus,
 .sort-button-down:focus {
 	opacity: 1;
-	outline: 0;	
+	outline: 0;
 }
 /*Убираем обводку формы*/
 .main-form fieldset{
 	border-style: none;
+	padding: 0px;
+	margin: 0px;
 }
 /*Декоратиные линии в фильтре*/
 .manufacturers-line {
@@ -826,6 +837,10 @@ a {
 .user-navigation {
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.header-container {
+	align-items: center;
 }
 /*Расположение меню сайта*/
 .site-navigation {
@@ -1119,6 +1134,20 @@ a {
 
 
 /*Сетка для страницы каталога*/
+.user-navigation-box {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 280px;
+}
+
+.user-navigation-catalog {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
 
 .nav-middle-box {
 	display: flex;
@@ -1126,22 +1155,11 @@ a {
 	padding-left: 190px;
 }
 
-.user-navigation-box {
-	display: flex;
-	flex-direction: column;
-}
-
-.user-navigation-catalog {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
 .nav-middle-box h1 {
 	font-size: 16px;
 	font-style: italic;
 	line-height: 23px;
-	color: #ee3643; 
+	color: #ee3643;
 }
 
 .breadcrumbs {
@@ -1158,7 +1176,8 @@ a {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	width: 300px;
+	width: 220px;
+	box-sizing: border-box;
 }
 
 .filters-instrument,
@@ -1169,6 +1188,11 @@ a {
 .catalog-list {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 700px;
+	margin: 0;
+	margin-left: 20px;
+	padding: 0;
 }
 /*Стилизаия карточки товара на страние каталога*/
 .catalog-item {
@@ -1182,15 +1206,7 @@ a {
 	border: 1px solid #eaeaea;
 }
 .catalog-list li {
-	margin-top: 20px;
 	margin-bottom: 20px;
-}
-
-.catalog-list li:nth-of-type(2),
-.catalog-list li:nth-of-type(5),
-.catalog-list li:nth-of-type(8) {
-	margin-left: 20px;
-	margin-right: 20px;
 }
 
 .catalog-item h3 {
@@ -1232,6 +1248,8 @@ a {
 /*Разметка навигации страниц*/
 .pagination-list {
 	display: flex;
+	margin: 0;
+	padding: 0;
 }
 
 
