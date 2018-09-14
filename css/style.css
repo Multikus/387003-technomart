@@ -22,6 +22,14 @@
 a {
 	text-decoration: none;
 }
+/*Чтобы картинки не выпадали из своего контейнера*/
+/*
+img {
+	max-width: 100%;
+	height: auto;
+}
+*/
+
 /*Общая стилизация шапки*/
 
 /*убираем точки в списках шапки*/
@@ -55,30 +63,52 @@ a {
 
 /*Стилизация кнопки заказа*/
 .nav-about-order .button {
+	padding: 12px 21px;
 	background-color: #63a63e;
 }
+/*Корзина */
+.nav-goods-basket {
+	padding-right: 31px;
+	padding-left: 59px;
+/*убрать цвет*/
+	background-color: aqua;
+}
+/*закладки*/
+.nav-bookmarks {
+	padding-right: 18px;
+	padding-left: 27px;
+/*убрать цвет*/
+	background-color: blueviolet;
+}
+
 
 .main-nav-search p,
 .nav-about-order {
 	margin: 0;
 	padding: 0;
+	margin-left: auto;
 }
+
 
 /*форма поиска спокойное состояние*/
 .main-nav-search input {
 	border-style: none;
 	background-color: #293449;
+	color: #fff;
+	padding-top: 11px;
+	padding-bottom: 12px;
 }
 /*изменение цвета подсказки формы поиска Safari и Chrome*/
 .main-nav-search input[type="search"]::-webkit-input-placeholder {
 	color: #fff;
+
 }
 /*изменение цвета подсказки формы поиска Firefox*/
 .main-nav-search input[type="search"]::-moz-placeholder {
 	color: #fff;
 }
 /*стилизация формы поиска*/
-.main-nav-search input:hover, 
+.main-nav-search input:hover,
 .main-nav-search input:focus {
 	background-color: #212a3a;
 	outline: 0;
@@ -95,7 +125,7 @@ a {
 	font-size: 16px;
 	font-style: italic;
 	line-height: 23px;
-	color: #ee3643; 
+	color: #ee3643;
 }
 /*адрес на главной*/
 .main-nav-contacts {
@@ -124,11 +154,11 @@ a {
 }
 /*Стилизация кнопок вход и рег-я*/
 .login-link {
+	max-width: 121px;
 	font-size: 21px;
 	line-height: 21px;
 	color: #000000;
-/*	изменить цвет на правильный*/
-	background-color: #d65656;
+	background-color: #fff;
 	padding: 15px 27px 15px 48px;
 	margin-right: 10px;
 }
@@ -138,11 +168,13 @@ a {
 	align-self: flex-start;
 }
 
+
 .login-link-registration {
+	max-width: 150px;
 	font-size: 21px;
 	line-height: 21px;
 	color: #000000;
-	background-color: #beacac;
+	background-color: #fff;
 	padding: 15px 25px 15px 25px;
 }
 /*Стилизация ссылок ЛК на странице каталога*/
@@ -152,7 +184,7 @@ a {
 	margin: 0;
 	padding: 0;
 	color: #000000;
-	
+
 }
 
 .user-order a,
@@ -174,22 +206,39 @@ a {
 	color: #ee3643;
 	outline: 0;
 }
-/*Стилизаяция ссылок в главном меню*/
-.site-navigation a {
-	font-size: 17px;
-	line-height: 17px;
-	color: #fff;
-	}
-.site-navigation li {
-	padding-top: 20px;
-	padding-bottom: 24px;
-}
 /*Стилизация контейнера главного меню*/
 .site-navigation {
 	margin: 0 auto;
 	width: 940px;
 	background-color: #32425c;
 }
+/*Стилизаяция ссылок в главном меню*/
+.header-container,
+.site-navigation,
+.user-navigation {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.header-container {
+	align-items: center;
+}
+/*Расположение меню сайта*/
+.site-navigation {
+	width: 940px;
+/*	justify-content: space-between;*/
+
+}
+
+.site-navigation a {
+	font-size: 17px;
+	line-height: 17px;
+	color: #fff;
+	display: block;
+	vertical-align: middle;
+	padding: 22px 32px;
+	}
+
 /*стилизация состояния наведения главного меню*/
 .site-navigation li:hover,
 .site-navigation li:focus {
@@ -198,7 +247,7 @@ a {
 }
 /*********************************/
 /*Хлебные крошки. -- Страница каталога -- */
-.breadcrumbs a, 
+.breadcrumbs a,
 .breadcrumbs-current {
 	font-family: 'PT Sans', sans-serif;
 	font-size: 13px;
@@ -220,6 +269,7 @@ a {
 .catalog-title h2 {
 	font-size: 30px;
 	line-height: 30px;
+	font-weight: 400;
 	color: #32425c;
 	padding-top: 25px;
 	padding-bottom: 25px;
@@ -304,7 +354,7 @@ a {
 	color: #000;
 }
 /*Старая цена*/
-.popular-goods-old-price, 
+.popular-goods-old-price,
 .popular-goods-button {
 	font-family: 'PT Sans', sans-serif;
 	font-size: 17px;
@@ -347,9 +397,6 @@ a {
 	background-color: #ee3643;
 }
 /*Убираем точки списка у лого произв-ля*/
-.popular-manufacturer-list {
-;
-}
 /*Стилизаия логотипов производителей*/
 .popular-manufacturer-list {
 	list-style: none;
@@ -383,10 +430,20 @@ a {
 /*Стилизация блока сервисы*/
 /*Общие параметры для всего блока*/
 .service {
-	background-color: #f4f8f9; 
+	display: flex;
+	background-image: url(../img/service-truck.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+/*	*/
+}
+.service-box {
+	background-color: #f4f8f9;
 }
 /*Заголовок сервиса*/
 .service-list-caption {
+	margin: 0;
+	padding: 0;
+	padding-top: 35px;
 	font-size: 30px;
 	line-height: 30px;
 	font-weight: 400;
@@ -395,6 +452,8 @@ a {
 }
 /*заголовок доставки*/
 .servece-delivery-caption {
+	margin: 0;
+	padding: 0;
 	font-size: 36px;
 	line-height: 36px;
 	font-weight: 400;
@@ -403,46 +462,85 @@ a {
 }
 /*текст*/
 .service-description,
-.delivery-description {
+.delivery-description,
+.service-delivery-description {
+	margin: 0;
+	padding: 0;
 	font-size: 13px;
 	line-height: 24px;
 	color: #000;
 }
+
+/*Контейнер для списка и блока доставки*/
+.service-delivery-box {
+	display: flex;
+	align-items: center;
+}
+
+.delivery-description,
+.service-delivery-description {
+	display: block;
+	width: 255px;
+}
+
 /*список сервисов*/
 .service-list {
+	display: block;
 	list-style: none;
 	margin: 0;
-	padding: 0;
+	padding: 73px 80px 80px 0px;
 }
+/*Стилизация списка*/
+
+.service-list li:nth-of-type(3) {
+	border-bottom: 1px solid #4d627b;
+	border-top: 1px solid #4d627b;
+}
+
 .service-list-button {
 	background-color: #32425c;
 }
-/*Стилизаия текста  списке*/
+
+/*Стилизаия текста списке*/
 .service-list-button a {
+	display: block;
 	font-size: 21px;
 	line-height: 30px;
-	font-weight: bold;	
+	font-weight: bold;
 	color: #fff;
-}
+	padding: 15px 140px 15px 22px;
+	}
+
 /*Стилизация при наведении*/
 .service-list-button a:hover,
 .service-list-button a:focus {
 	padding-top: 15px;
 	padding-bottom: 15px;
-	padding-right: auto;
-	width: 240px;
 	background-color: #293449;
 	outline: 0;
+}
+/*Флексы для */
+
+.service-list-box{
+	display: flex;
+	flex-direction: column;
+/*	padding-bottom: 80px;*/
+}
+
+.service-delivery {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
 }
 /*********************************/
 /*Блок компания техномарт*/
 /*Стилизация заголовков*/
-.company-title, 
+.company-title,
 .contact-title {
 	font-size: 30px;
 	line-height: 30px;
 	font-weight: 400;
-	color: #000;	
+	color: #000;
 	text-transform: uppercase;
 }
 /*Стилизаия текста*/
@@ -467,7 +565,7 @@ a {
 	color: #000;
 }
 /*Стилизация текста кнопок*/
-.about-company-button, 
+.about-company-button,
 .contact-button {
 	font-size: 14px;
 	line-height: 28px;
@@ -492,7 +590,7 @@ a {
 	outline: 0;
 }
 /*Стилизация текста ссылок*/
-.footer-address, 
+.footer-address,
 .footer-nav a,
 .footer-category-nav a {
 	font-size: 18px;
@@ -505,7 +603,7 @@ a {
 }
 /*стилизация нижней части футера*/
 .footer-copyright,
-.footer-feedback, 
+.footer-feedback,
 .footer-developed {
 	margin: 0;
 	padding: 0;
@@ -529,7 +627,7 @@ a {
 .social-button-ico {
 	background-color: #212a3a;
 	padding: 5px;
-	 
+
 }
 /*фон для кнопок СС при наедении*/
 .social-button-ico:hover,
@@ -722,10 +820,21 @@ a {
 }
 /*------------------------------------*/
 /*Стилизация номеров страниц*/
-.pagination-list {
-	list-style: none;
-	
+/*Разметка навигации страниц*/
+/*
+.pagination-list-box {
+	margin-bottom: 61px;
 }
+*/
+.pagination-list {
+	display: flex;
+	max-width: 286px;
+	justify-content: space-between;
+	padding-left: 20px;
+	list-style: none;
+	margin-bottom: 61px;
+}
+
 .pagination-list a,
 .pagination-item-current a,
 .button-next {
@@ -734,14 +843,14 @@ a {
 	line-height: 18px;
 	color: #000;
 	text-transform: uppercase;
-	padding: 14px;
+	padding: 11px 15px;
 	border: 1px solid #e5e5e5;
+	border-radius: 3px;
 }
 
 .pagination-item-current a {
 	color: #fff;
 	background-color: #ee3643;
-	
 }
 
 .pagination-list a:hover,
@@ -752,13 +861,16 @@ a {
 	outline: 0;
 }
 /*---------------------------*/
-.instrument-information {
+.instrument-information-box {
 	background-color: #f2f6f8;
 	margin: 0px;
 	padding: 0px;
 }
 
 .information-title {
+	margin: 0px;
+	padding-top: 69px;
+	padding-bottom: 33px;
 	font-size: 30px;
 	line-height: 30px;
 	font-weight: 400;
@@ -771,6 +883,7 @@ a {
 	line-height: 24px;
 	color: #000;
 	margin: 0px;
+	padding-bottom: 71px;
 }
 /*Модальные окна*/
 /*Стилизация попапа*/
@@ -832,29 +945,16 @@ a {
 	background-color: #293449;
 }
 
-.header-container,
-.site-navigation,
-.user-navigation {
-	display: flex;
-	flex-wrap: wrap;
-}
 
-.header-container {
-	align-items: center;
-}
-/*Расположение меню сайта*/
-.site-navigation {
-	width: 940px;
-	justify-content: space-between;
-	
-}
-.site-navigation-item:last-child {
+/*
+.site-navigation-item a:last-child {
 	padding-right: 55px;
 }
 
-.site-navigation-item:first-of-type {
+.site-navigation-item a:first-of-type {
 	padding-left: 52px;
 }
+*/
 
 /*Разметка центрального блока шапки*/
 
@@ -995,7 +1095,7 @@ a {
 }
 
 .popular-goods-model {
-	margin-left: 71px; 
+	margin-left: 71px;
 }
 
 .goods-item-image {
@@ -1004,7 +1104,7 @@ a {
 }
 
 .popular-goods-price a {
-	padding: 10px 15px 11px 37px; 
+	padding: 10px 15px 11px 37px;
 }
 
 /*------------------------------------*/
@@ -1015,23 +1115,6 @@ a {
 /*-----------------------------*/
 /*Разметка сервисы*/
 /*Расположение*/
-.service {
-	display: flex;
-/*	margin-left: 130px;*/
-}
-
-
-.service-list-box{
-	display: flex;
-	flex-direction: column;
-}
-
-.service-delivery {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-}
-
 
 
 /*-------------------------*/
@@ -1190,8 +1273,9 @@ a {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 700px;
-	margin: 0;
+	margin-top: 0;
 	margin-left: 20px;
+	margin-bottom: 35px;
 	padding: 0;
 }
 /*Стилизаия карточки товара на страние каталога*/
@@ -1241,33 +1325,39 @@ a {
 	margin-bottom: -16px;
 }
 .catalog-item-price {
-	padding: 10px 15px 11px 37px; 
+	padding: 10px 15px 11px 37px;
 }
 
 
-/*Разметка навигации страниц*/
-.pagination-list {
-	display: flex;
-	margin: 0;
+
+
+
+
+
+
+
+
+
+
+.visually-hidden:not(:focus):not(:active) {
+/*
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+*/
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
 	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -1277,4 +1367,4 @@ a {
 	padding: 0;
 	clip: rect(0 0 0 0);
 	overflow: hidden;
-}
+}*/
