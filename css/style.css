@@ -453,7 +453,7 @@ img {
 /*заголовок доставки*/
 .servece-delivery-caption {
 	margin: 0;
-	padding: 0;
+	padding-bottom: 30px;
 	font-size: 36px;
 	line-height: 36px;
 	font-weight: 400;
@@ -475,6 +475,10 @@ img {
 .service-delivery-box {
 	display: flex;
 	align-items: center;
+}
+
+.service-delivery {
+	margin-bottom: 30px;
 }
 
 .delivery-description,
