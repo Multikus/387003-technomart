@@ -522,6 +522,10 @@ img {
 	background-color: #f9f5f0;
 }
 
+.popular-manufacturer {
+	padding-bottom: 44px;
+}
+
 /*Кнопка все производители*/
 .popular-manufacturer-button-link {
 	font-size: 14px;
@@ -529,7 +533,7 @@ img {
 	color: #fff;
 	text-transform: uppercase;
 	align-self: center;
-	padding: 12px 70px 12px 70px;
+	padding: 10px 70px 10px 70px;
 	border-radius: 3px;
 	background-color: #ee3643;
 }
@@ -579,8 +583,8 @@ img {
 /*Заголовок сервиса*/
 .service-list-caption {
 	margin: 0;
-	padding: 0;
-	padding-top: 35px;
+	padding-top: 88px;
+	padding-bottom: 35px;
 	font-size: 30px;
 	line-height: 30px;
 	font-weight: 400;
@@ -631,8 +635,20 @@ img {
 	margin: 0;
 	padding: 73px 80px 80px 0px;
 }
-/*Стилизация списка*/
 
+.service-list-button a::after {
+	content: "";
+	top 50px;
+	right: 50px;
+	width: 10px;
+	height: 279px;
+	background-image: url(../img/svg/icon-close.svg);
+	background-color: red;
+	background-repeat: no-repeat;
+	z-index: 3;
+}
+
+/*Стилизация списка*/
 .service-list li:nth-of-type(3) {
 	border-bottom: 1px solid #4d627b;
 	border-top: 1px solid #4d627b;
@@ -669,15 +685,33 @@ img {
 }
 
 .service-delivery {
+	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 }
+
+/*Проблема с тенью*/
+.servece-delivery-caption::before {
+	position: absolute;
+	content: "";
+	top: -44px;
+	left: -89px;
+	width: 10px;
+	height: 272px;
+	background-image: url(../img/svg/shadow.svg);
+	background-repeat: no-repeat;
+	background-color: #d6d9db;
+}
+
 /*********************************/
 /*Блок компания техномарт*/
 /*Стилизация заголовков*/
 .company-title,
 .contact-title {
+	margin: 0;
+	padding-top: 104px;
+	padding-bottom: 35px;
 	font-size: 30px;
 	line-height: 30px;
 	font-weight: 400;
@@ -687,34 +721,107 @@ img {
 /*Стилизаия текста*/
 .company-description,
 .contact-description {
+	margin: 0;
+	padding-bottom: 25px;
 	font-size: 13px;
 	line-height: 24px;
 	font-weight: 400;
 	color: #000;
 }
+
+.contact-description {
+	display: block;
+	width: 180px;
+}
+
+.contact-map {
+	margin-bottom: 35px;
+}
+
 /*Стилизуем маркеры списка*/
 .company-partners {
+	position: relative;
 	list-style: none;
-	margin: 0;
+	margin-top: 0;
+	margin-bottom: 35px;
 	padding: 0;
 }
 /*Стилизация списка партнеров*/
 .company-partners-item {
+	padding-bottom: 15px;
+	padding-left: 35px;
 	font-size: 18px;
 	line-height: 20px;
 	font-weight: 400;
 	color: #000;
 }
+
+.row-1::before {
+	content: "";
+	position: absolute;
+	top: 9px;
+	left: 0;
+	width: 25px;
+	height: 2px;
+	background-image: url(../img/list-style-img.png);
+	background-repeat: no-repeat;
+}
+
+.row-2::before {
+	content: "";
+	position: absolute;
+	top: 43px;
+	left: 0;
+	width: 25px;
+	height: 2px;
+	background-image: url(../img/list-style-img.png);
+	background-repeat: no-repeat;
+}
+
+.row-3::before {
+	content: "";
+	position: absolute;
+	top: 78px;
+	left: 0;
+	width: 25px;
+	height: 2px;
+	background-image: url(../img/list-style-img.png);
+	background-repeat: no-repeat;
+}
+
 /*Стилизация текста кнопок*/
+.about-company,
+.contact-button-box {
+	padding: 0;
+	margin: 0;
+}
+
 .about-company-button,
 .contact-button {
+/*	display: block;*/
+	text-transform: uppercase;
 	font-size: 14px;
+	vertical-align: middle;
 	line-height: 28px;
 	font-weight: 400;
 	color: #fff;
-/*временный фон	удалить*/
-	background-color: red;
+	border-radius: 3px;
+	padding-top: 11px;
+	padding-bottom: 10px;
+	background-color: #ee3643;
 }
+
+.about-company-button {
+	padding-left: 41px;
+	padding-right: 40px;
+}
+
+.contact-button {
+	padding: 12px 59px 10px 63px;
+}
+
+
+
 /***********************************/
 /*стилизация футера*/
 .main-footer {
@@ -1316,7 +1423,7 @@ img {
 
 /*Добавить отступы в контейнер*/
 .popular-goods-button-link {
-	padding: 12px 55px 12px 55px;
+	padding: 10px 55px 10px 55px;
 	margin: 0;
 	border-radius: 3px;
 	align-self: center;
@@ -1404,6 +1511,7 @@ img {
 .company-contack-box {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 68px;
 }
 
 .company {

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="2" viewBox="0 0 25 2">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="272" viewBox="0 0 10 272">
   <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
 <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -27,5 +27,12 @@
                                                                                                     
                            
 <?xpacket end="w"?></metadata>
-<image id="Layer_23_copy_3" data-name="Layer 23 copy 3" width="25" height="2" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAACAQMAAACXNuV4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABlBMVEXuNkMAAAAu6XnIAAAAAWJLR0QB/wIt3gAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+IJDxcWN39nxyMAAAALSURBVAjXY2CAAQAACgAB5/ja+gAAAABJRU5ErkJggg=="/>
+<defs>
+    <style>
+      .cls-1 {
+        opacity: 0.25;
+      }
+    </style>
+  </defs>
+  <image class="cls-1" width="10" height="272" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAEQCAQAAAAjAS1/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCQ8WIgaUUV7ZAAACLklEQVRYw+1YSXLDMAwjNf7/k40e3EpcQC1ueqs7mUwQkgAhSk6tEi8VaUIuZZ9p5Eb680kbC9uqWbNfq5paRaqP1BE7QIxYJklzunLxmiWlmvr8UZeo+Iukd1AN0TzSwbGjJElzpIFbolHRTNSWvWtNlGo+0E7NDrN0Z11Id9CBzpbBVrjUkiCjU/t7swvXk/MSp3UnkaOreaS+S8+9S27T6FQfS9nphr2cQ4T9p0QH1aTT8eZbpgVBIlIcVlciopIkuySxzV6gWYLMruML5jw/FfPukDHzBtpKL4mc8+Zi6bogoulBp9kX23eu0k85uR+xAZsZEm6UJwunuUDLcWe9w0G7bfaOtIoMWkvnlaeX4G6bZhMu1/0Dfq5BrSOTS7pZ89y68gTb/WFWgvoxnf/gB0D8LRFEBALBx2qiioQHcVDztCMaiU3xP6/XRAZEBnv5x/W3fmK8T05v39ULQ0KbiNDWEj+NYtEmYnqQv6UztTmpKeUaDUFl+s6WMSXYamKh0wxjJFq1Cb9S2SVE9iLSsZvDYnlYYRaJxXzCUGEytDCxwjqi1iFOHYZ4uDj4/yY63RWg2qUrup7TgyQXmYdBBFNJliqIP2O/LRFYOiECJzLOs5rIm+uObYI7b8TDwLfcbw0pxd/+4cOeIW6W37RJrSs66nA0udgI95DkJjQOGEn/rrqlc70NnQJKND2XHFV+rliIl43I74vpJE9Kj357swet6Ub+q4e3MpH0BS6oFrCXW9HVAAAAAElFTkSuQmCC"/>
 </svg>
