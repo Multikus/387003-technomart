@@ -61,6 +61,7 @@ img {
 .main-header-logo {
 	width: 220px;
 	height: 42px;
+	box-shadow: 0px 5px 0px 0px #b52933;
 }
 
 /*Стилизация кнопки заказа*/
@@ -170,9 +171,16 @@ img {
 	border-style: none;
 	background-color: #293449;
 	color: #fff;
+	font-family: 'Cuprum', Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 18px;
+	background-color: #293449;
+	padding-left: 8px;
 	padding-top: 11px;
-	padding-bottom: 12px;
+	padding-bottom: 11px;
 }
+
 /*изменение цвета подсказки формы поиска Safari и Chrome*/
 .main-nav-search input[type="search"]::-webkit-input-placeholder {
 	color: #fff;
@@ -185,7 +193,9 @@ img {
 /*стилизация формы поиска*/
 .main-nav-search input:hover,
 .main-nav-search input:focus {
-	background-color: #212a3a;
+/*	background-color: #212a3a;*/
+	background-color: #fff;
+	color: #000;
 	outline: 0;
 }
 /*стилизация состояния наведения кнопки заказа*/
@@ -328,7 +338,9 @@ img {
 	margin: 0 auto;
 	width: 940px;
 	background-color: #32425c;
+	justify-content: space-between;
 }
+
 /*Стилизаяция ссылок в главном меню*/
 .header-container,
 .site-navigation,
@@ -346,7 +358,6 @@ img {
 	line-height: 17px;
 	color: #fff;
 	display: block;
-	vertical-align: middle;
 	padding: 22px 32px;
 	}
 
@@ -464,18 +475,226 @@ img {
 	text-transform: uppercase;
 }
 /*Стилизаия карточек товара*/
-.popular-goods-list {
+.catalog-item {
 	list-style: none;
 }
 
-.popular-goods-list img {
-	max-width: 217px;
-	height: auto;
+/*/////////////////////////////*/
+.catalog-items{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 940px;
+	border:1px solid #eaeaea;
+	position: relative;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
+
+.title,
+.discount,
+.price {
+	display: block;
+}
+
+.catalog-item:hover {
+	box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
+}
+
+.catalog-item {
+position: relative;
+width: 218px;
+margin-bottom: 20px;
+border: 1px solid #ccc;
+line-height: 20px;
+font-weight: bold;
+text-align: center;
+}
+
+.title {
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 20px;
+}
+
+.discount,
+.price {
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-size: 17px;
+	font-weight: bold;
+	line-height: 18px;
+}
+
+.catalog-item:nth-child(3n){
+	margin-right: 0;
+}
+.catalog-items{
+	font-size: 0;
+}
+.catalog-item{
+	font-size: 16px;
+}
+
+.flag-new::after {
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	top: 0;
+	right: 0;
+	background-image: url(../img/new-flag.png);
+	background-repeat: no-repeat;
+}
+
+.catalog-item .flag-new{
+	background: url("img/new-flag.png") no-repeat 0 0;
+}
+.catalog-item .actions{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 218px;
+	height: 88px;
+	padding: 40px 0;
+	z-index: 10;
+}
+.catalog-item .actions .buy,
+.catalog-item .actions .bookmark{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 7px;
+	padding: 7px 0;
+	border: 3px solid #63a63e;*/
+	border-bottom-color: #377416; 
+	background-color: #63a63e;
+	color: #fff;
+	font-size: 14px;
+	font-weight: normal;
+	font-family: "Cuprum", sans-serif;
+	line-height: 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 3px;
+}
+
+
+
+.actions {
+	position: relative;
+}
+
+.actions .buy {
+	width: 135px;
+	border-bottom: 3px solid #367315;
+}
+
+.actions .buy::before {
+	content: "";
+	position: absolute;
+	top: 48px;
+	left: 56px;
+	width: 15px;
+	height: 15px;
+	background-image: url(../img/svg/icon-cart.svg);
+	background-repeat: no-repeat;
+	opacity: 0.3;
+}
+
+.actions .buy:active::before,
+.actions .buy:focus::before,
+.actions .buy:hover::before {
+	opacity: 1;
+}
+
+
+.actions .bookmark{
+	width: 129px;
+	border: 3px solid #63a63e;
+}
+
+.catalog-item .actions .bookmark{
+	color: #32425c;
+	padding-left: 3px;
+	padding-right: 3px;
+	background: #fff;
+	border-bottom-color: #367315;
+}
+
+.actions .buy:focus,
+.actions .buy:hover {
+	background-color: #5fbb2d;
+	border-bottom-color: #377416;
+}
+
+.actions .buy:active {
+	background-color: #518534;
+}
+
+.actions .bookmark:focus,
+.actions .bookmark:hover {
+	border-color: #32425c;
+}
+
+.actions .bookmark:active {
+	border-color: #32425c;
+	opacity: 0.3;
+}
+
+.catalog-item .actions{
+	display: none;
+}
+.catalog-item:hover .actions{
+	background-color: #fff;
+	display: block;
+}
+.catalog-item .image{
+	width: 218px;
+	height: 168px;
+}
+.catalog-item .image img{
+	max-width: 100%;
+}
+.catalog-item .title{
+	min-height: 40px;
+	padding: 0 25px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+.catalog-item .discount{
+	min-height: 20px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	color: #aaaaaa;
+	text-decoration: line-through;
+}
+.catalog-item .price{
+	position: relative;
+	width: 80px;
+	margin: 10px auto;
+	margin-bottom: 20px;
+	padding: 10px 30px;
+	color: #fff;
+	background: #ee3643;
+	border-radius: 3px;
+}
+.catalog-item .price:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: -20px;
+	width: 0;
+	height: 0;
+	border: 20px solid #fff;
+	border-left-color: #ee3643;
+}
+
+/*/////////////////////////////*/
 
 /*марка товара. Верхняя строка*/
 .popular-goods-category {
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', Arial, sans-serif;
 	font-size: 18px;
 	line-height: 20px;
 	font-weight: bold;
@@ -493,7 +712,7 @@ img {
 /*Старая цена*/
 .popular-goods-old-price,
 .popular-goods-button {
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans', Arial, sans-serif;
 	font-size: 17px;
 	line-height: 18px;
 	font-weight: bold;
@@ -555,6 +774,17 @@ img {
 	margin-bottom: 20px;
 	border: 1px solid #eaeaea;
 }
+
+.popular-manufacturer-item:hover,
+.popular-manufacturer-item:focus {
+	box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
+}
+
+.popular-manufacturer-item:active {
+	box-shadow: 0px 7px 18px 0px rgba(41, 52, 73, 1);
+	opacity: 0.3;
+}
+
 
 .popular-manufacturer-item {
 	display: flex;
@@ -676,6 +906,12 @@ img {
 	background-color: #293449;
 	outline: 0;
 }
+
+.service-list-button a:active {
+	background-color: #fff;
+	color: #32425c;
+}
+
 /*Флексы для */
 
 .service-list-box{
@@ -698,10 +934,9 @@ img {
 	top: -44px;
 	left: -89px;
 	width: 10px;
-	height: 272px;
-	background-image: url(../img/svg/shadow.svg);
+	height: 279px;
+	background-image: url(../img/shadow.png);
 	background-repeat: no-repeat;
-	background-color: #d6d9db;
 }
 
 /*********************************/
@@ -865,24 +1100,51 @@ img {
 .footer-developed a {
 	color: #ffd180;
 }
-/*Убираем маркеры списка СС*/
-.social-button ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-/*фон для кнопок СС*/
-.social-button-ico {
-	background-color: #212a3a;
-	padding: 5px;
 
+.footer-developed a:active,
+.footer-feedback-box:active {
+	color: #ee3643;
 }
-/*фон для кнопок СС при наедении*/
-.social-button-ico:hover,
-.social-button-ico:focus {
-	background-color: #ee3643;
+
+.footer-developed a:hover,
+.footer-developed a:focus,
+.footer-feedback-box:hover,
+.footer-feedback-box:focus {
+	border-bottom: 1px solid #8d7d63;
 	outline: 0;
 }
+
+/*Убираем маркеры списка СС*/
+
+.footer-social-button {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	padding-left: 160px;
+	padding-right: 117px;
+	width: 135px;
+}
+
+.social {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	min-height: 40px;
+	background-color: #212a3a;
+	margin-right: 5px;
+	border-radius: 50%;
+}
+
+.social:hover,
+.social:focus,
+.social:active {
+  background-color: #ee3643;
+	outline: 0;
+}
+
 
 /*Стилизация при наведении*/
 .footer-nav a:hover,
@@ -1216,6 +1478,7 @@ img {
 .choose-category-box {
 	display: flex;
 	flex-wrap: wrap;
+	position: relative;
 }
 
 .category-list {
@@ -1401,11 +1664,126 @@ img {
 	text-transform: uppercase;
 	padding: 12px 45px 12px 49px;
 	left: 25px;
-	bottom: 27px;
+	bottom: 41px;
 	background-color: #ee3643;
 	border-radius: 3px;
 	color: #fff;
 }
+
+.gallery-content-second {
+	position: relative;
+}
+
+.gallery-content-second .gallery-header-name {
+	position: absolute;
+	top: 19px;
+	left: 24px;
+	font-size: 36px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.choose-category-btn {
+	position: absolute;
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	padding: 12px 45px 12px 49px;
+	left: 25px;
+	bottom: 41px;
+	background-color: #ee3643;
+	border-radius: 3px;
+	color: #fff;
+}
+
+.gallery-content-second {
+	position: absolute;
+	top: 162px;
+	left: 0;
+/*	z-index: 10;*/
+}
+
+.control-slider {
+	position: absolute;
+	left: 360px;
+	bottom: 136px;
+	z-index: 20;
+}
+
+.gallery-button-back {
+	position: absolute;
+	width: 22px;
+	height: 40px;
+	top: -150px;
+	left: -289px;
+}
+
+.gallery-button-back path {
+	background-color: rgba (255, 255, 255, 0);
+}
+
+.gallery-button-next {
+	position: absolute;
+	width: 22px;
+	height: 40px;
+	top: 30px;
+	right: 30px;
+}
+
+.slider-arrows label:nth-child(1) {
+	position: absolute;
+	left: -338px;
+	bottom: -26px;
+	width: 56px;
+	height: 56px;
+	box-shadow: 5px 5px 0px 1px #fff;
+	transform: rotate(-225deg) scale(0.5);
+}
+
+.slider-arrows label:nth-child(2) {
+	position: absolute;
+	left: 189px;
+	bottom: -26px;
+	width: 56px;
+	height: 56px;
+	box-shadow: 5px 5px 0px 1px #fff;
+	transform: rotate(-45deg) scale(0.5);
+}
+
+.control-slider input[type=button] {
+  display: none;
+}
+
+.control-slider input[type=radio] {
+	display: none;
+}
+
+.slider-control label {
+  border-radius: 50%;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 13px 3px;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  z-index: 100;
+  position: relative;
+	top: 107px;
+	left: -64px;
+  vertical-align: middle;
+}
+
+.slider-control label:nth-child(1) {
+	background-color: #ef414d;
+}
+
+/*//////////////////////////////*/
+/*//////////////////////////////*/
+/*Управляющие элементы*/
+
+
+
 /*/////////////////////////////////*/
 /***********************************/
 
@@ -1414,11 +1792,13 @@ img {
 
 
 /*Второй слайд галереи скрыт*/
+/*
 .gallery-content-second,
 .control-slider,
 .hidden-box {
 	display: none;
 }
+*/
 /*Заголовок популярных товаров*/
 
 /*Добавить отступы в контейнер*/
@@ -1430,53 +1810,22 @@ img {
 	background-color: #ee3643;
 }
 
-/*---------------------------------*/
-/*Популярные товары*/
-.popular-goods-list {
-	display: flex;
-	width: 940px;
-	padding: 0;
-}
-
-.popular-goods-list li {
-	width: 218px;
-	border: 1px solid #eaeaea;
-}
-.popular-goods-list li:nth-of-type(2) {
-	margin-left: 20px;
-	margin-right: 20px;
-}
-.popular-goods-list li:nth-of-type(3) {
-	margin-right: 20px;
-}
-/*Стилизация внутри карточки товара*/
-.popular-goods-item {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.goods-item-image {
-	position: relative;
-}
-
-.popular-goods-item h3 {
-	order: 2;
-	margin: 0;
-	margin-bottom: 15px;
-}
-
 .popular-goods-old-price {
 	align-self: center;
 	margin: 0;
+	text-align: center;
 	margin-bottom: 13px;
 	order: 3;
+}
+
+.hidden-price {
+	visibility: hidden;
 }
 
 .popular-goods-price {
 	align-self: center;
 	order: 4;
-	margin-bottom: 30px
+	margin-bottom: 11px;
 }
 
 .popular-goods-category {
@@ -1493,18 +1842,27 @@ img {
 }
 
 .popular-goods-price a {
-	padding: 10px 15px 11px 37px;
+	display: block;
+	width: 140px;
+	padding: 10px 30px;
+	position: relative;
+	margin: 0 auto 13px;
+	background-color: #ee3643;
+	box-sizing: border-box;
+	border-radius: 3px 0px 0px 3px;
 }
 
-/*------------------------------------*/
-/*Популярные производители*/
-/*Заголовок*/
-
-
-/*-----------------------------*/
-/*Разметка сервисы*/
-/*Расположение*/
-
+.popular-goods-price a::after {
+	position: absolute;
+  top: 0;
+  right: -20px;
+  content: '';
+  display: block;
+  width: 0px;
+  min-height: 0px;
+  border: 19px solid #ffffff;
+  border-left-color: #ee3643;
+}
 
 /*-------------------------*/
 /*Блок о компании*/
@@ -1535,6 +1893,10 @@ img {
 	padding: 0;
 }
 
+.footer-logo img {
+	box-shadow: 0px 5px 0px 0px #b52933;
+}
+
 .footer-line-top {
 	display: flex;
 	width: 940px;
@@ -1555,10 +1917,6 @@ img {
 }
 
 .footer-category-nav {
-	display: flex;
-}
-
-.social-button ul {
 	display: flex;
 }
 
@@ -1602,9 +1960,6 @@ img {
 .footer-feedback {
 	margin-right: 52px;
 }
-
-
-
 
 /*Сетка для страницы каталога*/
 .user-navigation-box {
@@ -1669,12 +2024,6 @@ img {
 	padding: 0;
 }
 /*Стилизаия карточки товара на страние каталога*/
-.catalog-item {
-	display: flex;
-  flex-direction: column;
-	justify-content: space-between;
-}
-
 .catalog-list li {
 	width: 218px;
 	border: 1px solid #eaeaea;
@@ -1722,13 +2071,6 @@ img {
 
 
 
-
-
-
-
-
-
-
 .visually-hidden:not(:focus):not(:active) {
 /*
 input[type="checkbox"].visually-hidden,
@@ -1745,16 +2087,3 @@ input[type="radio"].visually-hidden {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
-
-
-/*
-.visually-hidden {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	border: 0;
-	padding: 0;
-	clip: rect(0 0 0 0);
-	overflow: hidden;
-}*/
