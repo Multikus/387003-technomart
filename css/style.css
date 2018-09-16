@@ -503,13 +503,13 @@ img {
 }
 
 .catalog-item {
-position: relative;
-width: 218px;
-margin-bottom: 20px;
-border: 1px solid #ccc;
-line-height: 20px;
-font-weight: bold;
-text-align: center;
+	position: relative;
+	width: 218px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	line-height: 20px;
+	font-weight: bold;
+	text-align: center;
 }
 
 .title {
@@ -1141,7 +1141,7 @@ text-align: center;
 .social:hover,
 .social:focus,
 .social:active {
-  background-color: #ee3643;
+	background-color: #ee3643;
 	outline: 0;
 }
 
@@ -1759,46 +1759,28 @@ text-align: center;
 }
 
 .slider-control label {
-  border-radius: 50%;
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin: 13px 3px;
-  cursor: pointer;
-  border: 2px solid #ffffff;
-  background-color: #ffffff;
-  z-index: 100;
-  position: relative;
+	border-radius: 50%;
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	margin: 13px 3px;
+	cursor: pointer;
+	border: 2px solid #ffffff;
+	background-color: #ffffff;
+	z-index: 100;
+	position: relative;
 	top: 107px;
 	left: -64px;
-  vertical-align: middle;
+	vertical-align: middle;
 }
 
 .slider-control label:nth-child(1) {
 	background-color: #ef414d;
 }
 
-/*//////////////////////////////*/
-/*//////////////////////////////*/
 /*Управляющие элементы*/
-
-
-
 /*/////////////////////////////////*/
-/***********************************/
 
-
-
-
-
-/*Второй слайд галереи скрыт*/
-/*
-.gallery-content-second,
-.control-slider,
-.hidden-box {
-	display: none;
-}
-*/
 /*Заголовок популярных товаров*/
 
 /*Добавить отступы в контейнер*/
@@ -2066,8 +2048,6 @@ text-align: center;
 .catalog-item-price {
 	padding: 10px 15px 11px 37px;
 }
-
-
 
 
 
