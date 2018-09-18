@@ -24,11 +24,11 @@
 							</p>
 						</form>
 
-						<p class="nav-about-order">
+						<div class="nav-about-order">
 							<span class="nav-bookmarks">Закладки: 0</span>
-							<span class="nav-goods-basket">Корзина: 0</span>
+							<span class="nav-goods-basket">Корзина: 10</span>
 							<a href="#" class="button">Оформить заказ</a>
-						</p>
+						</div>
 					</div>
 				</div>
 				<div class="header-central-box">
@@ -40,17 +40,48 @@
 						<span class="nav-contacts-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
 						</span>
 					</p>
+					
+					
+					
+					
 					<div class="user-navigation-box">
-						<p class="user-name">Равшан Джамшутович</p>
+					
+						<div class="user-name-login">
+							<a class="user-name" href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18"><path fill="#c5c5c5" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/>
+								</svg>
+								Равшан Джамшутович
+							</a>
+							
+							<a class="user-logout" href="#">
+								<span class="visually-hidden">Выйти</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"><g fill="#c5c5c5"><path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g></svg>
+							</a>
+							
+						</div>
+						
+						
+						
 						<ul class="user-navigation-catalog">
+						
+						
 							<li class="user-order">
-								<a href="#">Мои заказы</a>
+								<a class="user-link user-link-order" href="#">Мои заказы</a>
 							</li>
+							
+							
 							<li class="user-cabinet">
-								<a href="#">Личный кабинет</a>
+								<a class="user-link user-link-personal" href="#">Личный кабинет</a>
 							</li>
+							
+							
 						</ul>
 					</div>
+					
+					
+					
+					
+					
 				</div>
 					<ul class="site-navigation">
 						<h3 class="visually-hidden">Главное меню сайта</h3>
@@ -82,15 +113,20 @@
 			<main class="main-container">
 		<!--			Хлебные крошки-->
 				<div class="container">
+					
+					
 					<ul class="breadcrumbs">
-						<li>
+					
+						<li class="icon-home">
 							<a href="index.html">
-								<img class="breadcrumbs-home-ico" src="img/svg/icon-home.svg" alt="графическое изображение ссылки на главную страницу">
+								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12"><g fill="#C1C6CE"><path d="M3 8v4h4V8h2v4h4V8L8 3.516z"/><path d="M14.831 6.365L13 4.751V0h-2v2.987L8.332.635c-.02-.017-.043-.023-.064-.037a.465.465 0 0 0-.08-.047.551.551 0 0 0-.095-.024C8.062.521 8.032.515 8 .515c-.031 0-.061.006-.092.012a.46.46 0 0 0-.095.025c-.028.011-.053.029-.08.046-.021.014-.045.02-.064.037l-6.498 5.73a.501.501 0 0 0 .33.875.497.497 0 0 0 .331-.125L8 1.677l6.169 5.438a.501.501 0 0 0 .662-.75z"/></g>
+								</svg>
 							</a>
 						</li>
-						<li><a href="catalog.html">Каталог</a></li>
-						<li><a href="instrument.html">Инструмент</a></li>
-						<li class="breadcrumbs-current">Перфораторы</li>
+						
+						<li class="icon-right"><a href="catalog.html">Каталог</a></li>
+						<li class="icon-right"><a href="instrument.html">Инструмент</a></li>
+						<li class="icon-right breadcrumbs-current">Перфораторы</li>
 					</ul>
 
 					<section class="catalog-title">
@@ -105,76 +141,131 @@
 							<fieldset class="filter-price">
 								<legend class="label-form">Цена:</legend>
 								<h3 class="visually-hidden">Фильтр сортировки товаров по цене</h3>
-									<div class="input-form-container">
-										<input id="filter-price" type="range" min="0" max="30000" step="1">	
-										<input type="text" value="0"> - 
-										<input type="text" value="30000">
+									
+								<div class="filter-price-box">
+									<div class="scale">
+										<div class="bar"></div>
 									</div>
+									<div class="toggle toggle-min"></div>
+									<div class="toggle toggle-max"></div>
+								</div>
+
+								<div class="main-form-input-box">
+									<label class="min-price">
+										<span class="visually-hidden">от</span>
+										<input name="min-price" type="text" value="0"></label>
+									<span class="dash"></span>
+									<label class="max-price">
+										<span class="visually-hidden">до</span>
+										<input name="max-price" type="text" value="30000"></label>
+								</div>
+									
 							</fieldset>
 								<div class="manufacturers-line">
 									<fieldset class="filter-manufacturers">
 										<h3 class="visually-hidden">Фильтр сортировки товаров по производителю</h3>
-										<legend class="label-form">Производители:</legend>	
-										<ul>
-											<li>
-												<input type="checkbox" name="bosch" id="filter-bosch" checked>
+										
+										<legend class="label-form">Производители:</legend>
+										
+										
+										
+										<ul class="filter-manufacturers-list">
+										
+											<li class="filter-select filter-on">
+												<input  class="visually-hidden" type="checkbox" name="bosch" id="filter-bosch" checked>
 												<label class="label-form" for="filter-bosch">Bosch</label>
 											</li>
-											<li>
-												<input type="checkbox" name="interskol" id="filter-interskol">
+											
+											<li class="filter-select filter-off">
+												<input  class="visually-hidden" type="checkbox" name="interskol" id="filter-interskol">
 												<label class="label-form" for="filter-interskol">Интерскол</label>
 											</li>
-											<li>
-												<input type="checkbox" name="makita" id="filter-bosch" checked>
+											
+											<li class="filter-select filter-on">
+												<input  class="visually-hidden" type="checkbox" name="makita" id="filter-bosch" checked>
 												<label class="label-form" for="filter-makita">Makita</label>
 											</li>
-											<li>
-												<input type="checkbox" name="dewalt" id="filter-dewalt">
+											
+											<li class="filter-select filter-off">
+												<input  class="visually-hidden" type="checkbox" name="dewalt" id="filter-dewalt">
 												<label class="label-form" for="filter-dewalt">Dewalt</label>
 											</li>
-											<li>
-												<input type="checkbox" name="hitachi" id="filter-hitachi">
+											
+											<li class="filter-select filter-off">
+												<input  class="visually-hidden" type="checkbox" name="hitachi" id="filter-hitachi">
 												<label class="label-form" for="filter-hitachi">Hitachi</label>
 											</li>
-										</ul>	
+										</ul>
+										
 									</fieldset>
 								</div>
-							<fieldset class="filter-feature">
+								
+								
+								
+								
+								
+							<fieldset class="power-supply">
 
 								<h3 class="visually-hidden">Фильтр сортировки товаров по дополнительным характеристикам</h3>
+
 								<legend class="label-form">Питание:</legend>
-									<ul>
-										<li>
-											<input type="radio" name="feature-group" value="battery" id="filter-battery" checked>
+									<ul class="power-supply-list">
+										
+										<li class="filter-select filter-on">
+										
+											<input class="visually-hidden filter-input filter-input-radio" type="radio" name="feature-group" value="battery" id="filter-battery" checked>
+											
 											<label class="label-form" for="filter-battery">Аккумуляторные</label>
 										</li>
-										<li>
-											<input type="radio" name="feature-group" value="network" id="filter-network">
-											<label class="label-form" for="filter-network">Сетеые</label>
+										
+										<li class="filter-select filter-off">
+										
+											<input class="visually-hidden filter-input filter-input-radio" type="radio" name="feature-group" value="network" id="filter-network">
+											
+											<label class="label-form" for="filter-network">Сетевые</label>
+											
 										</li>
 									</ul>
 							</fieldset>
+							
+							
+							
 								<span class="visually-hidden">Кнопка применения установленных фильтров</span>
-									<button class="form-submit" type="submit">Показать</button>
+									<button class="form-submit btn-catalog" type="submit">Показать</button>
 						</form>
 						</div>
+						
+						
+						
+						
+						
+						
+						
+						
 
 						<div class="filters-instrument-box">
+							
 							<section class="filters-instrument">
+							
 								<h2 class="filters-instrument-title">Сортировка:</h2>
 					<!--			сортировка товаров -->
 								<h3 class="visually-hidden">Выбор направления сортировки товаров от большего к меньшему</h3>
+								
 								<ul class="filters-choise-sorting">
-									<li>
-										<a href="#" class="direction-sort" >По цене</a>
+								
+									<li class="choise-sorting-current ">
+										<a href="#" class="direction-sort-current" >По цене</a>
 									</li>
+									
+									
 									<li>
 										<a href="#" class="direction-sort">По типу</a>
 									</li>
 									<li>
 										<a href="#" class="direction-sort">По функционалу</a>
 									</li>
-									<li>
+									
+									<li class="ascending-sort ascending-sort-on">
 										<a href="#" class="sort-button-up">
 											<span class="visually-hidden">Сортировка товаров от меньшего к большему</span>
 											<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
@@ -182,7 +273,8 @@
 											</svg>
 										</a>
 									</li>
-									<li>
+									
+									<li class="descending-sort">
 										<a href="#" class="sort-button-down">
 											<span class="visually-hidden">Сортировка товаров от большего к меньшему</span>
 											<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
