@@ -154,17 +154,43 @@ img {
 	position: relative;
 }
 
-.main-nav-search p::before {
-	content: "";
-	position: absolute;
-	top: 12px;
-	left: -32px;
-	width: 16px;
-	height: 17px;
-	background-image: url(../img/svg/icon-search.svg);
-	background-repeat: no-repeat;
-	background-position: 0 0;
-	opacity: 0.3;
+/*///////////////////////////*/
+
+.search-submit{
+  position: absolute;
+  top: 10px;
+  left: -36px;
+  
+  border: none;
+  background: none;
+  
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.main-nav-search input:active ~ .search-submit path,
+.nav-search:active ~ .search-submit {
+  fill: #ee3643;
+	opacity: 1;
+}
+
+.main-nav-search input:hover ~ .search-submit,
+.search-submit:hover {
+  opacity: 1;
+}
+
+.main-nav-search input:active ~ .search-submit,
+.search-submit:active {
+  opacity: 0.5;
+}
+
+/*стилизация формы поиска*/
+.main-nav-search input:hover,
+.main-nav-search input:focus {
+/*	background-color: #212a3a;*/
+	background-color: #fff;
+	color: #000;
+	outline: 0;
 }
 
 /*форма поиска спокойное состояние*/
@@ -191,14 +217,7 @@ img {
 .main-nav-search input[type="search"]::-moz-placeholder {
 	color: #fff;
 }
-/*стилизация формы поиска*/
-.main-nav-search input:hover,
-.main-nav-search input:focus {
-/*	background-color: #212a3a;*/
-	background-color: #fff;
-	color: #000;
-	outline: 0;
-}
+
 /*стилизация состояния наведения кнопки заказа*/
 .nav-about-order .button:hover,
 .nav-about-order .button:focus {
@@ -494,6 +513,14 @@ img {
 	border-radius: 3px;
 }
 
+.choose-category-button:hover,
+.choose-category-button:focus {
+	background-color: #cccccc;
+}
+
+.choose-category-button:active {
+	background-color: #b2b2b2;
+}
 
 /*список категорий, список управляющих эл-в*/
 .category-list,
@@ -742,7 +769,7 @@ img {
 	right: -20px;
 	width: 0;
 	height: 0;
-	border: 20px solid #fff;
+	border: 19px solid #fff;
 	border-left-color: #ee3643;
 }
 
@@ -1089,7 +1116,6 @@ img {
 
 .about-company-button,
 .contact-button {
-/*	display: block;*/
 	text-transform: uppercase;
 	font-size: 14px;
 	vertical-align: middle;
@@ -1392,11 +1418,8 @@ img {
 /*------------------------------------*/
 /*Стилизация номеров страниц*/
 /*Разметка навигации страниц*/
-/*
-.pagination-list-box {
-	margin-bottom: 61px;
-}
-*/
+
+
 .pagination-list {
 	display: flex;
 	max-width: 286px;
@@ -1430,6 +1453,11 @@ img {
 .button-next:focus {
 	border: 1px solid #bdc6ca;
 	outline: 0;
+}
+
+.pagination-item a:active,
+.button-next:active {
+	border: 1px solid #ee3643;
 }
 /*---------------------------*/
 .instrument-information-box {
@@ -1540,6 +1568,7 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	position: relative;
+	margin-bottom: 54px;
 }
 
 .category-list {
@@ -1563,6 +1592,19 @@ img {
 .two-card .choose-category-button {
 	background-color: #35a9cc;
 }
+
+.two-card .choose-category-button:hover,
+.two-card .choose-category-button:focus,
+.tree-card .choose-category-button:hover,
+.tree-card .choose-category-button:focus {
+	background-color: #cccccc;
+}
+
+.two-card .choose-category-button:active,
+.tree-card .choose-category-button:active {
+	background-color: #b2b2b2;
+}
+
 .tree-card {
 	position: relative;
 	background-color: #dc91d8;
@@ -1690,19 +1732,49 @@ img {
 	margin-top: 20px;
 }
 
-.gallery-content a {
-	margin: 0;
-	padding: 0;
-}
+/*
 
 /*Позиионирование элементов галереи*/
 .gallery {
 	position: relative;
 }
 
+.gallery-promo {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.gallery-promo li:nth-child(1) {
+	width: 620px;
+	height: 266px;
+	background-image: url(../img/man-with-drill.jpg);
+}
+
+.gallery-promo li:nth-child(2) {
+	width: 620px;
+	height: 266px;
+	background-image: url(../img/man-with-puncher.jpg);
+}
+
+.gallery-item-promo:nth-child(1) {
+/*	display: none;*/
+	display: block;
+}
+
+.gallery-item-promo:nth-child(2) {
+/*	display: block;*/
+	display: none;
+}
+
+
+
+
+
+
 .gallery-header-name {
 	position: absolute;
-	top: 19px;
+	top: 26px;
 	left: 24px;
 	font-size: 36px;
 	font-weight: bold;
@@ -1711,11 +1783,17 @@ img {
 
 .gallery-header-item {
 	position: absolute;
-	top: 60px;
+	top: 67px;
 	left: 24px;
+	font-family: "PT sans", Arial, sans-serif;
+	font-weight: 400;
 	font-size: 18px;
 	line-height: 24px;
 	color: #fff;
+}
+
+.drill-description {
+	font-family: "Cuprum", Arial, sans-serif;
 }
 
 .gallery-category-button {
@@ -1725,22 +1803,9 @@ img {
 	text-transform: uppercase;
 	padding: 12px 45px 12px 49px;
 	left: 25px;
-	bottom: 41px;
+	bottom: 21px;
 	background-color: #ee3643;
 	border-radius: 3px;
-	color: #fff;
-}
-
-.gallery-content-second {
-	position: relative;
-}
-
-.gallery-content-second .gallery-header-name {
-	position: absolute;
-	top: 19px;
-	left: 24px;
-	font-size: 36px;
-	font-weight: bold;
 	color: #fff;
 }
 
@@ -1751,18 +1816,21 @@ img {
 	text-transform: uppercase;
 	padding: 12px 45px 12px 49px;
 	left: 25px;
-	bottom: 41px;
+	bottom: 21px;
 	background-color: #ee3643;
 	border-radius: 3px;
 	color: #fff;
 }
 
-.gallery-content-second {
-	position: absolute;
-	top: 162px;
-	left: 0;
-/*	z-index: 10;*/
+.choose-category-btn:hover,
+.choose-category-btn:focus {
+	background-color: #ca2c37;
 }
+
+.choose-category-btn:active {
+	background-color: #ba2732;
+}
+
 
 .control-slider {
 	position: absolute;
@@ -1794,7 +1862,7 @@ img {
 .slider-arrows label:nth-child(1) {
 	position: absolute;
 	left: -338px;
-	bottom: -26px;
+	bottom: -33px;
 	width: 56px;
 	height: 56px;
 	box-shadow: 5px 5px 0px 1px #fff;
@@ -1804,7 +1872,7 @@ img {
 .slider-arrows label:nth-child(2) {
 	position: absolute;
 	left: 189px;
-	bottom: -26px;
+	bottom: -33px;
 	width: 56px;
 	height: 56px;
 	box-shadow: 5px 5px 0px 1px #fff;
@@ -2283,31 +2351,41 @@ color: #cacaca;
 	font-family: "PT sans", Arial, sans-serif;
 	font-size: 15px;
 	line-height: 20px;
-	color: #000000;
+	color: #000;
 	text-transform: uppercase;
 	font-weight: 500;
 }
 
-.filter-manufacturers-list .filter-on::before {
+
+.filter-checkbox:checked + label::before {
 	content: "";
 	position: absolute;
-	width: 27px;
-	height: 23px;
-	top: -2px;
 	left: -34px;
-	background-image: url(../img/svg/checkbox-on.svg);
-	background-repeat: no-repeat;
+	top: -2px;
+	width: 26px;
+	height: 26px;
+	background: url("../img/svg/checkbox-on.svg") no-repeat;
+	opacity: 0.5;
 }
 
-.filter-manufacturers-list .filter-off::before {
+.filter-checkbox + label::before {
 	content: "";
 	position: absolute;
-	width: 27px;
-	height: 23px;
-	top: -2px;
 	left: -34px;
-	background-image: url(../img/svg/checkbox-off.svg);
-	background-repeat: no-repeat;
+	top: -2px;
+	width: 24px;
+	height: 24px;
+	background: urL("../img/svg/checkbox-off.svg") no-repeat;
+	opacity: 0.5;
+}
+
+.filter-checkbox + label:hover::before,
+.filter-checkbox + label:focus::before{
+	opacity: 1;
+}
+
+.filter-checkbox + label:active::before {
+	opacity: 0.3;
 }
 
 .filters .filter-manufacturers-list {
@@ -2330,26 +2408,36 @@ color: #cacaca;
 	font-weight: 500;
 }
 
-.power-supply-list .filter-on::before {
+/*Стилизация радибатонов*/
+.filter-input + label::before{
 	content: "";
 	position: absolute;
-	width: 25px;
-	height: 25px;
-	top: -2px;
-	left: -34px;
-	background-image: url(../img/svg/radio-on.svg);
-	background-repeat: no-repeat;
+	left: -35px;
+	top: -3px;
+	width: 26px;
+	height: 26px;
+	background: urL("../img/svg/radio-off.svg") no-repeat;
+	opacity: 0.5;
 }
 
-.power-supply-list .filter-off::before {
+.filter-input:checked + label::before {
 	content: "";
 	position: absolute;
-	width: 25px;
-	height: 25px;
-	top: -2px;
-	left: -34px;
-	background-image: url(../img/svg/radio-off.svg);
-	background-repeat: no-repeat;
+	left: -35px;
+	top: -3px;
+	width: 26px;
+	height: 26px;
+	background: url("../img/svg/radio-on.svg") no-repeat;
+	opacity: 0.5;
+}
+
+.filter-input + label:hover::before,
+.filter-input + label:focus::before {
+	opacity: 1;
+}
+
+.filter-input + label:active::before {
+	opacity: 0.3;
 }
 
 .power-supply-list {
