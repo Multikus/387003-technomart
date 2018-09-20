@@ -60,7 +60,8 @@ img {
 .main-header-logo {
 	width: 220px;
 	height: 42px;
-	box-shadow: 0px 5px 0px 0px #b52933;
+	-webkit-box-shadow: 0px 5px 0px 0px #b52933;
+	        box-shadow: 0px 5px 0px 0px #b52933;
 }
 
 /*Стилизация кнопки заказа*/
@@ -97,8 +98,8 @@ img {
 	position: relative;
 	padding-top: 11px;
 	padding-bottom: 11px;
-	padding-right: 18px;
-	padding-left: 40px;
+	padding-right: 24px;
+	padding-left: 41px;
 }
 
 .nav-bookmarks::before {
@@ -142,6 +143,8 @@ img {
 
 .main-nav-search p,
 .nav-about-order {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin: 0;
 	padding: 0;
@@ -150,7 +153,7 @@ img {
 
 /*Поле поиска*/
 .main-nav-search p {
-	margin-left: 49px;
+	margin-left: 41px;
 	position: relative;
 }
 
@@ -158,8 +161,8 @@ img {
 
 .search-submit{
   position: absolute;
-  top: 10px;
-  left: -36px;
+  top: 9px;
+  left: -31px;
   
   border: none;
   background: none;
@@ -198,7 +201,7 @@ img {
 	border-style: none;
 	background-color: #293449;
 	color: #fff;
-	font-family: 'Cuprum', Arial, Helvetica, sans-serif;
+	font-family: 'Cuprum', Arial,    sans-serif;
 	font-weight: normal;
 	font-size: 17px;
 	line-height: 18px;
@@ -325,7 +328,8 @@ img {
 
 .user-navigation {
 	margin-top: 12px;
-	align-self: flex-start;
+	-ms-flex-item-align: start;
+			align-self: flex-start;
 }
 
 .login-link-registration {
@@ -362,18 +366,25 @@ img {
 
 /*Стилизация контейнера главного меню*/
 .site-navigation {
+	-webkit-box-sizing: border-box;
+					box-sizing: border-box;
 	margin: 0 auto;
 	width: 940px;
 	background-color: #32425c;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+					justify-content: space-between;
 }
 
 /*Стилизаяция ссылок в главном меню*/
 .header-container,
 .site-navigation,
 .user-navigation {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
 }
 
 .site-navigation {
@@ -381,16 +392,33 @@ img {
 }
 
 .header-container {
-	align-items: center;
+	-webkit-box-align: center;
+			-ms-flex-align: center;
+					align-items: center;
 }
 /*Расположение меню сайта*/
 .site-navigation a {
+	display: block;
 	font-size: 17px;
 	line-height: 17px;
 	color: #fff;
 	display: block;
-	padding: 22px 32px;
+/*	padding: 0;*/
+	padding-top: 22px;
+	padding-bottom: 22px;
+	padding-right: 30px;
+	padding-left: 31px;
+/*	padding: 22px 25px;*/
 	}
+
+.site-navigation-item .indentation-right {
+	padding-right: 55px;
+}
+
+.site-navigation-item .indentation-left {
+	padding-left: 51px;
+}
+
 
 /*стилизация состояния наведения главного меню*/
 .site-navigation-item a:hover,
@@ -421,6 +449,8 @@ img {
 .breadcrumbs {
 	margin: 0;
 	padding: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	position: relative;
 	list-style: none;
@@ -533,9 +563,14 @@ img {
 
 /*фон для заголовка*/
 .popular-goods-box {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	width: 894px;
 	padding-right: 16px;
 	padding-left: 30px;
@@ -564,9 +599,14 @@ img {
 
 /*/////////////////////////////*/
 .catalog-items{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+	-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+					justify-content: space-between;
 	width: 940px;
 	border:1px solid #eaeaea;
 	position: relative;
@@ -582,7 +622,8 @@ img {
 }
 
 .catalog-item:hover {
-	box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
+	-webkit-box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
+					box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
 }
 
 .catalog-item {
@@ -662,8 +703,6 @@ img {
 	border-radius: 3px;
 }
 
-
-
 .actions {
 	position: relative;
 }
@@ -742,7 +781,7 @@ img {
 .catalog-item .title{
 	min-height: 40px;
 	padding: 0 25px;
-	margin-top: 5px;
+	margin-top: 14px;
 	margin-bottom: 15px;
 }
 .catalog-item .discount{
@@ -814,12 +853,17 @@ img {
 /*************************************/
 /*Блок заголовка поп. произв-ей*/
 .popular-manufacturer-header {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
 	width: 894px;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+					justify-content: space-between;
 	margin-bottom: 20px;
-	padding-left: 30px;
+	padding-left: 22px;
 	padding-right: 16px;
 	background-color: #f9f5f0;
 }
@@ -834,7 +878,9 @@ img {
 	line-height: 18px;
 	color: #fff;
 	text-transform: uppercase;
-	align-self: center;
+	-ms-flex-item-align: center;
+			-ms-grid-row-align: center;
+			align-self: center;
 	padding: 10px 70px 10px 70px;
 	border-radius: 3px;
 	background-color: #ee3643;
@@ -845,10 +891,15 @@ img {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
 	width: 940px;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+					justify-content: space-between;
 }
 
 .popular-manufacturer-item {
@@ -860,16 +911,20 @@ img {
 
 .popular-manufacturer-item:hover,
 .popular-manufacturer-item:focus {
-	box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
+	-webkit-box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
+					box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
 }
 
 .popular-manufacturer-item:active {
-	box-shadow: 0px 7px 18px 0px rgba(41, 52, 73, 1);
+	-webkit-box-shadow: 0px 7px 18px 0px rgba(41, 52, 73, 1);
+					box-shadow: 0px 7px 18px 0px rgba(41, 52, 73, 1);
 	opacity: 0.3;
 }
 
 
 .popular-manufacturer-item {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 .manufacturer-logo-link {
@@ -884,11 +939,12 @@ img {
 /*Стилизация блока сервисы*/
 /*Общие параметры для всего блока*/
 .service {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	background-image: url(../img/service-truck.png);
 	background-repeat: no-repeat;
 	background-position: right bottom;
-/*	*/
 }
 .service-box {
 	background-color: #f4f8f9;
@@ -927,8 +983,12 @@ img {
 
 /*Контейнер для списка и блока доставки*/
 .service-delivery-box {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+			-ms-flex-align: center;
+				align-items: center;
 }
 
 .service-delivery {
@@ -1028,8 +1088,8 @@ img {
 .company-title,
 .contact-title {
 	margin: 0;
-	padding-top: 104px;
-	padding-bottom: 35px;
+	padding-top: 91px;
+	padding-bottom: 26px;
 	font-size: 30px;
 	line-height: 30px;
 	font-weight: 400;
@@ -1040,7 +1100,7 @@ img {
 .company-description,
 .contact-description {
 	margin: 0;
-	padding-bottom: 25px;
+	padding-bottom: 23px;
 	font-size: 13px;
 	line-height: 24px;
 	font-weight: 400;
@@ -1061,12 +1121,12 @@ img {
 	position: relative;
 	list-style: none;
 	margin-top: 0;
-	margin-bottom: 35px;
+	margin-bottom: 24px;
 	padding: 0;
 }
 /*Стилизация списка партнеров*/
 .company-partners-item {
-	padding-bottom: 15px;
+	padding-bottom: 19px;
 	padding-left: 35px;
 	font-size: 18px;
 	line-height: 20px;
@@ -1088,7 +1148,7 @@ img {
 .row-2::before {
 	content: "";
 	position: absolute;
-	top: 43px;
+	top: 48px;
 	left: 0;
 	width: 25px;
 	height: 2px;
@@ -1099,7 +1159,7 @@ img {
 .row-3::before {
 	content: "";
 	position: absolute;
-	top: 78px;
+	top: 87px;
 	left: 0;
 	width: 25px;
 	height: 2px;
@@ -1112,6 +1172,7 @@ img {
 .contact-button-box {
 	padding: 0;
 	margin: 0;
+	margin-bottom: 10px
 }
 
 .about-company-button,
@@ -1575,6 +1636,7 @@ img {
 	display: flex;
 	justify-content: space-between;
 	width: 940px;
+	margin-top: 50px;
 }
 
 .category-item {
@@ -1584,10 +1646,12 @@ img {
 .first-card {
 	position: relative;
 	background-color: #ffbf47;
+	margin-top: 0;
 }
 .two-card {
 	position: relative;
 	background-color: #3bbce3;
+	margin-top: 0;
 }
 .two-card .choose-category-button {
 	background-color: #35a9cc;
@@ -1608,6 +1672,7 @@ img {
 .tree-card {
 	position: relative;
 	background-color: #dc91d8;
+	margin-top: 0;
 }
 .tree-card .choose-category-button {
 	background-color: #c682c2;
@@ -1767,11 +1832,6 @@ img {
 	display: none;
 }
 
-
-
-
-
-
 .gallery-header-name {
 	position: absolute;
 	top: 26px;
@@ -1911,8 +1971,6 @@ img {
 /*/////////////////////////////////*/
 
 /*Заголовок популярных товаров*/
-
-/*Добавить отступы в контейнер*/
 .popular-goods-button-link {
 	padding: 10px 55px 10px 55px;
 	margin: 0;
@@ -2024,11 +2082,12 @@ img {
 
 .footer-nav {
 	display: flex;
-	margin-top: 35px;
+	margin-top: 37px;
 }
 
 .footer-category-nav {
 	display: flex;
+	
 }
 
 .footer-nav li:not(:last-of-type):not(:first-of-type) {
@@ -2038,7 +2097,7 @@ img {
 
 .footer-nav li:first-child {
 	margin-left: 173px;
-	margin-right: 30px;
+	margin-right: 28px;
 }
 .footer-nav li:last-child {
 	margin-left: 30px;
@@ -2051,7 +2110,11 @@ img {
 
 .footer-category-nav li:first-child {
 	margin-right: 30px;
-	margin-left: 91px;
+	margin-left: 98px;
+}
+
+.footer-category-nav li:last-child {
+	margin-left: 30px;
 }
 
 /*Нижняя часть футера*/
@@ -2070,6 +2133,7 @@ img {
 
 .footer-feedback {
 	margin-right: 52px;
+	
 }
 
 /*Сетка для страницы каталога*/
@@ -2191,15 +2255,6 @@ color: #cacaca;
 	background-color: #32425c;
 }
 
-
-
-
-
-
-
-
-
-
 /*******************************/
 
 .nav-middle-box {
@@ -2255,7 +2310,7 @@ color: #cacaca;
 	position: relative;
 	padding: 0;
 	margin: 0;
-	height: 80px;
+	height: 40px;
 	margin-bottom: 10px;
 	padding-top: 39px;
 	padding-right: 20px;
@@ -2520,29 +2575,274 @@ color: #cacaca;
 }
 
 
+/*////////////////////////*/
+/*Модальные окна*/
+/*//////////////////////////*/
+.modal {
+	background-color: #fff;
+	position: fixed;
+	top: 50%;
+	left: -9999px;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	visibility: hidden;
+	transition-property: opacity, visibility;
+	transition-duration: 500ms;
+	transition-timing-function: ease;
+	z-index: 2001;
+}
+
+.contact-button {
+	display: inline-block;
+	min-width: 300px;
+	min-height: 38px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 64px;
+	padding-right: 58px;
+	background-color: #ee3643;
+	box-sizing: border-box;
+	font-family: 'Cuprum', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #ffffff;
+	border-radius: 3px;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+}
 
 
+.modal-write-us {
+	padding-top: 46px;
+	padding-bottom: 37px;
+	padding-left: 80px;
+	padding-right: 80px;
+	width: 462px;
+	box-shadow: 0px 20px 50px,
+		inset 0px 7px 0px #ee3643;
+}
+
+.modal-write-us.is-show,
+.modal-cart.is-show,
+.modal-map.is-show {
+	left: 50%;
+	opacity: 1;
+	visibility: visible;
+	transition-delay: 500ms;
+}
+
+.modal-close {
+	background: none;
+	border: none;
+	position: absolute;
+	width: 28px;
+	min-height: 28px;
+	top: 16px;
+	right: 10px;
+	cursor: pointer;
+	text-indent: -9999px;
+	display: block;
+}
+
+.modal-close::before,
+.modal-close::after {
+	content: '';
+	position: absolute;
+	right: 0px;
+	top: 10px;
+	width: 28px;
+	height: 3px;
+	background-color: #ee3643;
+}
+
+.modal-close::before {
+	transform: rotate(45deg);
+}
+
+.modal-close::after {
+	transform: rotate(-45deg);
+}
+
+.modal-item {
+	display: inline;
+	list-style: none;
+	font-family: 'Cuprum', Arial, sans-serif;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 18px;
+	color: #000;
+}
+
+.modal-item {
+	display: inline-block;
+	width: 220px;
+	vertical-align: middle;
+}
+
+.write-us p {
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.write-us input[type='text'],
+.write-us input[type='email'] {
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 18px;
+	color: #000;
+	border: 1px solid #dee3e4;
+	border-radius: 3px;
+	box-sizing: border-box;
+	width: 220px;
+	min-height: 37px;
+	margin-bottom: 20px;
+	padding-left: 10px;
+}
+
+.write-us input[type='text'],
+.modal-item:first-child {
+	margin-right: 16px;
+}
+
+.write-us input[type='text']:hover,
+.write-us input[type='email']:hover {
+	border: 1px solid #b5b5b5;
+}
+
+.write-us input[type='text']:focus,
+.write-us input[type='email']:focus {
+	border: 1px solid #ee3643;
+}
+
+.write-us textarea {
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 18px;
+	color: #000;
+	border: 1px solid #dee3e4;
+	border-radius: 3px;
+	box-sizing: border-box;
+	width: 460px;
+	min-height: 114px;
+	resize: none;
+	margin-bottom: 75px;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.write-us textarea:hover {
+	border: 1px solid #b5b5b5;
+}
+
+.write-us textarea:focus {
+	border: 1px solid #ee3643;
+}
+
+.modal-write-us .button {
+	width: 460px;
+	border: 1px solid #ee3643;
+	border-radius: 3px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 3px;
+	padding-right: 3px;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+	background-color: #ee3643;
+}
+
+.modal-cart {
+	padding-top: 46px;
+	padding-bottom: 37px;
+	padding-left: 80px;
+	padding-right: 80px;
+	width: 462px;
+	min-height: 202px;
+	box-shadow: 0px 20px 50px,
+		inset 0px 7px 0px #ee3643;
+}
+
+.modal-cart p::before {
+	position: absolute;
+	content: '';
+	width: 70px;
+	min-height: 70px;
+	top: 60px;
+	left: 80px;
+	background-image: url('../img/svg/icon-mark.svg');
+	background-repeat: no-repeat;
+}
+
+.modal-cart p {
+	font-family: 'Cuprum', Arial, sans-serif;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 30px;
+	color: #000;
+	padding-left: 50px;
+	text-align: center;
+}
+
+.modal-cart-bottom {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	margin: 0px;
+	padding: 0px;
+	width: 620px;
+	min-height: 110px;
+	background-color: #f1f1f1;
+}
+
+.modal-cart .button-continue {
+	position: absolute;
+	margin-top: 150px;
+	z-index: 400;
+	top: 60px;
+	left: 350px;
+	background-color: #fff;
+	color: #000;
+	font-weight: 700;
+}
+
+.modal-cart .button-buy {
+	position: absolute;
+	margin-top: 150px;
+	z-index: 400;
+	top: 60px;
+	left: 80px;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+	z-index: 2000;
+	opacity: 0;
+	visibility: hidden;
+	transition-property: opacity, visibility;
+	transition-duration: 500ms;
+	transition-timing-function: ease;
+}
 
 
+.style-btn:hover,
+.style-btn:focus {
+	background-color: #ca2c37;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.style-btn:active {
+	background-color: #ba2732;
+}
 
 
 .visually-hidden:not(:focus):not(:active),
