@@ -181,7 +181,7 @@ a {
 	border-style: none;
 	background-color: #293449;
 	color: #fff;
-	font-family: 'Cuprum', Arial,    sans-serif;
+	font-family: "Cuprum", Arial, sans-serif;
 	font-weight: normal;
 	font-size: 17px;
 	line-height: 18px;
@@ -406,7 +406,7 @@ a {
 
 .breadcrumbs a,
 .breadcrumbs-current {
-	font-family: 'PT Sans', sans-serif;
+	font-family: "PT Sans", sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	color: #000;
@@ -615,7 +615,7 @@ a {
 }
 
 .title {
-	font-family: 'PT Sans', Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 18px;
 	font-weight: bold;
 	line-height: 20px;
@@ -623,7 +623,7 @@ a {
 
 .discount,
 .price {
-	font-family: 'PT Sans', Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 17px;
 	font-weight: bold;
 	line-height: 18px;
@@ -803,7 +803,7 @@ a {
 }
 
 .popular-goods-category {
-	font-family: 'PT Sans', Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 20px;
 	font-weight: bold;
@@ -811,7 +811,7 @@ a {
 }
 
 .popular-goods-model {
-	font-family: 'PT Sans', sans-serif;
+	font-family: "PT Sans", sans-serif;
 	font-size: 18px;
 	line-height: 20px;
 	font-weight: bold;
@@ -821,7 +821,7 @@ a {
 
 .popular-goods-old-price,
 .popular-goods-button {
-	font-family: 'PT Sans', Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 17px;
 	line-height: 18px;
 	font-weight: bold;
@@ -1105,6 +1105,11 @@ a {
 	margin-bottom: 25px;
 }
 
+.map-link {
+	width: 573px;
+	height: 432px;
+}
+
 .company-partners {
 	position: relative;
 	list-style: none;
@@ -1286,7 +1291,7 @@ a {
 .filters-instrument-title,
 .filters-choise-sorting a,
 .catalog-list span {
-	font-family: 'PT Sans', sans-serif;
+	font-family: "PT Sans", sans-serif;
 }
 
 .filters-form-title{
@@ -1387,7 +1392,7 @@ a {
 }
 
 .catalog {
-	font-family: 'PT Sans', sans-serif;
+	font-family: "PT Sans, sans-serif;
 }
 
 .catalog-list {
@@ -1463,7 +1468,7 @@ a {
 .pagination-list a,
 .pagination-item-current a,
 .button-next {
-	font-family: 'PT Sans', sans-serif;
+	font-family: "PT Sans", sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	color: #000;
@@ -1982,7 +1987,7 @@ a {
 	position: absolute;
 	top: 0;
 	right: -20px;
-	content: '';
+	content: "";
 	display: block;
 	width: 0px;
 	min-height: 0px;
@@ -2249,13 +2254,6 @@ color: #cacaca;
 	
 }
 
-#filter-price {
-	margin: 0;
-	padding-top: 29px;
-	padding-bottom: 29px;
-	
-}
-
 .filter-price-box {
 	position: relative;
 	padding: 0;
@@ -2410,7 +2408,7 @@ color: #cacaca;
 	font-family: "PT sans", Arial, sans-serif;
 	font-size: 15px;
 	line-height: 20px;
-	color: #000000;
+	color: #000;
 	text-transform: uppercase;
 	font-weight: 500;
 }
@@ -2548,7 +2546,7 @@ color: #cacaca;
 	padding-right: 58px;
 	background-color: #ee3643;
 	box-sizing: border-box;
-	font-family: 'Cuprum', Arial, sans-serif;
+	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: normal;
@@ -2594,7 +2592,7 @@ color: #cacaca;
 
 .modal-close::before,
 .modal-close::after {
-	content: '';
+	content: "";
 	position: absolute;
 	right: 0px;
 	top: 10px;
@@ -2614,7 +2612,7 @@ color: #cacaca;
 .modal-item {
 	display: inline;
 	list-style: none;
-	font-family: 'Cuprum', Arial, sans-serif;
+	font-family: "Cuprum", Arial, sans-serif;
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 18px;
@@ -2632,9 +2630,9 @@ color: #cacaca;
 	margin-bottom: 20px;
 }
 
-.write-us input[type='text'],
-.write-us input[type='email'] {
-	font-family: 'PT Sans', Arial, sans-serif;
+.write-us input[type="text"],
+.write-us input[type="email"] {
+	font-family: "PT Sans", Arial, sans-serif;
 	font-weight: normal;
 	font-size: 13px;
 	line-height: 18px;
@@ -2648,23 +2646,23 @@ color: #cacaca;
 	padding-left: 10px;
 }
 
-.write-us input[type='text'],
+.write-us input[type="text"],
 .modal-item:first-child {
 	margin-right: 16px;
 }
 
-.write-us input[type='text']:hover,
-.write-us input[type='email']:hover {
+.write-us input[type="text"]:hover,
+.write-us input[type="email"]:hover {
 	border: 1px solid #b5b5b5;
 }
 
-.write-us input[type='text']:focus,
-.write-us input[type='email']:focus {
+.write-us input[type="text"]:focus,
+.write-us input[type="email"]:focus {
 	border: 1px solid #ee3643;
 }
 
 .write-us textarea {
-	font-family: 'PT Sans', Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-weight: normal;
 	font-size: 13px;
 	line-height: 18px;
@@ -2716,7 +2714,7 @@ color: #cacaca;
 
 .modal-cart p::before {
 	position: absolute;
-	content: '';
+	content: "";
 	width: 70px;
 	min-height: 70px;
 	top: 60px;
@@ -2726,7 +2724,7 @@ color: #cacaca;
 }
 
 .modal-cart p {
-	font-family: 'Cuprum', Arial, sans-serif;
+	font-family: "Cuprum", Arial, sans-serif;
 	font-weight: normal;
 	font-size: 30px;
 	line-height: 30px;

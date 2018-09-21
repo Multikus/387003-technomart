@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="utf-8">
-		<title>HTML Academy: Техномарт</title>
-		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
-		<link rel="stylesheet" href="css/normalize.min.css">
-		<link rel="stylesheet" href="css/style.min.css">
-	</head>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Academy: Техномарт</title>
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
 	<body>
 		<header class="main-header">
 			<nav class="main-navigation">
@@ -119,7 +119,6 @@
 				<section class="filters-form">
 					<div class="main-form-box">
 						<h2 class="filters-form-title">Фильтр:</h2>
-						<!--			Формы -->
 						<form class="main-form" method="post" action="https://echo.htmlacademy.ru">
 							<fieldset class="filter-price">
 								<legend class="label-form">Цена:</legend>
@@ -142,8 +141,8 @@
 								</div>
 							</fieldset>
 							<div class="manufacturers-line">
+								<h3 class="visually-hidden">Фильтр сортировки товаров по производителю</h3>
 								<fieldset class="filter-manufacturers">
-									<h3 class="visually-hidden">Фильтр сортировки товаров по производителю</h3>
 									<legend class="label-form">Производители:</legend>
 									<ul class="filter-manufacturers-list">
 										<li class="filter-select filter-on">
@@ -170,8 +169,8 @@
 								</fieldset>
 							</div>
 							<fieldset class="power-supply">
-								<h3 class="visually-hidden">Фильтр сортировки товаров по дополнительным характеристикам</h3>
 								<legend class="label-form">Питание:</legend>
+								<h3 class="visually-hidden">Фильтр сортировки товаров по дополнительным характеристикам</h3>
 								<ul class="power-supply-list">
 									<li class="filter-select filter-on">
 										<input class="visually-hidden filter-input filter-input-radio" type="radio" name="feature-group" value="battery" id="filter-battery" checked>
@@ -395,7 +394,7 @@
 			<section class="footer-social">
 				<div class="footer-social-box">
 					<p class="footer-copyright">
-						&copy; 2010-2017 Компания &laquo;Техномарт&raquo;<br>
+						&copy;2010-2017 Компания&laquo;Техномарт&raquo;<br>
 						Все права защищены
 					</p>
 					<div class="footer-social-button">
@@ -433,7 +432,6 @@
 		</footer>
 		<section class="modal modal-write">
 			<button class="modal-close" type="button">
-				<img src="img/svg/icon-close.svg" alt="Кнопка закрытия формы отправки обратной связи">
 			</button>
 			<form class="write-us" method="post" action="https://echo.htmlacademy.ru">
 				<label for="write-us-name">Ваше имя:</label>
@@ -446,13 +444,6 @@
 			<div class="modal-container">
 				<button class="btn-modal-write label-form" type="submit">Отправить</button>
 			</div>
-		</section>
-		<section class="modal modal-map">
-			<h2 class="visually-hidden">Как до нас добраться</h2>
-			<button class="modal-close" type="button">
-				<img src="img/svg/icon-close.svg" alt="Кнопка закрытия карты проезда">
-			</button>
-			<img src="img/modal-map.jpg" alt="Карта проезда" class="modal-map-img">
 		</section>
 		<script src="js/script.min.js"></script>
 	</body>
