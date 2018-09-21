@@ -8,7 +8,7 @@
 }
 
 .main-header {
-	padding-bottom: 62px;
+	padding-bottom: 67px;
 	font-size: 17px;
 	line-height: 17px;
 	background-color: #f3f7f8;
@@ -51,6 +51,7 @@ img {
 	color: #fff;
 	font-size: 17px;
 	line-height: 18px;
+	font-weight: 400;
 	background-color: #293449;
 }
 .header-container a {
@@ -61,20 +62,24 @@ img {
 	width: 220px;
 	height: 42px;
 	-webkit-box-shadow: 0px 5px 0px 0px #b52933;
-	        box-shadow: 0px 5px 0px 0px #b52933;
+					box-shadow: 0px 5px 0px 0px #b52933;
 }
 
 /*Стилизация кнопки заказа*/
 .nav-about-order .button {
-	padding: 12px 21px;
+/*	padding: 12px 21px;*/
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 22px;
+	padding-right: 21px;
 	background-color: #63a63e;
 }
 /*Корзина */
 .nav-goods-basket {
 	position: relative;
-	padding-top: 11px;
+	padding-top: 9px;
 	padding-bottom: 12px;
-	padding-right: 33px;
+	padding-right: 25px;
 	padding-left: 49px;
 	background-color: #ee3643;
 }
@@ -96,16 +101,16 @@ img {
 /*закладки*/
 .nav-bookmarks {
 	position: relative;
-	padding-top: 11px;
+	padding-top: 10px;
 	padding-bottom: 11px;
-	padding-right: 24px;
+	padding-right: 31px;
 	padding-left: 41px;
 }
 
 .nav-bookmarks::before {
 	content: "";
 	position: absolute;
-	top: 12px;
+	top: 9px;
 	left: 12px;
 	width: 14px;
 	height: 16px;
@@ -208,7 +213,7 @@ img {
 	background-color: #293449;
 	padding-left: 8px;
 	padding-top: 11px;
-	padding-bottom: 11px;
+	padding-bottom: 13px;
 }
 
 /*изменение цвета подсказки формы поиска Safari и Chrome*/
@@ -238,9 +243,9 @@ img {
 }
 /*адрес на главной*/
 .main-nav-contacts {
-	margin: 10px 69px 0px 67px;
-	margin-left: 67px;
-	margin-right: 66px;
+	margin: 11px 69px -1px 67px;
+	margin-left: 80px;
+	margin-right: 61px;
 	font-size: 14px;
 	line-height: 24px;
 	color: #32425c;
@@ -251,6 +256,7 @@ img {
 	vertical-align: middle;
 	font-size: 21px;
 	line-height: 21px;
+	font-weight: 400;
 	color: #ee3643;
 	border: 4px solid #fff;
 	padding: 11px 51px 11px 74px;
@@ -260,7 +266,7 @@ img {
 	content: "";
 	position: absolute;
 	top: 14px;
-	left: 17px;
+	left: 12px;
 	width: 19px;
 	height: 19px;
 	background-image: url(../img/svg/icon-phone.svg);
@@ -271,7 +277,7 @@ img {
 .nav-contacts-adress {
 	display: block;
 	vertical-align: bottom;
-	margin-top: 18px;
+	margin-top: 15px;
 	margin-left: 10px;
 }
 /*Стилизация кнопок вход и рег-я*/
@@ -280,9 +286,10 @@ img {
 	max-width: 121px;
 	font-size: 21px;
 	line-height: 21px;
-	color: #000000;
+	font-weight: 400;
+	color: #000;
 	background-color: #fff;
-	padding: 15px 27px 15px 48px;
+	padding: 15px 27px 15px 54px;
 	margin-right: 10px;
 }
 
@@ -290,7 +297,7 @@ img {
 	content: "";
 	position: absolute;
 	top: 19px;
-	left: 15px;
+	left: 21px;
 	width: 23px;
 	height: 19px;
 	background-image: url(../img/svg/icon-login.svg);
@@ -336,9 +343,10 @@ img {
 	max-width: 150px;
 	font-size: 21px;
 	line-height: 21px;
-	color: #000000;
+	font-weight: 400;
+	color: #000;
 	background-color: #fff;
-	padding: 15px 25px 15px 25px;
+	padding: 15px 9px 15px 25px;
 }
 /*Стилизация ссылок ЛК на странице каталога*/
 .user-name {
@@ -346,7 +354,7 @@ img {
 	line-height: 21px;
 	margin: 0;
 	padding: 0;
-	color: #000000;
+	color: #000;
 
 }
 
@@ -401,14 +409,13 @@ img {
 	display: block;
 	font-size: 17px;
 	line-height: 17px;
+	font-weight: 400;
 	color: #fff;
 	display: block;
-/*	padding: 0;*/
 	padding-top: 22px;
-	padding-bottom: 22px;
+	padding-bottom: 18px;
 	padding-right: 30px;
 	padding-left: 31px;
-/*	padding: 22px 25px;*/
 	}
 
 .site-navigation-item .indentation-right {
@@ -463,10 +470,10 @@ img {
 
 .breadcrumbs li {
 	position: relative;
-	padding-top: 21px;
+	padding-top: 13px;
 	padding-bottom: 20px;
 	padding-left: 0px;
-	margin-right: 40px;
+	margin-right: 37px;
 }
 
 .breadcrumbs a {
@@ -482,7 +489,7 @@ img {
 	position: absolute;
 	content: "";
 	left: -26px;
-	top: 23px;
+	top: 15px;
 	width: 8px;
 	height: 12px;
 	background-image: url("../img/svg/icon-right-small.svg");
@@ -492,8 +499,10 @@ img {
 
 /*Стилизация контейнера заголовка*/
 .catalog-title {
+	text-transform: uppercase;
 	background-color: #f2f6f8;
 	padding: 0;
+	padding-top: 6px;
 	margin: 0;
 }
 /*Заголовок перфораторы*/
@@ -506,7 +515,7 @@ img {
 	padding-bottom: 25px;
 	margin: 0;
 	margin-left: 30px;
-	margin-bottom: 20px;
+	margin-bottom: 23px;
 }
 
 /* --------------------- */
@@ -519,28 +528,43 @@ img {
 	line-height: 30px;
 	font-weight: bold;
 	padding-left: 23px;
-	padding-top: 19px;
+	padding-top: 23px;
 	padding-bottom: 12px;
 	color: #fff;
 }
+
 /*стилизация кнопки на карточках категории*/
 .catalog-button {
 	margin: 0;
 	margin-left: 23px;
-	margin-bottom: 25px;
+	margin-bottom: 22px;
 	margin-right: 140px;
 }
 
 /*Кнопка в выборе популярной категории*/
 .choose-category-button {
 	display: block;
-	padding: 9px 24px;
+	padding: 10px 24px;
 	font-size: 14px;
 	line-height: 18px;
+	font-weight: 400;
 	text-transform: uppercase;
 	background-color: #e5ac40;
 	color: #fff;
 	border-radius: 3px;
+}
+
+.btn-five {
+	padding-left: 38px;
+	padding-top: 13px;
+}
+
+.first-btn {
+	padding-left: 25px;
+}
+
+.tree-btn {
+	padding-left: 31px;
 }
 
 .choose-category-button:hover,
@@ -567,10 +591,10 @@ img {
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+			flex-wrap: wrap;
 	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+			-ms-flex-pack: justify;
+					justify-content: space-between;
 	width: 894px;
 	padding-right: 16px;
 	padding-left: 30px;
@@ -583,12 +607,14 @@ img {
 	font-size: 30px;
 	line-height: 30px;
 	color: #32425c;
+	font-weight: 400;
 	text-transform: uppercase;
 }
 /*Стилизация кнопки поп. товаров*/
 .popular-goods-button-link {
 	font-size: 14px;
 	line-height: 18px;
+	font-weight: 400;
 	color: #fff;
 	text-transform: uppercase;
 }
@@ -780,23 +806,25 @@ img {
 }
 .catalog-item .title{
 	min-height: 40px;
-	padding: 0 25px;
-	margin-top: 14px;
-	margin-bottom: 15px;
+	padding: 5px 25px;
+	margin-top: 7px;
+	margin-bottom: 6px;
 }
 .catalog-item .discount{
 	min-height: 20px;
-	margin-top: 15px;
+	margin-top: -3px;
 	margin-bottom: 10px;
-	color: #aaaaaa;
+	margin-right: 1px;
+	color: #aaa;
 	text-decoration: line-through;
 }
 .catalog-item .price{
 	position: relative;
 	width: 80px;
-	margin: 10px auto;
-	margin-bottom: 20px;
-	padding: 10px 30px;
+	margin: 11px auto;
+	margin-bottom: 17px;
+	margin-left: 39px;
+	padding: 11px 32px;
 	color: #fff;
 	background: #ee3643;
 	border-radius: 3px;
@@ -808,7 +836,7 @@ img {
 	right: -20px;
 	width: 0;
 	height: 0;
-	border: 19px solid #fff;
+	border: 20px solid #fff;
 	border-left-color: #ee3643;
 }
 
@@ -863,13 +891,14 @@ img {
 			-ms-flex-pack: justify;
 					justify-content: space-between;
 	margin-bottom: 20px;
-	padding-left: 22px;
-	padding-right: 16px;
+	padding-left: 25px;
+	padding-right: 24px;
+	padding-top: 5px;
 	background-color: #f9f5f0;
 }
 
 .popular-manufacturer {
-	padding-bottom: 44px;
+	padding-bottom: 71px;
 }
 
 /*Кнопка все производители*/
@@ -929,6 +958,12 @@ img {
 }
 .manufacturer-logo-link {
 	margin: auto;
+	padding-top: 12px;
+	padding-left: 6px;
+}
+
+.aeg-logo {
+	padding-top: 23px;
 }
 
 .second-row li {
@@ -952,8 +987,8 @@ img {
 /*Заголовок сервиса*/
 .service-list-caption {
 	margin: 0;
-	padding-top: 88px;
-	padding-bottom: 35px;
+	padding-top: 64px;
+	padding-bottom: 28px;
 	font-size: 30px;
 	line-height: 30px;
 	font-weight: 400;
@@ -963,7 +998,9 @@ img {
 /*заголовок доставки*/
 .servece-delivery-caption {
 	margin: 0;
-	padding-bottom: 30px;
+	margin-bottom: 11px;
+	padding-left: 2px;
+	padding-bottom: 18px;
 	font-size: 36px;
 	line-height: 36px;
 	font-weight: 400;
@@ -978,7 +1015,15 @@ img {
 	padding: 0;
 	font-size: 13px;
 	line-height: 24px;
+	font-weight: 400;
 	color: #000;
+}
+
+.service-description {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	padding-left: 1px;
 }
 
 /*Контейнер для списка и блока доставки*/
@@ -992,8 +1037,13 @@ img {
 }
 
 .service-delivery {
-	margin-bottom: 30px;
+	margin-bottom: 41px;
 }
+
+.service-delivery-description {
+	padding-left: 1px;
+}
+
 
 .delivery-description,
 .service-delivery-description {
@@ -1006,12 +1056,12 @@ img {
 	display: block;
 	list-style: none;
 	margin: 0;
-	padding: 73px 80px 80px 0px;
+	padding: 66px 78px 85px 1px;
 }
 
 .service-list-button a::after {
 	content: "";
-	top 50px;
+	top: 50px;
 	right: 50px;
 	width: 10px;
 	height: 279px;
@@ -1100,7 +1150,7 @@ img {
 .company-description,
 .contact-description {
 	margin: 0;
-	padding-bottom: 23px;
+	padding-bottom: 24px;
 	font-size: 13px;
 	line-height: 24px;
 	font-weight: 400;
@@ -1113,7 +1163,7 @@ img {
 }
 
 .contact-map {
-	margin-bottom: 35px;
+	margin-bottom: 25px;
 }
 
 /*Стилизуем маркеры списка*/
@@ -1121,7 +1171,7 @@ img {
 	position: relative;
 	list-style: none;
 	margin-top: 0;
-	margin-bottom: 24px;
+	margin-bottom: 22px;
 	padding: 0;
 }
 /*Стилизация списка партнеров*/
@@ -1172,7 +1222,7 @@ img {
 .contact-button-box {
 	padding: 0;
 	margin: 0;
-	margin-bottom: 10px
+	margin-bottom: 17px
 }
 
 .about-company-button,
@@ -1265,8 +1315,8 @@ img {
 	justify-content: space-between;
 	margin: 0;
 	padding: 0;
-	padding-left: 160px;
-	padding-right: 117px;
+	padding-left: 168px;
+	padding-right: 114px;
 	width: 135px;
 }
 
@@ -1404,6 +1454,8 @@ img {
 }
 /*Декоратиные линии в фильтре*/
 .manufacturers-line {
+	padding-left: 0;
+	padding-top: 8px;
 	border-top: 1px solid #e5e5e5;
 	border-bottom: 1px solid #e5e5e5;
 }
@@ -1529,8 +1581,8 @@ img {
 
 .information-title {
 	margin: 0px;
-	padding-top: 69px;
-	padding-bottom: 33px;
+	padding-top: 72px;
+	padding-bottom: 27px;
 	font-size: 30px;
 	line-height: 30px;
 	font-weight: 400;
@@ -1544,6 +1596,7 @@ img {
 	color: #000;
 	margin: 0px;
 	padding-bottom: 71px;
+	margin-bottom: -3px;
 }
 /*Модальные окна*/
 /*Стилизация попапа*/
@@ -1608,13 +1661,14 @@ img {
 /*Разметка центрального блока шапки*/
 
 .header-central-box {
+	box-sizing: border-box;
 	margin: 0 auto;
-	width: 890px;
+	width: 940px;
 	display: flex;
 	align-items: center;
 	padding-top: 43px;
-	padding-bottom: 40px;
-	padding-left: 50px;
+	padding-bottom: 38px;
+	padding-left: 58px;
 }
 
 /*-----Шапка закончена--------*/
@@ -1629,7 +1683,8 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	position: relative;
-	margin-bottom: 54px;
+	margin-bottom: 56px;
+	margin-top: 1px;
 }
 
 .category-list {
@@ -1641,7 +1696,7 @@ img {
 
 .category-item {
 	width: 300px;
-	margin-top: 20px;
+	margin-top: 16px;
 }
 .first-card {
 	position: relative;
@@ -1682,7 +1737,7 @@ img {
 .first-card-ico::after {
 	content: "";
 	position: absolute;
-	top: 35px;
+	top: 31px;
 	right: 42px;
 	width: 44px;
 	height: 65px;
@@ -1756,14 +1811,17 @@ img {
 
 .four-card-ico a {
 	background-color: #80c180;
-	padding: 10px 23px;
+	padding-top: 12px;
+	padding-bottom: 10px;
+	padding-left: 23px;
+	padding-right: 23px;
 }
 
 .four-card-ico::before {
 	content: "";
 	position: absolute;
-	top: 31px;
-	right: 44px;
+	top: 25px;
+	right: 43px;
 	width: 59px;
 	height: 72px;
 	background-image: url(../img/svg/sales-ico.svg);
@@ -1780,8 +1838,8 @@ img {
 .five-card-ico::before {
 	content: "";
 	position: absolute;
-	top: 33px;
-	right: 31px;
+	top: 32px;
+	right: 29px;
 	width: 78px;
 	height: 63px;
 	background-image: url(../img/svg/delivery-ico.svg);
@@ -1794,7 +1852,7 @@ img {
 	display: flex;
 	flex-direction: column;
 	width: 620px;
-	margin-top: 20px;
+	margin-top: 18px;
 }
 
 /*
@@ -1808,6 +1866,7 @@ img {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	margin-left: 2px;
 }
 
 .gallery-promo li:nth-child(1) {
@@ -1834,17 +1893,19 @@ img {
 
 .gallery-header-name {
 	position: absolute;
-	top: 26px;
-	left: 24px;
+	top: 22px;
+	left: 27px;
+	line-height: 36px;
 	font-size: 36px;
 	font-weight: bold;
+	text-transform: uppercase;
 	color: #fff;
 }
 
 .gallery-header-item {
 	position: absolute;
-	top: 67px;
-	left: 24px;
+	top: 61px;
+	left: 28px;
 	font-family: "PT sans", Arial, sans-serif;
 	font-weight: 400;
 	font-size: 18px;
@@ -1860,6 +1921,7 @@ img {
 	position: absolute;
 	font-size: 14px;
 	line-height: 18px;
+	font-weight: 400;
 	text-transform: uppercase;
 	padding: 12px 45px 12px 49px;
 	left: 25px;
@@ -1973,6 +2035,12 @@ img {
 /*Заголовок популярных товаров*/
 .popular-goods-button-link {
 	padding: 10px 55px 10px 55px;
+/*
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 55px;
+	padding-right: 55px;
+*/
 	margin: 0;
 	border-radius: 3px;
 	align-self: center;
@@ -2039,6 +2107,8 @@ img {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 68px;
+	padding-top: 7px;
+	padding-left: 3px;
 }
 
 .company {
@@ -2070,14 +2140,14 @@ img {
 	display: flex;
 	width: 940px;
 	margin: 0 auto;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 }
 
 .footer-line-middle {
 	display: flex;
 	width: 940px;
 	margin: 0 auto;
-	margin-bottom: 53px;
+	margin-bottom: 60px;
 }
 
 .footer-nav {
@@ -2122,7 +2192,7 @@ img {
 	display: flex;
 	width: 940px;
 	margin: 0 auto;
-	padding-top: 39px;
+	padding-top: 26px;
 	padding-bottom: 33px;
 }
 
@@ -2169,7 +2239,7 @@ img {
 	color: #000;
 	font-size: 21px;
 	line-height: 21px;
-	padding-left: 33px;
+	padding-left: 44px;
 	padding-top: 12px;
 	padding-bottom: 12px;
 }
@@ -2180,8 +2250,8 @@ img {
 
 .user-name svg {
 	position: absolute;
-	left: 13px;
-	top: 13px;
+	left: 24px;
+	top: 10px;
 }
 
 .user-name:hover path {
@@ -2195,8 +2265,8 @@ img {
 
 .user-logout svg {
 	position: absolute;
-	left: 268px;
-	top: 14px;
+	left: 278px;
+	top: 12px;
 }
 
 .user-logout:hover path {
@@ -2217,7 +2287,7 @@ img {
 	flex-wrap: wrap;
 	list-style: none;
 	padding: 0;
-	padding-right: 70px;
+	padding-right: 47px;
 	margin: 0;
 	margin-top: 6px;
 } 
@@ -2291,12 +2361,15 @@ color: #cacaca;
 .filters-form-title {
 	margin: 0;
 	padding: 12px 150px 12px 18px;
+	font-weight: 400;
 }
 
 .label-form {
 	margin: 0;
-	padding-top: 15px;
+	padding-top: 9px;
 	padding-bottom: 15px;
+	padding-left: 3px;
+	
 }
 
 #filter-price {
@@ -2389,13 +2462,17 @@ color: #cacaca;
 	width: 700px;
 	margin-top: 0;
 	margin-left: 20px;
-	margin-bottom: 35px;
+	margin-bottom: 43px;
 	padding: 0;
 }
 
 /*Фильтр производители*/
 .filter-manufacturers-list {
+	margin: 0;
+	padding: 0;
+	padding-left: 39px;
 	list-style: none;
+	margin-bottom: 10px;
 }
 
 .filter-manufacturers-list .filter-select {
@@ -2415,8 +2492,8 @@ color: #cacaca;
 .filter-checkbox:checked + label::before {
 	content: "";
 	position: absolute;
-	left: -34px;
-	top: -2px;
+	left: -40px;
+	top: -4px;
 	width: 26px;
 	height: 26px;
 	background: url("../img/svg/checkbox-on.svg") no-repeat;
@@ -2426,8 +2503,8 @@ color: #cacaca;
 .filter-checkbox + label::before {
 	content: "";
 	position: absolute;
-	left: -34px;
-	top: -2px;
+	left: -40px;
+	top: -6px;
 	width: 24px;
 	height: 24px;
 	background: urL("../img/svg/checkbox-off.svg") no-repeat;
@@ -2546,8 +2623,9 @@ color: #cacaca;
 .filters-instrument li {
 	margin-right: 10px;
 	margin-left: 29px;
-	padding-right: 22px;
+	padding-right: 14px;
 	padding-left: 10px;
+	font-weight: 400;
 }
 
 .direction-sort-current {
@@ -2557,12 +2635,12 @@ color: #cacaca;
 
 .filters-instrument .ascending-sort {
 	position: absolute;
-	right: 17px;
+	right: 24px;
 }
 
 .filters-instrument .descending-sort {
 	position: absolute;
-	right: -15px;
+	right: -8px;
 }
 
 .ascending-sort path,
