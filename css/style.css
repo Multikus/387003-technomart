@@ -22,13 +22,6 @@
 a {
 	text-decoration: none;
 }
-/*Чтобы картинки не выпадали из своего контейнера*/
-/*
-img {
-	max-width: 100%;
-	height: auto;
-}
-*/
 
 /*Общая стилизация шапки*/
 
@@ -67,7 +60,6 @@ img {
 
 /*Стилизация кнопки заказа*/
 .nav-about-order .button {
-/*	padding: 12px 21px;*/
 	padding-top: 12px;
 	padding-bottom: 12px;
 	padding-left: 22px;
@@ -1110,7 +1102,6 @@ img {
 .service-list-box{
 	display: flex;
 	flex-direction: column;
-/*	padding-bottom: 80px;*/
 }
 
 .service-delivery {
@@ -1446,12 +1437,14 @@ img {
 	opacity: 1;
 	outline: 0;
 }
+
 /*Убираем обводку формы*/
 .main-form fieldset{
 	border-style: none;
 	padding: 0px;
 	margin: 0px;
 }
+
 /*Декоратиные линии в фильтре*/
 .manufacturers-line {
 	padding-left: 0;
@@ -1464,9 +1457,11 @@ img {
 .catalog {
 	font-family: 'PT Sans', sans-serif;
 }
+
 .catalog-list {
 	list-style: none;
 }
+
 /*Старая цена*/
 .catalog-item-old-price,
 .catalog-item-button {
@@ -1474,15 +1469,16 @@ img {
 	line-height: 18px;
 	font-weight: bold;
 	text-decoration: line-through;
-	color: #999999;
+	color: #999;
 }
+
 /*Новая цена*/
 .catalog-item-button {
 	text-decoration: none;
 	color: #fff;
-/*Временный фон*/
 	background-color: red;
 }
+
 /*Категория и модель*/
 .catalog-item-category,
 .catalog-item-model {
@@ -1491,6 +1487,7 @@ img {
 	font-weight: bold;
 	color: #000;
 }
+
 .catalog-item-model {
 	text-transform: uppercase;
 }
@@ -1855,7 +1852,7 @@ img {
 	margin-top: 18px;
 }
 
-/*
+
 
 /*Позиионирование элементов галереи*/
 .gallery {
@@ -2002,7 +1999,7 @@ img {
 }
 
 .control-slider input[type=button] {
-  display: none;
+	display: none;
 }
 
 .control-slider input[type=radio] {
@@ -2035,12 +2032,6 @@ img {
 /*Заголовок популярных товаров*/
 .popular-goods-button-link {
 	padding: 10px 55px 10px 55px;
-/*
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 55px;
-	padding-right: 55px;
-*/
 	margin: 0;
 	border-radius: 3px;
 	align-self: center;
@@ -2091,14 +2082,14 @@ img {
 
 .popular-goods-price a::after {
 	position: absolute;
-  top: 0;
-  right: -20px;
-  content: '';
-  display: block;
-  width: 0px;
-  min-height: 0px;
-  border: 19px solid #ffffff;
-  border-left-color: #ee3643;
+	top: 0;
+	right: -20px;
+	content: '';
+	display: block;
+	width: 0px;
+	min-height: 0px;
+	border: 19px solid #fff;
+	border-left-color: #ee3643;
 }
 
 /*-------------------------*/
@@ -2936,4 +2927,4 @@ input[type="radio"].visually-hidden {
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
-
+}
