@@ -3,12 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Техномарт</title>
-	<link href="https://fonts.googleapis.com/css?family=Cuprum:400, 400i,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
-
 <body>
 	<header class="main-header">
 		<nav class="main-navigation">
@@ -17,7 +16,6 @@
 					<a class="main-header-logo">
 						<img src="img/main-logo-header.png" width="220" height="42" alt="Логотип магазина Техномарт">
 					</a>
-						<!--    			Форма поиска-->
 					<form class="main-nav-search" action="https://echo.htmlacademy.ru" method="post">
 						<h3 class="visually-hidden">Поле поиска по сайту</h3>
 						<p>
@@ -30,7 +28,6 @@
 							</button>
 						</p>
 					</form>
-
 					<p class="nav-about-order">
 						<span class="nav-bookmarks">Закладки: 0</span>
 						<span class="nav-goods-basket">Корзина: 0</span>
@@ -56,50 +53,45 @@
 					</li>
 				</ul>
 			</div>
+			<h3 class="visually-hidden">Главное меню сайта</h3>
 			<ul class="site-navigation">
-				<h3 class="visually-hidden">Главное меню сайта</h3>
 				<li class="site-navigation-item">
 					<a class="indentation-left" href="#">Главная</a>
 				</li>
 				<li class="site-navigation-item">
-					<a href="about.html">Компания</a>
+					<a href="#">Компания</a>
 				</li>
 				<li class="site-navigation-item">
 					<a href="catalog.html">Каталог</a>
 				</li>
 				<li class="site-navigation-item">
-					<a href="news.html">Новости</a>
+					<a href="#">Новости</a>
 				</li>
 				<li class="site-navigation-item">
-					<a href="specialoffers.html">Спецпредложения</a>
+					<a href="#">Спецпредложения</a>
 				</li>
 				<li class="site-navigation-item">
-					<a href="delivery.html">Доставка</a>
+					<a href="#">Доставка</a>
 				</li>
 				<li class="site-navigation-item">
-					<a class="indentation-right" href="contacts.html">Контакты</a>
+					<a class="indentation-right" href="#">Контакты</a>
 				</li>
 			</ul>
 		</nav>
 	</header>
-		
 	<main class="main-container">
 		<div class="container">
 			<div class="choose-category-box">
 				<div class="control-slider">
 					<h2 class="visually-hidden">Выбор категории товара</h2>
-				
 					<input type="button" class="prev" id="prev" name="arrows" value="Предыдущий слайд">
 					<input type="button" class="next" id="next" name="arrows" value="Следующий слайд">
-					
 					<div class="slider-arrows">
 						<label for="prev"></label>
 						<label for="next"></label>
 					</div>
-						
-					<input type="radio" class="point-1" id="point-1" name="point" checked>
-					<input type="radio" class="point-2" name="point" id="point-1">
-						
+					<input type="radio" class="point-1" name="point" id="point-1" checked>
+					<input type="radio" class="point-2" name="point" id="point-2">
 					<div class="slider-control">
 						<label for="point-1"></label>
 						<label for="point-2"></label>
@@ -131,16 +123,10 @@
 						</p>
 					</li>
 				</ul>
-				
-				
 				<div class="gallery">
 					<h3 class="visually-hidden">Фотогалерея</h3>
-					
-					
 					<div class="gallery-content">
-						
 						<ul class="gallery-promo">
-						
 							<li class="gallery-item-promo catalog-item-promo">
 								<span class="gallery-header-name">
 									Дрели
@@ -150,7 +136,6 @@
 								</span>
 								<a href="catalog.html" class="gallery-category-button">Открыть каталог</a>
 							</li>
-							
 							<li class="gallery-item-promo catalog-item-promo">
 								<p class="gallery-header">
 									<span class="gallery-header-name">
@@ -165,12 +150,7 @@
 						</ul>
 					</div>
 				</div>
-			
-			
-			
-			<!--					Второй слайд галереи-->
 				<div class="gallery-content-second">
-					
 					<p class="gallery-button">
 						<a href="catalog.html" class="choose-category-btn">Открыть каталог</a>
 					</p>
@@ -194,13 +174,11 @@
 					</li>
 				</ul>
 			</div>
-	
 			<section class="popular-goods">
 				<div class="popular-goods-box">
 					<h2 class="popular-caption">Популярные товары:</h2>
 	<!--					<span class="popular-goods-button">-->
 					<a href="#" class="popular-goods-button-link style-btn">Все популярные товары</a>
-	<!--					</span>-->
 				</div>
 				<ul class="catalog-items">
 					<li class="catalog-item">
@@ -215,7 +193,6 @@
 						<span class="discount">32 500 Р.</span>
 						<span class="price">25500 Р.</span>
 					</li>
-					
 					<li class="catalog-item">
 						<div class="actions">
 							<a href="#" class="buy">Купить</a>
@@ -228,7 +205,6 @@
 						<span class="discount">22500 </span>
 						<span class="price">15500 Р.</span>
 					</li>
-						
 					<li class="catalog-item">
 						<div class="actions">
 							<a href="#" class="buy">Купить</a>
@@ -241,7 +217,6 @@
 						<span class="discount">30500 Р.</span>
 						<span class="price">25500 Р.</span>
 					</li>
-						
 					<li class="catalog-item flag-new">
 						<div class="actions flag-new">
 							<a href="#" class="buy">Купить</a>
@@ -256,13 +231,11 @@
 					</li>
 				</ul>
 			</section>
-
 			<section class="popular-manufacturer">
 				<div class="popular-manufacturer-header">
 					<h2 class="popular-caption">Популярные производители:</h2>
 					<a href="#" class="popular-manufacturer-button-link style-btn">Все производители</a>
 				</div>
-
 				<ul class="popular-manufacturer-list">
 					<li class="popular-manufacturer-item">
 						<a href="#" class="manufacturer-logo-link">
@@ -307,7 +280,6 @@
 				</ul>
 			</section>
 		</div>
-			
 		<div class="service-box">
 			<section class="service container">
 				<div class="service-list-box">
@@ -346,7 +318,6 @@
 				</div>
 			</section>
 		</div>
-
 		<div class="company-contack-box container">
 			<section class="company">
 				<h2 class="company-title">Компания<span class="company-name"> &laquo;Техномарт&raquo;</span></h2>
@@ -367,37 +338,31 @@
 					<a href="#" class="about-company-button style-btn">Подробнее о компании</a>
 				</p>
 			</section>
-
 			<section class="contact">
 				<h2 class="contact-title">Контакты</h2>
 				<p class="contact-description">
 					Вы можете забрать товар сами, заехав в наш офис:
 				</p>
-
 				<p class="contact-map about-contacts">
 					<a class="map-link" href="https://yandex.ru/map-widget/v1/?um=constructor%3A4dd0f0168b8da29dbf8b8fbee4d790efa685c0f0415bf63324f135fdc59f51c1&amp;source=constructor" width="573" 	height="432" frameborder="0">
 						<img src="img/mini-map.png" width="300" height="158" alt="Карта с адресом нашего офиса. ул. Большая Конюшенная д.19">
 					</a>
 				</p>
-
 				<p class="contact-button-box about-contacts">
 					<a href="form.html" class="contact-button button-link style-btn">Заблудились? Напишите нам!</a>
 				</p>
-
 			</section>
 		</div>
 	</main>
-
 	<footer class="main-footer">
-				<!--		  	исправил в соответствии с 4 лекцией-->
 		<section class="footer-menu">
+			<h4 class="visually-hidden">Переход в подвал сайта компании</h4>
 			<div class="footer-line-top">
 				<p class="footer-logo">
 					<a href="index.html" class="footer-logo-image">
 						<img src="img/main-logo-footer.png" width="220" height="68" alt="Логотип магазина Техномарт">
 					</a>
 				</p>
-				
 				<ul class="footer-nav">
 					<li><a href="about.html">Компания</a></li>
 					<li><a href="news.html">Новости</a></li>
@@ -427,14 +392,13 @@
 				</ul>
 			</div>
 		</section>
-<!--//////////////////////////////////////////////////////////-->
 		<section class="footer-social">
+			<h4 class="visually-hidden">Раздел подвала сайта с ссылками на соиальные сети компании</h4>
 			<div class="footer-social-box">
 				<p class="footer-copyright">
 					&copy; 2010-2017 Компания &laquo;Техномарт&raquo;<br>
 					Все права защищены
 				</p>
-							
 				<div class="footer-social-button">
 					<a class="social social-vk" href="vk.com" aria-label="Наша группа Вконтакте">
 						<span class="visually-hidden">Вконтакте</span>
@@ -470,32 +434,26 @@
 			</div>
 		</section>
 	</footer>
-
 			<p class="overlay"></p>
 			<div class="modal modal-map">
 				<button type="button" class="modal-close">Закрыть</button>
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22607.663848233355!2d30.319081918320876!3d59.94451923932073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1536491785083"
 					width="940" height="450" style="border-width:1px" allowfullscreen></iframe>
 			</div>
-
 			<div class="modal modal-write-us">
 				<button type="button" class="modal-close">Закрыть</button>
 				<form class="write-us" action="https://echo.htmlacademy.ru" method="POST">
-
 					<label for="name" class="modal-item">Ваше имя:</label>
 					<label for="email" class="modal-item">Ваш e-mail:</label>
-
 					<input type="text" id="name" name="name" placeholder="Имя Фамилия" required>
 					<input type="email" id="email" name="email" placeholder="email@example.com" required>
-
 					<label for="your-text" class="modal-item">Текст письма:</label>
 					<textarea id="your-text" cols="63" rows="5" placeholder="В свободной форме"></textarea>
-
 					<p>
 						<button class="button" type="submit">Отправить</button>
 					</p>
 				</form>
 			</div>
-		<script src="js/script.js"></script>
+		<script src="js/script.min.js"></script>
 	</body>
 </html>
