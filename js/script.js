@@ -41,10 +41,10 @@ if (document.querySelector('.modal-map') && document.querySelector('.modal-write
 			}
 		}
 		if (counter == inputs.length || textarea.value == ''){
-			form.classList.add('error');
+			form.classList.add('.error');
 			setTimeout(function(){
 				counter = 0;
-				form.classList.remove('error');
+				form.classList.remove('.error');
 			}, 10000);
 		} else {
 			form.submit();
